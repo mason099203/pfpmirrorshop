@@ -344,38 +344,59 @@ main {
 }
 
 .tag.new {
-    background: #4CAF50;
+    background: #b2ec54;
+    color: rgb(14, 13, 13);
+}
+
+.tag.Searing {
+    background: #ee1414;
     color: white;
 }
 
-.tag.searing-exarch {
-    background: #FF5722;
+.tag.Eater {
+    background: #20aa04;
     color: white;
 }
 
-.tag.eater-of-worlds {
-    background: #9C27B0;
+.tag.Shaper {
+    background: #9e9fa0;
     color: white;
 }
 
-.tag.shaper-item {
-    background: #2196F3;
+.tag.Elder{
+    background: #58514f;
     color: white;
 }
 
-.tag.elder-item {
-    background: #795548;
+.tag.Redeemer {
+    background: #078791;
+    color: white;
+}
+.tag.Warlord {
+    background: #cf8e38;
+    color: white;
+}
+.tag.Hunter {
+    background: #1b6903;
     color: white;
 }
 
-.tag.hunter-item {
-    background: #607D8B;
+.tag.Crusader {
+    background: #d6d313;
+    color: white;
+}
+.tag.Synthesised {
+    background: #078791;
     color: white;
 }
 
-.tag.synthesised {
-    background: #8e44ad;
+.tag.Split {
+    background: #42e7f3;
     color: white;
+}
+.tag.Fractured {
+    background: #dcdfbb;
+    color: rgb(70, 63, 63);
 }
 
 /* 擁有者資訊 */

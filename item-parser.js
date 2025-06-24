@@ -363,7 +363,37 @@ class POEItemParser {
      */
     _processModText(text) {
         // 移除 (implicit), (crafted), (enchant), (fractured) 標記
-        return text.replace(/\s*\((?:implicit|crafted|enchant|fractured)\)/g, '');
+        let processedText = text.replace(/\s*\((?:implicit|crafted|enchant|fractured)\)/g, '');
+        
+        // 移除系統標籤（從標籤開始到行尾）
+        processedText = processedText.replace(/^Rarity:.*$/g, '');
+        processedText = processedText.replace(/^Level:.*$/g, '');
+        processedText = processedText.replace(/^Item Class:.*$/g, '');
+        processedText = processedText.replace(/^Item Level:.*$/g, '');
+        
+        // 移除各種影響類型標籤
+        const influenceTags = [
+            'Searing Exarch Item',
+            'Eater of Worlds Item', 
+            'Shaper Item',
+            'Elder Item',
+            'Synthesised',
+            'Redeemer Item',
+            'Warlord Item', 
+            'Hunter Item',
+            'Crusader Item',
+            'Synthesised Item',
+            'Fractured Item',
+            'Corrupted'
+        ];
+        
+        // 移除影響類型標籤（完全匹配）
+        influenceTags.forEach(tag => {
+            processedText = processedText.replace(new RegExp(`^${tag}$`, 'g'), '');
+        });
+        
+        // 移除前後空白
+        return processedText.trim();
     }
 
     /**

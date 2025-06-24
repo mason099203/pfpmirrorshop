@@ -35,10 +35,9 @@ function initializeItems() {
             mirrorFee: 20,
             category: "weapon",
             type: "RF / Ignite build / CWS",
-            tags: ["new"],
+            tags: ["new","Hunter Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
-            pobLink: "#",
             itemData: `Item Class: Sceptres
 Rarity: Rare
 Brimstone Knell
@@ -84,10 +83,9 @@ Hunter Item
             mirrorFee: 20,
             category: "armor",
             type: "Warcry cri /Volcanic Fissure of Snaking",
-            tags: ["new"],
+            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
-            pobLink: "#",
             itemData: `Item Class: Helmets
 Rarity: Rare
 Honour Ward
@@ -129,10 +127,9 @@ Fractured Item
             mirrorFee: 20,
             category: "armor",
             type: "Str Stacking Armour/Energy Enjoyer",
-            tags: ["new"],
+            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
-            pobLink: "#",
             itemData: `Item Class: Body Armours
 Rarity: Rare
 Torment Shell
@@ -178,10 +175,9 @@ Fractured Item
             mirrorFee: 20,
             category: "armor",
             type: "Int Stacking Trickster",
-            tags: ["new"],
+            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
-            pobLink: "#",
             itemData: `Item Class: Body Armours
 Rarity: Rare
 Vengeance Sanctuary
@@ -230,10 +226,9 @@ Sacred Chainmail
             mirrorFee: 20,
             category: "armor",
             type: "Penance Brand / Blade vortex",
-            tags: ["new"],
+            tags: ["new","Shaper Item","Elder Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
-            pobLink: "#",
             itemData: `Item Class: Helmets
 Rarity: Rare
 Victory Cowl
@@ -474,12 +469,18 @@ function createItemCard(item) {
 function getTagDisplayName(tag) {
     const tagNames = {
         'new': '新物品',
-        'searing-exarch': '灼熱總督',
-        'eater-of-worlds': '世界吞噬者',
-        'shaper-item': '塑者物品',
-        'elder-item': '異界尊師物品',
-        'hunter-item': '狩獵者物品',
-        'synthesised': '合成物品'
+        'Searing Exarch Item': '灼熱總督',
+        'Eater of Worlds Item': '吞噬者',
+        'Shaper Item': '塑者',
+        'Elder Item': '尊師',
+        'Redeemer Item': '救贖者',
+        'Warlord Item': '總督軍',
+        'Hunter Item': '狩獵者',
+        'Crusader Item': '聖戰軍王',
+        'Synthesised Item': '追憶',
+        'Fractured Item': '破裂',
+        'Split': '分化'
+
     };
     return tagNames[tag] || tag;
 }
