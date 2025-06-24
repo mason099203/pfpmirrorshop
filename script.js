@@ -458,9 +458,8 @@ function createItemCard(item) {
             <div>聯絡: <span class="contact">${item.contact}</span></div>
         </div>
         <div class="item-actions">
-            <button class="action-btn pob-btn" data-pob="${item.pobLink}"><i class="bi bi-copy"></i>copy POB</button>
+            <button class="action-btn pob-btn" data-pob="${item.itemData}"><i class="bi bi-copy"></i>copy POB</button>
             <button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>whisper</button>
-            ${itemDetailsBtn}
         </div>
     `;
 
