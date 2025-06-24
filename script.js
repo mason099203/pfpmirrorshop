@@ -649,7 +649,7 @@ function handleWhisper(e) {
         
         // 如果有費用且不為0，添加費用信息
         if (mirrorFee && mirrorFee !== '0') {
-            whisperMessage += ` FOR ${mirrorFee} DIVINE FEE`;
+            whisperMessage += ` FOR ${mirrorFee} DIVINE`;
         }
         
         // 嘗試複製私聊訊息到剪貼簿
