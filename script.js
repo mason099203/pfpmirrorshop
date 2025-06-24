@@ -35,7 +35,7 @@ function initializeItems() {
             mirrorFee: 20,
             category: "weapon",
             type: "RF / Ignite build / CWS",
-            tags: ["new","Hunter Item"],
+            tags: ["Hunter Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Sceptres
@@ -83,7 +83,7 @@ Hunter Item
             mirrorFee: 20,
             category: "armor",
             type: "Warcry cri /Volcanic Fissure of Snaking",
-            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+            tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Helmets
@@ -127,7 +127,7 @@ Fractured Item
             mirrorFee: 20,
             category: "armor",
             type: "Str Stacking Armour/Energy Enjoyer",
-            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+            tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Body Armours
@@ -175,7 +175,7 @@ Fractured Item
             mirrorFee: 20,
             category: "armor",
             type: "Int Stacking Trickster",
-            tags: ["new","Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+            tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Body Armours
@@ -226,7 +226,7 @@ Sacred Chainmail
             mirrorFee: 20,
             category: "armor",
             type: "Penance Brand / Blade vortex",
-            tags: ["new","Shaper Item","Elder Item"],
+            tags: ["Shaper Item","Elder Item"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Helmets
@@ -264,6 +264,58 @@ Split
 --------
 Shaper Item
 Elder Item
+
+`
+        },
+        {
+            id: 5,
+            name: "Miracle Gutter Synthesised Reaver Sword",
+            mirrorFee: 60,
+            category: "weapon",
+            type: "Str Stacking Original Sin Molten Strike",
+            tags: ["new","Synthesised Item","Split"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            itemData: `Item Class: Two Hand Swords
+Rarity: Rare
+Miracle Gutter
+Synthesised Reaver Sword
+--------
+Two Handed Sword
+Quality: +30% (augmented)
+Physical Damage: 62-104
+Elemental Damage: 34-636 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 2.07 (augmented)
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 65
+Str: 82
+Dex: 119
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 85
+--------
+Quality does not increase Physical Damage (enchant)
+1% increased Attack Speed per 8% Quality (enchant)
+--------
+8% increased Attack Speed (implicit)
++1 to Maximum Endurance Charges (implicit)
+Adds 3 to 5 Fire Damage to Attacks with this Weapon per 10 Strength (implicit)
+Item sells for much more to vendors (implicit)
+--------
++55 to Strength
+144% increased Spell Damage
+Adds 34 to 636 Lightning Damage
+27% increased Attack Speed
+Attacks with this Weapon Penetrate 16% Chaos Resistance
+30% chance to deal Double Damage while Focused (crafted)
+--------
+Split
+--------
+Synthesised Item
 
 `
         }
@@ -498,7 +550,8 @@ function getItemImageUrl(itemName) {
         'Honour Ward Giantslayer Helmet': './image/Honour Ward Giantslayer Helmet.png',
         'Torment Shell Sacred Chainmail': './image/Torment Shell Sacred Chainmail.png',
         'Vengeance Sanctuary Necrotic Armour': './image/Vengeance Sanctuary Necrotic Armour.png',
-        'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png'
+        'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png',
+        'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png'
     };
 
     // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片
