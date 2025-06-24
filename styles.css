@@ -81,6 +81,43 @@ body {
     color: #1a1a1a;
 }
 
+/* 社交連結區域 */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Twitch 按鈕樣式 */
+.twitch-btn {
+    background: linear-gradient(145deg, #9146ff, #7c2fdb);
+    border: 2px solid #9146ff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(145, 70, 255, 0.3);
+}
+
+.twitch-btn:hover {
+    background: linear-gradient(145deg, #a459ff, #8c44e6);
+    border-color: #a459ff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(145, 70, 255, 0.4);
+}
+
+.twitch-btn i {
+    font-size: 18px;
+}
+
 /* 主要內容區域 */
 main {
     padding: 40px 0;
@@ -534,6 +571,11 @@ main {
     .nav-btn {
         padding: 10px 16px;
         font-size: 13px;
+    }
+    
+    .twitch-btn {
+        padding: 10px 20px;
+        font-size: 14px;
     }
     
     .controls {
