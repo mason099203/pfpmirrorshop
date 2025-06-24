@@ -34,7 +34,7 @@ function initializeItems() {
             name: "Brimstone Knell Opal Sceptre",
             mirrorFee: 20,
             category: "weapon",
-            type: "Righteous Fire",
+            type: "RF / Ignite build / CWS",
             tags: ["new"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
@@ -83,7 +83,7 @@ Hunter Item
             name: "Honour Ward Giantslayer Helmet",
             mirrorFee: 20,
             category: "armor",
-            type: "",
+            type: "Warcry cri /Volcanic Fissure of Snaking",
             tags: ["new"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
@@ -128,7 +128,7 @@ Fractured Item
             name: "Torment Shell Sacred Chainmail",
             mirrorFee: 20,
             category: "armor",
-            type: "",
+            type: "Str Stacking Armour/Energy Enjoyer",
             tags: ["new"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
@@ -177,7 +177,7 @@ Fractured Item
             name: "Vengeance Sanctuary Necrotic Armour",
             mirrorFee: 20,
             category: "armor",
-            type: "",
+            type: "Int Stacking Trickster",
             tags: ["new"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
@@ -229,7 +229,7 @@ Sacred Chainmail
             name: "Victory Cowl Archdemon Crown",
             mirrorFee: 20,
             category: "armor",
-            type: "",
+            type: "Penance Brand / Blade vortex",
             tags: ["new"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
@@ -432,14 +432,27 @@ function createItemCard(item) {
             </div>
         </div>` : '';
 
+    const itemImageUrl = getItemImageUrl(item.name);
+    const itemTooltip = item.itemData ? 
+        `<div class="item-tooltip">${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData))}</div>` : '';
+
     card.innerHTML = `
-        <h3 class="item-name">${item.name}</h3>
-        <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> DIVINE</div>
-        <div class="item-type">${item.type}</div>
+        <div class="item-header">
+            
+            <div class="item-info">
+                <h3 class="item-name">${item.name}</h3>
+                <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> DIVINE</div>
+                <div class="item-type">${item.type}</div>
+            </div>
+        </div>
         <div class="item-tags">
             <div class="tags-row">${tagsHtml}</div>
             ${itemDetailsSection}
         </div>
+                 <div class="item-image-container" ${item.itemData ? 'data-tooltip="true"' : ''}>
+             <img src="${itemImageUrl}" class="item-image" alt="${item.name}">
+             ${itemTooltip}
+         </div>
         <div class="owner-info">
             ${ownerInfo}
             <div>聯絡: <span class="contact">${item.contact}</span></div>
@@ -470,6 +483,26 @@ function getTagDisplayName(tag) {
         'synthesised': '合成物品'
     };
     return tagNames[tag] || tag;
+}
+
+/**
+ * 根據物品名稱獲取圖片URL
+ * @param {string} itemName - 物品名稱
+ * @returns {string} 圖片URL
+ */
+function getItemImageUrl(itemName) {
+    // POE物品圖片映射表 - 使用本地圖片
+    const itemImages = {
+        // 武器類
+        'Brimstone Knell Opal Sceptre': './image/Brimstone Knell Opal Sceptre.png',
+        'Honour Ward Giantslayer Helmet': './image/Honour Ward Giantslayer Helmet.png',
+        'Torment Shell Sacred Chainmail': './image/Torment Shell Sacred Chainmail.png',
+        'Vengeance Sanctuary Necrotic Armour': './image/Vengeance Sanctuary Necrotic Armour.png',
+        'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png'
+    };
+
+    // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片
+    return itemImages[itemName] || `https://via.placeholder.com/64x64/2a2a2a/d4af37?text=${encodeURIComponent(itemName.charAt(0))}`;
 }
 
 /**
