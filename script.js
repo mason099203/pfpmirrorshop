@@ -1,5 +1,5 @@
 /**
- * Settlers Shop JavaScript 功能模組
+ * SETTLERS SHOP JAVASCRIPT 功能模組
  * 處理所有網頁互動功能
  */
 
@@ -31,84 +31,264 @@ function initializeItems() {
     allItems = [
         {
             id: 1,
-            name: "Horror Mitts",
-            mirrorFee: 0,
+            name: "Brimstone Knell Opal Sceptre",
+            mirrorFee: 20,
             category: "weapon",
-            type: "Int Stack Trickster",
-            tags: ["new", "searing-exarch", "eater-of-worlds"],
-            owner: "Sushi",
-            contact: "BIGSNAKESUCKER",
-            pobLink: "#"
+            type: "Righteous Fire",
+            tags: ["new"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            pobLink: "#",
+            itemData: `Item Class: Sceptres
+Rarity: Rare
+Brimstone Knell
+Opal Sceptre
+--------
+Sceptre
+Quality: +30% (augmented)
+Physical Damage: 49-73
+Critical Strike Chance: 8.00%
+Attacks per Second: 1.25
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 65
+Str: 95
+Int: 131
+--------
+Sockets: W-W-W 
+--------
+Item Level: 86
+--------
+Quality does not increase Physical Damage (enchant)
+Grants 1% increased Elemental Damage per 2% Quality (enchant)
+--------
+40% increased Elemental Damage (implicit)
+--------
++26% to Damage over Time Multiplier
++38% to Fire Damage over Time Multiplier
++1 to Level of all Spell Skill Gems
++1 to Level of all Fire Spell Skill Gems
+Malevolence has 40% increased Aura Effect
+60% increased Fire Damage (crafted)
+20% chance to Ignite (crafted)
+--------
+Split
+--------
+Hunter Item
+`
         },
         {
             id: 2,
-            name: "Loath Splinter",
-            mirrorFee: 60,
-            category: "accessory",
-            type: "Synthesised Small Cluster Jewel",
-            tags: ["new", "synthesised"],
-            owner: "abax0th",
-            contact: "Unc",
+            name: "Honour Ward Giantslayer Helmet",
+            mirrorFee: 20,
+            category: "armor",
+            type: "",
+            tags: ["new"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
             pobLink: "#",
-            itemData: `Item Class: Jewels
+            itemData: `Item Class: Helmets
 Rarity: Rare
-Loath Splinter
-Synthesised Small Cluster Jewel
+Honour Ward
+Giantslayer Helmet
+--------
+Quality: +30% (augmented)
+Armour: 1739 (augmented)
 --------
 Requirements:
-Level: 67 (unmet)
+Level: 84
+Str: 224
+--------
+Sockets: W-W-W-W 
 --------
 Item Level: 85
 --------
-Adds 3 Passive Skills (enchant)
-Added Small Passive Skills grant: 6% increased Mana Reservation Efficiency of Skills (enchant)
+12% increased Mana Reservation Efficiency of Skills (implicit)
+26% reduced Mana Cost of Attacks (implicit)
 --------
-+5 to Strength (implicit)
-+5 to Intelligence (implicit)
-5% increased Area of Effect (implicit)
+Skills have +3% to Critical Strike Chance for each Warcry Exerting them (fractured)
++2 to Level of Socketed AoE Gems
++58 to Intelligence
++536 to Accuracy Rating
+100% increased Armour
++143 to maximum Life
+9% increased Area of Effect
 --------
-Added Small Passive Skills also grant: +6 to All Attributes
-Added Small Passive Skills also grant: +14 to Intelligence
-Added Small Passive Skills also grant: +20 to Maximum Energy Shield
-Added Small Passive Skills have 35% increased Effect
+Split
+Searing Exarch Item
+Eater of Worlds Item
 --------
-Place into an allocated Small, Medium or Large Jewel Socket on the Passive Skill Tree. Added passives do not interact with jewel radiuses. Right click to remove from the Socket.
---------
-Synthesised Item`
+Fractured Item
+
+`
         },
         {
             id: 3,
-            name: "Death Shroud",
-            mirrorFee: 0,
+            name: "Torment Shell Sacred Chainmail",
+            mirrorFee: 20,
             category: "armor",
-            type: "Str stack chest",
-            tags: ["searing-exarch", "eater-of-worlds"],
-            owner: "",
-            contact: "DefaultLogin",
-            pobLink: "#"
+            type: "",
+            tags: ["new"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            pobLink: "#",
+            itemData: `Item Class: Body Armours
+Rarity: Rare
+Torment Shell
+Sacred Chainmail
+--------
+Quality: +30% (augmented)
+Armour: 3598 (augmented)
+Energy Shield: 725 (augmented)
+--------
+Requirements:
+Level: 84
+Str: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+12% increased Explicit Defence Modifier magnitudes (enchant)
+50% reduced Explicit Resistance Modifier magnitudes (enchant)
+--------
+1% less Damage Taken per 180 Strength (implicit)
+26% increased Arctic Armour Buff Effect (implicit)
+--------
+56% increased Global Defences (fractured)
++52 to Strength
+You take 10% reduced Extra Damage from Critical Strikes per Endurance Charge
++417 to Armour
+123% increased Armour and Energy Shield
++84 to maximum Energy Shield
+8% additional Physical Damage Reduction
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
         },
         {
             id: 4,
-            name: "Dread Song",
+            name: "Vengeance Sanctuary Necrotic Armour",
             mirrorFee: 20,
-            category: "weapon",
-            type: "測試物品",
-            tags: ["new", "shaper-item", "elder-item"],
-            owner: "soti1",
-            contact: "SotiSMITE / Exanallovermyface",
-            pobLink: "#"
-        },
+            category: "armor",
+            type: "",
+            tags: ["new"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            pobLink: "#",
+            itemData: `Item Class: Body Armours
+Rarity: Rare
+Vengeance Sanctuary
+Necrotic Armour
+--------
+Quality: +30% (augmented)
+Evasion Rating: 3621 (augmented)
+Energy Shield: 733 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+12% increased Explicit Defence Modifier magnitudes (enchant)
+50% reduced Explicit Resistance Modifier magnitudes (enchant)
+--------
+12% of Physical Damage from Hits taken as Chaos Damage (implicit)
++2% to all maximum Resistances (implicit)
+--------
+56% increased Global Defences (fractured)
++22% chance to Suppress Spell Damage
++58 to Intelligence
++418 to Evasion Rating
+123% increased Evasion and Energy Shield
++86 to maximum Energy Shield
+6% increased Attributes (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+
+Sacred Chainmail
+`
+        }
+        ,
         {
             id: 5,
-            name: "Oblivion Butcher",
-            mirrorFee: 10,
-            category: "weapon",
-            type: "Two Handed Phys Vaal Axe",
-            tags: ["elder-item"],
-            owner: "",
-            contact: "HeinzGotBaited",
-            pobLink: "#"
+            name: "Victory Cowl Archdemon Crown",
+            mirrorFee: 20,
+            category: "armor",
+            type: "",
+            tags: ["new"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            pobLink: "#",
+            itemData: `Item Class: Helmets
+Rarity: Rare
+Victory Cowl
+Archdemon Crown
+--------
+Quality: +20% (augmented)
+Armour: 254 (augmented)
+Energy Shield: 106 (augmented)
+--------
+Requirements:
+Level: 75
+Str: 79
+Int: 79
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+-2 to Level of Socketed Support Gems (implicit)
++2 to Level of Socketed Skill Gems (implicit)
+--------
++2 to Level of Socketed AoE Gems
+Socketed Gems are Supported by Level 25 Concentrated Effect
+Socketed Gems are Supported by Level 25 Hypothermia
+Socketed Gems deal 30% more Elemental Damage
+Socketed Spells have +4% to Critical Strike Chance
+10% increased Area of Effect
+25% increased Area Damage
+20% increased Effect of Cold Ailments
++45 to maximum Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+
+`
         }
+//         ,
+//         {
+//             id: 4,
+//             name: "Torment Shell Sacred Chainmail",
+//             mirrorFee: 20,
+//             category: "armor",
+//             type: "",
+//             tags: ["new"],
+//             owner: "福爾摩匹",
+//             contact: "福爾摩匹",
+//             pobLink: "#",
+//             itemData: `Item Class: Body Armours
+// Rarity: Rare
+// Torment Shell
+// Sacred Chainmail
+// `
+//         }
     ];
     
     filteredItems = [...allItems];
@@ -248,25 +428,27 @@ function createItemCard(item) {
     const itemDetailsSection = item.itemData ? 
         `<div class="item-details" style="display: none;">
             <div class="poe-item-display">
-                ${generatePoeItemHtml(parseItemData(item.itemData))}
+                ${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData))}
             </div>
         </div>` : '';
 
     card.innerHTML = `
         <h3 class="item-name">${item.name}</h3>
-        <div class="mirror-fee">鏡像費用: <span class="fee-amount">${item.mirrorFee}</span> Divine</div>
+        <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> DIVINE</div>
         <div class="item-type">${item.type}</div>
-        <div class="item-tags">${tagsHtml}</div>
+        <div class="item-tags">
+            <div class="tags-row">${tagsHtml}</div>
+            ${itemDetailsSection}
+        </div>
         <div class="owner-info">
             ${ownerInfo}
             <div>聯絡: <span class="contact">${item.contact}</span></div>
         </div>
         <div class="item-actions">
-            <button class="action-btn pob-btn" data-pob="${item.pobLink}">複製 PoB</button>
-            <button class="action-btn whisper-btn" data-contact="${item.contact}">私聊</button>
+            <button class="action-btn pob-btn" data-pob="${item.pobLink}"><i class="bi bi-copy"></i>copy POB</button>
+            <button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>whisper</button>
             ${itemDetailsBtn}
         </div>
-        ${itemDetailsSection}
     `;
 
     return card;
@@ -391,7 +573,7 @@ function showMessage(message, type) {
 }
 
 /**
- * 處理複製 PoB 連結
+ * 處理複製 POB 連結
  * @param {Event} e - 點擊事件
  */
 function handleCopyPoB(e) {
@@ -410,10 +592,10 @@ function handleCopyPoB(e) {
                 e.target.style.background = '';
             }, 1500);
         }).catch(() => {
-            alert('PoB 連結: ' + pobLink);
+            alert('POB 連結: ' + pobLink);
         });
     } else {
-        alert('此物品尚未提供 PoB 連結');
+        alert('此物品尚未提供 POB 連結');
     }
 }
 
@@ -423,10 +605,19 @@ function handleCopyPoB(e) {
  */
 function handleWhisper(e) {
     const contact = e.target.getAttribute('data-contact');
-    const itemName = e.target.closest('.item-card').querySelector('.item-name').textContent;
+    const itemCard = e.target.closest('.item-card');
+    const itemName = itemCard.querySelector('.item-name').textContent;
+    const mirrorFeeElement = itemCard.querySelector('.fee-amount');
+    const mirrorFee = mirrorFeeElement ? mirrorFeeElement.textContent : '0';
     
     if (contact) {
-        const whisperMessage = `@${contact} 你好，我對你的 ${itemName} 有興趣，可以私聊討論嗎？`;
+        // 生成英文格式的私聊訊息（全大寫）
+        let whisperMessage = `@${contact.toUpperCase()} HI, I'D LIKE TO MIRROR ${itemName.toUpperCase()}`;
+        
+        // 如果有費用且不為0，添加費用信息
+        if (mirrorFee && mirrorFee !== '0') {
+            whisperMessage += ` FOR ${mirrorFee} DIVINE FEE`;
+        }
         
         // 嘗試複製私聊訊息到剪貼簿
         navigator.clipboard.writeText(whisperMessage).then(() => {
@@ -440,6 +631,7 @@ function handleWhisper(e) {
                 e.target.style.background = '';
             }, 2000);
         }).catch(() => {
+            // 如果複製失敗，顯示訊息
             alert('私聊訊息: ' + whisperMessage);
         });
     }
@@ -490,295 +682,4 @@ function importItemsFromJSON(jsonString) {
     }
 }
 
-/**
- * 預覽物品功能
- */
-function previewItem() {
-    const itemData = document.getElementById('item-data').value.trim();
-    const previewContainer = document.getElementById('item-preview');
-    const itemDisplay = document.getElementById('item-display');
-
-    if (!itemData) {
-        previewContainer.style.display = 'none';
-        return;
-    }
-
-    try {
-        const parsedItem = parseItemData(itemData);
-        const itemHtml = generatePoeItemHtml(parsedItem);
-        itemDisplay.innerHTML = itemHtml;
-        previewContainer.style.display = 'block';
-
-        // 自動填充表單欄位
-        autoFillFormFromItemData(parsedItem);
-    } catch (error) {
-        console.error('解析物品失敗:', error);
-        showMessage('無法解析物品資料，請檢查格式是否正確', 'error');
-    }
-}
-
-/**
- * 解析 POE 物品資料
- * @param {string} itemText - 物品文字資料
- * @returns {Object} 解析後的物品物件
- */
-function parseItemData(itemText) {
-    const lines = itemText.split('\n').map(line => line.trim()).filter(line => line);
-    const item = {
-        itemClass: '',
-        rarity: '',
-        name: '',
-        baseType: '',
-        requirements: [],
-        itemLevel: '',
-        enchants: [],
-        implicits: [],
-        explicits: [],
-        corrupted: false,
-        synthesised: false,
-        fractured: false,
-        influenced: [],
-        flavourText: ''
-    };
-
-    let currentSection = 'header';
-    let separatorCount = 0;
-
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-
-        // 分隔線
-        if (line === '--------') {
-            separatorCount++;
-            if (separatorCount === 1) currentSection = 'requirements';
-            else if (separatorCount === 2) currentSection = 'properties';
-            else if (separatorCount === 3) currentSection = 'mods';
-            continue;
-        }
-
-        // 解析不同部分
-        switch (currentSection) {
-            case 'header':
-                if (line.startsWith('Item Class:')) {
-                    item.itemClass = line.replace('Item Class:', '').trim();
-                } else if (line.startsWith('Rarity:')) {
-                    item.rarity = line.replace('Rarity:', '').trim().toLowerCase();
-                } else if (line && !item.name) {
-                    item.name = line;
-                } else if (line && !item.baseType && item.name) {
-                    item.baseType = line;
-                }
-                break;
-
-            case 'requirements':
-                if (line.startsWith('Level:')) {
-                    item.requirements.push(line);
-                } else if (line.includes('Str') || line.includes('Dex') || line.includes('Int')) {
-                    item.requirements.push(line);
-                }
-                break;
-
-            case 'properties':
-                if (line.startsWith('Item Level:')) {
-                    item.itemLevel = line;
-                } else if (line.includes('(enchant)')) {
-                    item.enchants.push(line);
-                }
-                break;
-
-            case 'mods':
-                if (line.includes('(implicit)')) {
-                    item.implicits.push(line);
-                } else if (line.includes('(enchant)')) {
-                    item.enchants.push(line);
-                } else if (line === 'Corrupted') {
-                    item.corrupted = true;
-                } else if (line === 'Synthesised Item') {
-                    item.synthesised = true;
-                } else if (line.includes('Place into')) {
-                    item.flavourText = line;
-                } else if (line && !line.includes('unmet')) {
-                    item.explicits.push(line);
-                }
-                break;
-        }
-    }
-
-    return item;
-}
-
-/**
- * 生成 POE 物品 HTML
- * @param {Object} item - 解析後的物品物件
- * @returns {string} HTML 字串
- */
-function generatePoeItemHtml(item) {
-    let html = `<div class="poe-item ${item.rarity}">`;
-
-    // 物品標題區域
-    html += '<div class="poe-header">';
-    if (item.itemClass) {
-        html += `<div class="poe-item-class">${item.itemClass}</div>`;
-    }
-    if (item.rarity) {
-        html += `<div class="poe-rarity">Rarity: ${item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1)}</div>`;
-    }
-    if (item.name) {
-        html += `<div class="poe-name ${item.rarity}">${item.name}</div>`;
-    }
-    if (item.baseType && item.baseType !== item.name) {
-        html += `<div class="poe-base-type">${item.baseType}</div>`;
-    }
-    html += '</div>';
-
-    // 分隔線
-    html += '<div class="poe-separator"></div>';
-
-    // 需求
-    if (item.requirements.length > 0) {
-        html += '<div class="poe-requirements">';
-        html += 'Requirements:<br>';
-        item.requirements.forEach(req => {
-            html += `${req}<br>`;
-        });
-        html += '</div>';
-        html += '<div class="poe-separator"></div>';
-    }
-
-    // 物品等級
-    if (item.itemLevel) {
-        html += `<div class="poe-item-level">${item.itemLevel}</div>`;
-        html += '<div class="poe-separator"></div>';
-    }
-
-    // 附魔
-    if (item.enchants.length > 0) {
-        item.enchants.forEach(enchant => {
-            html += `<div class="poe-mod-line poe-enchant">${enchant}</div>`;
-        });
-        html += '<div class="poe-separator"></div>';
-    }
-
-    // 隱性詞綴
-    if (item.implicits.length > 0) {
-        item.implicits.forEach(implicit => {
-            html += `<div class="poe-mod-line poe-implicit">${implicit}</div>`;
-        });
-        html += '<div class="poe-separator"></div>';
-    }
-
-    // 顯性詞綴
-    if (item.explicits.length > 0) {
-        item.explicits.forEach(explicit => {
-            let cssClass = 'poe-explicit';
-            if (item.synthesised) cssClass = 'poe-synthesised';
-            html += `<div class="poe-mod-line ${cssClass}">${explicit}</div>`;
-        });
-    }
-
-    // 腐化/合成標記
-    if (item.corrupted) {
-        html += '<div class="poe-separator"></div>';
-        html += '<div class="poe-corrupted">Corrupted</div>';
-    }
-
-    if (item.synthesised) {
-        html += '<div class="poe-separator"></div>';
-        html += '<div class="poe-synthesised">Synthesised Item</div>';
-    }
-
-    // 描述文字
-    if (item.flavourText) {
-        html += '<div class="poe-separator"></div>';
-        html += `<div class="poe-flavour">${item.flavourText}</div>`;
-    }
-
-    html += '</div>';
-    return html;
-}
-
-/**
- * 從物品資料自動填充表單
- * @param {Object} item - 解析後的物品物件
- */
-function autoFillFormFromItemData(item) {
-    // 自動填充物品名稱
-    if (item.name) {
-        document.getElementById('item-name').value = item.name;
-    }
-
-    // 根據物品類型設定分類
-    if (item.itemClass) {
-        const categoryMap = {
-            'Jewels': 'accessory',
-            'Rings': 'accessory',
-            'Amulets': 'accessory',
-            'Belts': 'accessory',
-            'One Hand Weapons': 'weapon',
-            'Two Hand Weapons': 'weapon',
-            'Bows': 'weapon',
-            'Claws': 'weapon',
-            'Daggers': 'weapon',
-            'Wands': 'weapon',
-            'Staves': 'weapon',
-            'Body Armours': 'armor',
-            'Helmets': 'armor',
-            'Gloves': 'armor',
-            'Boots': 'armor',
-            'Shields': 'armor'
-        };
-
-        const category = categoryMap[item.itemClass] || '';
-        if (category) {
-            document.getElementById('item-category').value = category;
-        }
-    }
-
-    // 自動填充描述
-    if (item.baseType && item.baseType !== item.name) {
-        document.getElementById('item-description').value = item.baseType;
-    }
-
-    // 根據物品屬性設定標籤
-    const tagsCheckboxes = document.querySelectorAll('input[name="tags"]');
-    tagsCheckboxes.forEach(checkbox => checkbox.checked = false);
-
-    if (item.synthesised) {
-        const synthCheckbox = document.querySelector('input[name="tags"][value="synthesised"]');
-        if (!synthCheckbox) {
-            // 如果沒有合成標籤，可以添加其他適當的標籤
-        }
-    }
-
-    // 如果是稀有物品，標記為新物品
-    if (item.rarity === 'rare') {
-        const newCheckbox = document.querySelector('input[name="tags"][value="new"]');
-        if (newCheckbox) newCheckbox.checked = true;
-    }
-}
-
-/**
- * 切換物品詳情顯示
- * @param {HTMLElement} button - 點擊的按鈕元素
- */
-function toggleItemDetails(button) {
-    const itemCard = button.closest('.item-card');
-    const itemDetails = itemCard.querySelector('.item-details');
-    
-    if (itemDetails) {
-        const isVisible = itemDetails.style.display !== 'none';
-        itemDetails.style.display = isVisible ? 'none' : 'block';
-        button.textContent = isVisible ? '物品詳情' : '隱藏詳情';
-        
-        // 添加動畫效果
-        if (!isVisible) {
-            itemDetails.style.opacity = '0';
-            itemDetails.style.transform = 'translateY(-10px)';
-            setTimeout(() => {
-                itemDetails.style.transition = 'all 0.3s ease';
-                itemDetails.style.opacity = '1';
-                itemDetails.style.transform = 'translateY(0)';
-            }, 10);
-        }
-    }
-} 
+// 物品相關功能已移至 item-parser.js 模組 

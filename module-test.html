@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物品解析模組測試</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .test-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        .test-header {
+            text-align: center;
+            color: #d4af37;
+            margin-bottom: 30px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(26, 26, 26, 0.5);
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+        .test-section h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+        .test-textarea {
+            width: 100%;
+            min-height: 200px;
+            background: #1a1a1a;
+            border: 2px solid #444;
+            color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            resize: vertical;
+        }
+        .test-button {
+            background: linear-gradient(145deg, #4CAF50, #45a049);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 10px 5px 0 0;
+            transition: all 0.3s ease;
+        }
+        .test-button:hover {
+            background: linear-gradient(145deg, #5CBF60, #4CAF50);
+            transform: translateY(-1px);
+        }
+        .test-result {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(42, 42, 42, 0.8);
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+        .sample-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .sample-item {
+            padding: 10px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .sample-item:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: translateY(-2px);
+        }
+        .sample-item h4 {
+            color: #d4af37;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .sample-item p {
+            color: #b8b8b8;
+            font-size: 12px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-header">
+            <h1>🧪 POE 物品解析模組測試</h1>
+            <p>測試 item-parser.js 模組的各種功能</p>
+        </div>
+
+        <div class="test-section">
+            <h3>📋 範例物品資料</h3>
+            <p>點擊下方的範例物品來快速填入測試資料：</p>
+            <div class="sample-items">
+                <div class="sample-item" onclick="loadSampleItem('rare-jewel')">
+                    <h4>稀有珠寶</h4>
+                    <p>合成小型集群珠寶</p>
+                </div>
+                <div class="sample-item" onclick="loadSampleItem('unique-weapon')">
+                    <h4>傳奇武器</h4>
+                    <p>高級單手武器</p>
+                </div>
+                <div class="sample-item" onclick="loadSampleItem('corrupted-armor')">
+                    <h4>腐化護甲</h4>
+                    <p>腐化的胸甲</p>
+                </div>
+                <div class="sample-item" onclick="loadSampleItem('magic-ring')">
+                    <h4>魔法戒指</h4>
+                    <p>藍色戒指</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🔧 物品資料解析測試</h3>
+            <textarea id="item-input" class="test-textarea" 
+                placeholder="在這裡貼上從遊戲中複製的物品資料，或點擊上方的範例物品...&#10;&#10;範例格式:&#10;Item Class: Jewels&#10;Rarity: Rare&#10;Loath Splinter&#10;Synthesised Small Cluster Jewel&#10;--------&#10;Requirements:&#10;Level: 67 (unmet)&#10;--------&#10;Item Level: 85&#10;..."></textarea>
+            <button class="test-button" onclick="testParseItem()">解析物品</button>
+            <button class="test-button" onclick="testGenerateHtml()">生成 HTML</button>
+            <button class="test-button" onclick="clearResults()">清空結果</button>
+            
+            <div id="parse-result" class="test-result" style="display: none;">
+                <h4 style="color: #4CAF50;">📊 解析結果 (JSON)：</h4>
+                <pre id="parsed-json" style="color: #e0e0e0; background: #1a1a1a; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: 12px;"></pre>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🎨 物品顯示測試</h3>
+            <div id="item-display-result" class="test-result" style="display: none;">
+                <h4 style="color: #2196F3;">🖼️ 物品顯示效果：</h4>
+                <div id="item-html-display" style="display: flex; justify-content: center; padding: 20px;"></div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>📈 功能測試結果</h3>
+            <div id="test-log" style="font-family: monospace; font-size: 12px; color: #b8b8b8; max-height: 200px; overflow-y: auto;">
+                <p>📝 測試日誌將顯示在這裡...</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" style="color: #d4af37; text-decoration: none; font-size: 16px;">
+                ← 返回主頁
+            </a>
+        </div>
+    </div>
+
+    <script src="item-parser.js"></script>
+    <script>
+        // 範例物品資料
+        const sampleItems = {
+            'rare-jewel': `Item Class: Jewels
+Rarity: Rare
+Loath Splinter
+Synthesised Small Cluster Jewel
+--------
+Requirements:
+Level: 67 (unmet)
+--------
+Item Level: 85
+--------
+Adds 3 Passive Skills (enchant)
+Added Small Passive Skills grant: 6% increased Mana Reservation Efficiency of Skills (enchant)
+--------
++5 to Strength (implicit)
++5 to Intelligence (implicit)
+5% increased Area of Effect (implicit)
+--------
+Added Small Passive Skills also grant: +6 to All Attributes
+Added Small Passive Skills also grant: +14 to Intelligence
+Added Small Passive Skills also grant: +20 to Maximum Energy Shield
+Added Small Passive Skills have 35% increased Effect
+--------
+Place into an allocated Small, Medium or Large Jewel Socket on the Passive Skill Tree. Added passives do not interact with jewel radiuses. Right click to remove from the Socket.
+--------
+Synthesised Item`,
+
+            'unique-weapon': `Item Class: One Hand Swords
+Rarity: Unique
+The Baron's Blade
+Elegant Sword
+--------
+Requirements:
+Level: 58
+Str: 104
+Dex: 122
+--------
+Item Level: 75
+--------
+Quality: +20% (augmented)
+Physical Damage: 45-85 (augmented)
+Critical Strike Chance: 5.50%
+Attacks per Second: 1.30
+Weapon Range: 14
+--------
+20% increased Attack Speed
++50 to maximum Life
+Adds 15 to 25 Physical Damage
+10% increased Movement Speed
+--------
+"A blade forged in the depths of nobility."`,
+
+            'corrupted-armor': `Item Class: Body Armours
+Rarity: Rare
+Apocalypse Embrace
+Astral Plate
+--------
+Requirements:
+Level: 62
+Str: 180
+--------
+Item Level: 84
+--------
+Quality: +28% (augmented)
+Armour: 751 (augmented)
+Energy Shield: 156 (augmented)
+--------
++12% to all Elemental Resistances (implicit)
+--------
++89 to maximum Life
++45% to Cold Resistance
++38% to Lightning Resistance
++35% to Chaos Resistance
+15% increased Armour and Energy Shield
+--------
+Corrupted`,
+
+            'magic-ring': `Item Class: Rings
+Rarity: Magic
+Sapphire Ring of the Leech
+--------
+Requirements:
+Level: 8
+--------
+Item Level: 45
+--------
++20% to Cold Resistance (implicit)
+--------
+2% of Physical Attack Damage Leeched as Life`
+        };
+
+        let currentParsedItem = null;
+
+        function loadSampleItem(itemType) {
+            const itemData = sampleItems[itemType];
+            if (itemData) {
+                document.getElementById('item-input').value = itemData;
+                log(`🔄 載入範例物品: ${itemType}`);
+            }
+        }
+
+        function testParseItem() {
+            const input = document.getElementById('item-input').value.trim();
+            if (!input) {
+                log('❌ 請先輸入物品資料');
+                return;
+            }
+
+            try {
+                currentParsedItem = itemParser.parseItemData(input);
+                document.getElementById('parsed-json').textContent = JSON.stringify(currentParsedItem, null, 2);
+                document.getElementById('parse-result').style.display = 'block';
+                log(`✅ 物品解析成功: ${currentParsedItem.name || '未知物品'} (${currentParsedItem.rarity || '未知稀有度'})`);
+            } catch (error) {
+                log(`❌ 解析失敗: ${error.message}`);
+                console.error(error);
+            }
+        }
+
+        function testGenerateHtml() {
+            if (!currentParsedItem) {
+                log('⚠️ 請先解析物品資料');
+                return;
+            }
+
+            try {
+                const html = itemParser.generateItemHtml(currentParsedItem);
+                document.getElementById('item-html-display').innerHTML = html;
+                document.getElementById('item-display-result').style.display = 'block';
+                log(`✅ HTML 生成成功，物品類型: ${currentParsedItem.itemClass}`);
+            } catch (error) {
+                log(`❌ HTML 生成失敗: ${error.message}`);
+                console.error(error);
+            }
+        }
+
+        function clearResults() {
+            document.getElementById('parse-result').style.display = 'none';
+            document.getElementById('item-display-result').style.display = 'none';
+            document.getElementById('item-input').value = '';
+            currentParsedItem = null;
+            log('🧹 結果已清空');
+        }
+
+        function log(message) {
+            const logElement = document.getElementById('test-log');
+            const time = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('p');
+            logEntry.innerHTML = `[${time}] ${message}`;
+            logEntry.style.margin = '2px 0';
+            logElement.appendChild(logEntry);
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            log('🚀 物品解析模組測試頁面已載入');
+            log('📦 可用的全域物件: itemParser, itemDisplayManager');
+        });
+    </script>
+</body>
+</html> 
