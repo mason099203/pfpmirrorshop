@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settlers Shop - 物品交易平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>歡迎來到 Settlers Shop</h1>
+            <p class="subtitle">由 Spicysushi 和朋友們提供的免費/低手續費鏡像服務物品</p>
+            
+            <nav class="nav-menu">
+                <button class="nav-btn active" onclick="showSection('items')">查看物品</button>
+                <button class="nav-btn" onclick="showSection('standard')">標準聯盟</button>
+                <button class="nav-btn" onclick="showSection('poe2')">POE2 商店</button>
+                <button class="nav-btn" onclick="showSection('post-item')">張貼物品</button>
+                <a href="#" class="nav-btn">Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 物品列表區域 -->
+        <section id="items-section" class="section active">
+            <div class="controls">
+                <div class="filter-group">
+                    <label for="category-select">物品分類</label>
+                    <select id="category-select" onchange="filterItems()">
+                        <option value="">所有分類</option>
+                        <option value="weapon">武器</option>
+                        <option value="armor">護甲</option>
+                        <option value="accessory">飾品</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="group-by">分組方式</label>
+                    <select id="group-by" onchange="groupItems()">
+                        <option value="type">按類型分組</option>
+                        <option value="price">按價格分組</option>
+                        <option value="owner">按擁有者分組</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="items-info">
+                <p>商店物品數量: <span id="item-count">15</span></p>
+            </div>
+
+            <div id="items-grid" class="items-grid">
+                <!-- 預設物品 -->
+                <div class="item-card" data-category="weapon">
+                    <h3 class="item-name">Horror Mitts</h3>
+                    <div class="mirror-fee">鏡像費用: <span class="fee-amount">0</span> Divine</div>
+                    <div class="item-type">Int Stack Trickster</div>
+                    <div class="item-tags">
+                        <span class="tag new">新物品</span>
+                        <span class="tag searing-exarch">灼熱總督</span>
+                        <span class="tag eater-of-worlds">世界吞噬者</span>
+                    </div>
+                    <div class="owner-info">
+                        <div>擁有者: <span class="owner">Sushi</span></div>
+                        <div>聯絡: <span class="contact">BIGSNAKESUCKER</span></div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="action-btn pob-btn">複製 PoB</button>
+                        <button class="action-btn whisper-btn">私聊</button>
+                    </div>
+                </div>
+
+                <div class="item-card" data-category="weapon">
+                    <h3 class="item-name">Loath Splinter</h3>
+                    <div class="mirror-fee">鏡像費用: <span class="fee-amount">60</span> Divine</div>
+                    <div class="item-type">測試物品</div>
+                    <div class="item-tags">
+                        <span class="tag new">新物品</span>
+                    </div>
+                    <div class="owner-info">
+                        <div>擁有者: <span class="owner">abax0th</span></div>
+                        <div>聯絡: <span class="contact">Unc</span></div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="action-btn pob-btn">複製 PoB</button>
+                        <button class="action-btn whisper-btn">私聊</button>
+                    </div>
+                </div>
+
+                <div class="item-card" data-category="armor">
+                    <h3 class="item-name">Death Shroud</h3>
+                    <div class="mirror-fee">鏡像費用: <span class="fee-amount">0</span> Divine</div>
+                    <div class="item-type">Str stack chest</div>
+                    <div class="item-tags">
+                        <span class="tag searing-exarch">灼熱總督</span>
+                        <span class="tag eater-of-worlds">世界吞噬者</span>
+                    </div>
+                    <div class="owner-info">
+                        <div>聯絡: <span class="contact">DefaultLogin</span></div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="action-btn pob-btn">複製 PoB</button>
+                        <button class="action-btn whisper-btn">私聊</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 張貼物品區域 -->
+        <section id="post-item-section" class="section">
+            <h2>張貼新物品</h2>
+            <form id="post-item-form" class="post-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="item-name">物品名稱 *</label>
+                        <input type="text" id="item-name" name="itemName" required placeholder="輸入物品名稱">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mirror-fee">鏡像費用 (Divine) *</label>
+                        <input type="number" id="mirror-fee" name="mirrorFee" min="0" required placeholder="0">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="item-category">物品分類 *</label>
+                        <select id="item-category" name="category" required>
+                            <option value="">選擇分類</option>
+                            <option value="weapon">武器</option>
+                            <option value="armor">護甲</option>
+                            <option value="accessory">飾品</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="owner-name">擁有者名稱 *</label>
+                        <input type="text" id="owner-name" name="ownerName" required placeholder="您的遊戲角色名">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-description">物品描述</label>
+                    <textarea id="item-description" name="description" rows="3" placeholder="描述物品的特殊屬性或用途"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>標籤</label>
+                    <div class="tags-input">
+                        <div class="tag-options">
+                            <label><input type="checkbox" name="tags" value="new"> 新物品</label>
+                            <label><input type="checkbox" name="tags" value="searing-exarch"> 灼熱總督</label>
+                            <label><input type="checkbox" name="tags" value="eater-of-worlds"> 世界吞噬者</label>
+                            <label><input type="checkbox" name="tags" value="shaper-item"> 塑者物品</label>
+                            <label><input type="checkbox" name="tags" value="elder-item"> 異界尊師物品</label>
+                            <label><input type="checkbox" name="tags" value="hunter-item"> 狩獵者物品</label>
+                            <label><input type="checkbox" name="tags" value="synthesised"> 合成物品</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-info">聯絡資訊 *</label>
+                        <input type="text" id="contact-info" name="contactInfo" required placeholder="遊戲內聯絡方式">
+                    </div>
+
+                                    <div class="form-group">
+                    <label for="pob-link">PoB 連結</label>
+                    <input type="url" id="pob-link" name="pobLink" placeholder="https://pobb.in/...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="item-data">物品資料 (遊戲內複製)</label>
+                <textarea id="item-data" name="itemData" rows="8" placeholder="在遊戲中按 Ctrl+C 複製物品資料，然後貼上到這裡&#10;&#10;範例:&#10;Item Class: Jewels&#10;Rarity: Rare&#10;Loath Splinter&#10;Synthesised Small Cluster Jewel&#10;..."></textarea>
+                <button type="button" class="preview-btn" onclick="previewItem()">預覽物品</button>
+            </div>
+
+            <div id="item-preview" class="item-preview-container" style="display: none;">
+                <h4>物品預覽：</h4>
+                <div id="item-display" class="poe-item"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">張貼物品</button>
+            </form>
+        </section>
+
+        <!-- 其他區域 -->
+        <section id="standard-section" class="section">
+            <h2>標準聯盟商店</h2>
+            <p>標準聯盟物品即將推出...</p>
+        </section>
+
+        <section id="poe2-section" class="section">
+            <h2>POE2 商店</h2>
+            <p>POE2 物品即將推出...</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>本產品未與 Grinding Gear Games 有任何關聯或認可。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
