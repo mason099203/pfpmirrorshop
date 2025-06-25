@@ -310,7 +310,7 @@ Rarity: Rare
 Dusk Whorl
 Synthesised Gold Ring
 --------
-Quality (Caster Modifiers): +20% (augmented)
+Quality (法術詞墜): +20% (augmented)
 --------
 Requirements:
 Level: 65
@@ -371,18 +371,18 @@ Sockets: W-W-W
 --------
 Item Level: 86
 --------
-Quality does not increase Physical Damage (enchant)
-Grants 1% increased Elemental Damage per 2% Quality (enchant)
+品質不會增加物理傷害 (enchant)
+每增加2%品質，增加1%元素傷害 (enchant)
 --------
-40% increased Elemental Damage (implicit)
+增加40%元素傷害 (implicit)
 --------
-+26% to Damage over Time Multiplier
-+38% to Fire Damage over Time Multiplier
-+1 to Level of all Spell Skill Gems
-+1 to Level of all Fire Spell Skill Gems
-Malevolence has 40% increased Aura Effect
-60% increased Fire Damage (crafted)
-20% chance to Ignite (crafted)
+增加26%持續傷害加成
+增加38%火傷持續傷害加成
+全部法術技能等級+1
+全部火焰法術技能等級+1
+惡意增加40%光環效果
+增加60%火焰傷害 (crafted)
+20% 機率使用火焰傷害擊中造成點燃效果 (crafted)
 --------
 Split
 --------
@@ -414,16 +414,16 @@ Sockets: W-W-W-W
 --------
 Item Level: 85
 --------
-12% increased Mana Reservation Efficiency of Skills (implicit)
-26% reduced Mana Cost of Attacks (implicit)
+技能效果魔力保留效用提高12% (implicit)
+減少26%攻擊的魔力消耗 (implicit)
 --------
-Skills have +3% to Critical Strike Chance for each Warcry Exerting them (fractured)
-+2 to Level of Socketed AoE Gems
-+58 to Intelligence
-+536 to Accuracy Rating
-100% increased Armour
-+143 to maximum Life
-9% increased Area of Effect
+每有一個站吼竭盡技能，其+3%暴擊率 (fractured)
+插槽中範圍寶石等級+2
++58 智慧
++536 點命中
+增加100%護甲
++143 最大生命
+增加9%範圍效果
 --------
 Split
 Searing Exarch Item
@@ -460,19 +460,19 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 86
 --------
-12% increased Explicit Defence Modifier magnitudes (enchant)
-50% reduced Explicit Resistance Modifier magnitudes (enchant)
+增加 12% 變動防禦詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
 --------
-1% less Damage Taken per 180 Strength (implicit)
-26% increased Arctic Armour Buff Effect (implicit)
+每 180 點力量，承受 1% 更少傷害 (implicit)
+增加 26% 極地裝甲增益效果 (implicit)
 --------
-56% increased Global Defences (fractured)
-+52 to Strength
-You take 10% reduced Extra Damage from Critical Strikes per Endurance Charge
-+417 to Armour
-123% increased Armour and Energy Shield
-+84 to maximum Energy Shield
-8% additional Physical Damage Reduction
+增加56%全域防禦 (fractured)
++52 力量
+每個耐力球使你承受的暴擊傷害減少 10% 
++417 點護甲
+增加 123% 護甲與能量護盾
++84 最大能量護盾
+8% 額外物理傷害減免
 --------
 Split
 Searing Exarch Item
@@ -508,19 +508,19 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 86
 --------
-12% increased Explicit Defence Modifier magnitudes (enchant)
-50% reduced Explicit Resistance Modifier magnitudes (enchant)
+增加 12% 變動防禦詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
 --------
-12% of Physical Damage from Hits taken as Chaos Damage (implicit)
-+2% to all maximum Resistances (implicit)
+承受 12% 的擊中物理傷害視為混沌傷害 (implicit)
++2% 最大全部抗性 (implicit)
 --------
-56% increased Global Defences (fractured)
-+22% chance to Suppress Spell Damage
-+58 to Intelligence
-+418 to Evasion Rating
-123% increased Evasion and Energy Shield
-+86 to maximum Energy Shield
-6% increased Attributes (crafted)
+增加 56% 全域防禦 (fractured)
++22% 壓抑法術傷害率
++58 智慧
++418 點閃避值 
+增加 123% 閃避與能量護盾 
++86 最大能量護盾 
+增加 6% 所有屬性 (crafted)
 --------
 Split
 Searing Exarch Item
@@ -558,18 +558,18 @@ Sockets: W-W-W-W
 --------
 Item Level: 84
 --------
--2 to Level of Socketed Support Gems (implicit)
-+2 to Level of Socketed Skill Gems (implicit)
+此物品插槽中輔助寶石等級 -2 (implicit)
+此物品插槽中技能寶石等級 +2 (implicit)
 --------
-+2 to Level of Socketed AoE Gems
-Socketed Gems are Supported by Level 25 Concentrated Effect
-Socketed Gems are Supported by Level 25 Hypothermia
-Socketed Gems deal 30% more Elemental Damage
-Socketed Spells have +4% to Critical Strike Chance
-10% increased Area of Effect
-25% increased Area Damage
-20% increased Effect of Cold Ailments
-+45 to maximum Energy Shield (crafted)
+插槽中範圍效果寶石等級 +2
+插槽中寶石被等級 25 的集中效應輔助
+插槽中寶石被等級 25 的急凍輔助
+插槽中的寶石造成 30% 更多元素傷害
+插槽中的法術 +4% 暴擊率
+增加 10% 範圍效果
+增加 25% 範圍傷害
+增加 20% 冰冷異常狀態效果
++45 最大能量護盾 (crafted)
 --------
 Split
 --------
@@ -609,20 +609,20 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 85
 --------
-Quality does not increase Physical Damage (enchant)
-1% increased Attack Speed per 8% Quality (enchant)
+品質不會增加物理傷害 (enchant)
+每 8% 品質增加 1% 攻擊速度 (enchant)
 --------
-8% increased Attack Speed (implicit)
-+1 to Maximum Endurance Charges (implicit)
-Adds 3 to 5 Fire Damage to Attacks with this Weapon per 10 Strength (implicit)
-Item sells for much more to vendors (implicit)
+增加 8% 攻擊速度 (implicit)
++1 最大耐力球 (implicit)
+使用此武器攻擊，每 10 點力量附加 3 至 5 火焰傷害 (implicit)
+物品販售給商人更有價值 (implicit)
 --------
-+55 to Strength
-144% increased Spell Damage
-Adds 34 to 636 Lightning Damage
-27% increased Attack Speed
-Attacks with this Weapon Penetrate 16% Chaos Resistance
-30% chance to deal Double Damage while Focused (crafted)
++55 力量
+增加 144% 法術傷害
+附加 34 至 636 閃電傷害 
+增加 27% 攻擊速度 
+使用此武器攻擊穿透 16% 混沌抗性
+專注時有 30% 機率造成 2 倍傷害(crafted)
 --------
 Split
 --------
@@ -650,19 +650,19 @@ Level: 65
 --------
 Item Level: 100
 --------
-Your Chilling Towers freeze enemies for 0.2 seconds while they are affected by chilling beams (enchant)
+當敵人被冰緩射線影響時，你的冰緩塔冰凍敵人 0.2 秒(enchant)
 --------
-+1 to Maximum Frenzy Charges (implicit)
-+1 to Maximum Power Charges (implicit)
-7% increased Spell Damage per Power Charge (implicit)
++1 最大狂怒球 (implicit)
++1 最大暴擊球 (implicit)
+每個暴擊球增加 7% 法術傷害 (implicit)
 --------
-+55 to Intelligence
-19% increased Cast Speed
-+25% to Global Critical Strike Multiplier
-+47 to maximum Energy Shield
-+55 to maximum Mana
-7% reduced Mana Cost of Skills
-Non-Channelling Skills have -7 to Total Mana Cost (crafted)
++55 智慧
+增加 19% 施放速度
++25% 全域暴擊加成
++47 最大能量護盾
++55 最大魔力
+減少 7% 技能魔力消耗
+非引導施放技能-7 總魔力消耗(crafted)
 --------
 Synthesised Item
 `
