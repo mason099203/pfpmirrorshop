@@ -32,7 +32,7 @@ function initializeItems() {
         {
             id: 1,
             name: "Brimstone Knell Opal Sceptre",
-            mirrorFee: 20,
+            mirrorFee: 0,
             category: "weapon",
             type: "RF / Ignite build / CWS",
             tags: ["Hunter Item"],
@@ -80,7 +80,7 @@ Hunter Item
         {
             id: 2,
             name: "Honour Ward Giantslayer Helmet",
-            mirrorFee: 20,
+            mirrorFee: 0,
             category: "armor",
             type: "Warcry cri /Volcanic Fissure of Snaking",
             tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
@@ -223,7 +223,7 @@ Sacred Chainmail
         {
             id: 5,
             name: "Victory Cowl Archdemon Crown",
-            mirrorFee: 20,
+            mirrorFee: 0,
             category: "armor",
             type: "Penance Brand / Blade vortex",
             tags: ["Shaper Item","Elder Item"],
@@ -741,10 +741,10 @@ function handleWhisper(e) {
     
     if (contact) {
         // 生成英文格式的私聊訊息（全大寫）
-        let whisperMessage = `@${contact.toUpperCase()} HI, I'D LIKE TO MIRROR ${itemName.toUpperCase()}`;
+        let whisperMessage = `@${contact.toUpperCase()}  Hi, 老P like to mirror ${itemName.toUpperCase()}`;
         
         // 如果有費用且不為0，添加費用信息
-        if (mirrorFee && mirrorFee !== '0') {
+        if (mirrorFee > 0) {
             whisperMessage += ` FOR ${mirrorFee} DIVINE`;
         }
         
