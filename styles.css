@@ -960,4 +960,45 @@ main {
 .poe-item-display {
     display: flex;
     justify-content: center;
+}
+
+/* 語言切換器樣式 */
+.language-switcher {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-btn {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border: 2px solid #444;
+    color: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 60px;
+}
+
+.language-btn:hover {
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+    border-color: #d4af37;
+    color: #d4af37;
+    transform: translateY(-1px);
+}
+
+.language-btn.active {
+    background: linear-gradient(145deg, #d4af37, #b8941f);
+    border-color: #d4af37;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.language-btn.active:hover {
+    background: linear-gradient(145deg, #e6c14f, #d4af37);
+    color: #1a1a1a;
+    transform: translateY(-1px);
 } 

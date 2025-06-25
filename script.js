@@ -164,11 +164,11 @@ function createItemCard(item) {
     ).join('');
 
     const ownerInfo = item.owner 
-        ? `<div>擁有者: <span class="owner">${item.owner}</span></div>`
+        ? `<div>${typeof getText === 'function' ? getText('ownerLabel') : '擁有者'}: <span class="owner">${item.owner}</span></div>`
         : '';
 
     const itemDetailsBtn = item.itemData ? 
-        `<button class="action-btn item-details-btn" onclick="toggleItemDetails(this)">物品詳情</button>` : '';
+        `<button class="action-btn item-details-btn" onclick="toggleItemDetails(this)">${typeof getText === 'function' ? getText('itemDetailsLabel') : '物品詳情'}</button>` : '';
 
     const itemDetailsSection = item.itemData ? 
         `<div class="item-details" style="display: none;">
@@ -186,7 +186,7 @@ function createItemCard(item) {
             
             <div class="item-info">
                 <h3 class="item-name">${item.name}</h3>
-                <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> <img src="https://cdn.poedb.tw/image/Art/2DItems/Currency/CurrencyModValues.webp" alt="divine" style="height: 30px;"></div>
+                <div class="mirror-fee">${typeof getText === 'function' ? getText('feeLabel') : 'FEE'}: <span class="fee-amount">${item.mirrorFee}</span> <img src="https://cdn.poedb.tw/image/Art/2DItems/Currency/CurrencyModValues.webp" alt="divine" style="height: 30px;"></div>
                 <div class="item-type">${item.type}</div>
             </div>
         </div>
@@ -203,8 +203,8 @@ function createItemCard(item) {
             <div>聯絡: <span class="contact">${item.contact}</span></div>
         </div>
         <div class="item-actions">
-            <button class="action-btn pob-btn" data-pob="${item.itemData}"><i class="bi bi-copy"></i>copy POB</button>
-            <button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>whisper</button>
+            <button class="action-btn pob-btn" data-pob="${item.itemData}"><i class="bi bi-copy"></i>${typeof getText === 'function' ? getText('copyPoB') : '複製 PoB'}</button>
+            <button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>${typeof getText === 'function' ? getText('whisper') : '私訊'}</button>
         </div>
     `;
 
@@ -212,27 +212,56 @@ function createItemCard(item) {
 }
 
 /**
- * 取得標籤的顯示名稱
+ * 取得標籤的顯示名稱（支援多語言）
  * @param {string} tag - 標籤值
  * @returns {string} 顯示名稱
  */
 function getTagDisplayName(tag) {
-    const tagNames = {
-        'new': '新物品',
-        'Searing Exarch Item': '灼熱總督',
-        'Eater of Worlds Item': '吞噬者',
-        'Shaper Item': '塑者',
-        'Elder Item': '尊師',
-        'Redeemer Item': '救贖者',
-        'Warlord Item': '總督軍',
-        'Hunter Item': '狩獵者',
-        'Crusader Item': '聖戰軍王',
-        'Synthesised Item': '追憶',
-        'Fractured Item': '破裂',
-        'Split': '分化'
-
+    // 使用語言管理器的getText函數
+    if (typeof getText === 'function') {
+        // 如果是標準標籤，使用多語言翻譯
+        const standardTags = ['free', 'cheap', 'expensive', 'popular', 'new', 'hot', 'recommended'];
+        if (standardTags.includes(tag)) {
+            return getText(`tags.${tag}`);
+        }
+    }
+    
+    // 遊戲內容標籤翻譯（根據當前語言）
+    const currentLang = typeof getCurrentLanguage === 'function' ? getCurrentLanguage() : 'zh-TW';
+    
+    const gameTagNames = {
+        'zh-TW': {
+            'new': '新物品',
+            'Searing Exarch Item': '灼熱總督',
+            'Eater of Worlds Item': '吞噬者',
+            'Shaper Item': '塑者',
+            'Elder Item': '尊師',
+            'Redeemer Item': '救贖者',
+            'Warlord Item': '總督軍',
+            'Hunter Item': '狩獵者',
+            'Crusader Item': '聖戰軍王',
+            'Synthesised Item': '追憶',
+            'Fractured Item': '破裂',
+            'Split': '分化'
+        },
+        'en-US': {
+            'new': 'New Item',
+            'Searing Exarch Item': 'Searing Exarch',
+            'Eater of Worlds Item': 'Eater of Worlds',
+            'Shaper Item': 'Shaper',
+            'Elder Item': 'Elder',
+            'Redeemer Item': 'Redeemer',
+            'Warlord Item': 'Warlord',
+            'Hunter Item': 'Hunter',
+            'Crusader Item': 'Crusader',
+            'Synthesised Item': 'Synthesised',
+            'Fractured Item': 'Fractured',
+            'Split': 'Split'
+        }
     };
-    return tagNames[tag] || tag;
+    
+    const langTagNames = gameTagNames[currentLang] || gameTagNames['zh-TW'];
+    return langTagNames[tag] || tag;
 }
 
 /**
@@ -354,6 +383,25 @@ function showMessage(message, type) {
         setTimeout(() => {
             messageElement.remove();
         }, 3000);
+    }
+}
+
+/**
+ * 切換物品詳情顯示
+ * @param {HTMLElement} button - 點擊的按鈕元素
+ */
+function toggleItemDetails(button) {
+    const itemCard = button.closest('.item-card');
+    const itemDetails = itemCard.querySelector('.item-details');
+    
+    if (itemDetails) {
+        if (itemDetails.style.display === 'none') {
+            itemDetails.style.display = 'block';
+            button.textContent = typeof getText === 'function' ? getText('hideDetailsLabel') : '隱藏詳情';
+        } else {
+            itemDetails.style.display = 'none';
+            button.textContent = typeof getText === 'function' ? getText('itemDetailsLabel') : '物品詳情';
+        }
     }
 }
 
