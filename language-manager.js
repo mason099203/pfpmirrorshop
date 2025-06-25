@@ -166,8 +166,10 @@ function switchLanguage(language) {
     // 更新語言切換按鈕狀態
     updateLanguageSwitcherButtons();
     
-    // 重新渲染物品（如果需要更新標籤翻譯）
-    if (typeof renderItems === 'function') {
+    // 重新載入物品資料並渲染（切換語言版本的物品）
+    if (typeof initializeItems === 'function') {
+        initializeItems();
+    } else if (typeof renderItems === 'function') {
         renderItems();
     }
     
