@@ -89,7 +89,7 @@ body {
 }
 
 /* 社交連結區域 */
-.social-links {
+.social-links-main, .social-links-shop{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -128,17 +128,24 @@ body {
     font-size: 18px;
 }
 
+.social-links-shop .twitch-btn{
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
 /* Twitch 按鈕樣式 */
 .shop-btn {
     background: linear-gradient(145deg, #aa530b, #dfbf09);
     border: 2px solid #e5e908;
     color: white;
     max-width: 140px;
-    padding: 8px 12px;
+    padding: 6px 8px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -182,15 +189,18 @@ main {
 /* 控制面板 */
 .controls {
     display: flex;
+    flex-direction: row;
     gap: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .filter-group {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
 }
 
 .filter-group label {
@@ -214,7 +224,8 @@ main {
 
 /* 物品資訊 */
 .items-info {
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     color: #b8b8b8;
 }
