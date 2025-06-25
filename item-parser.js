@@ -183,7 +183,7 @@ class POEItemParser {
         html += this._generateHeader(item);
 
         // 分隔線
-        html += '<div class="poe-separator"></div>';
+        // html += '<div class="poe-separator"></div>';
 
         // 需求
         if (item.requirements.length > 0) {
@@ -242,14 +242,14 @@ class POEItemParser {
     _generateHeader(item) {
         let html = '<div class="poe-header">';
         
-        if (item.itemClass) {
-            html += `<div class="poe-item-class">${item.itemClass}</div>`;
-        }
+        // if (item.itemClass) {
+        //     html += `<div class="poe-item-class">${item.itemClass}</div>`;
+        // }
         
-        if (item.rarity) {
-            const rarityDisplay = item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1);
-            html += `<div class="poe-rarity">Rarity: ${rarityDisplay}</div>`;
-        }
+        // if (item.rarity) {
+        //     const rarityDisplay = item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1);
+        //     html += `<div class="poe-rarity">Rarity: ${rarityDisplay}</div>`;
+        // }
         
         if (item.name) {
             html += `<div class="poe-name ${item.rarity}">${item.name}</div>`;

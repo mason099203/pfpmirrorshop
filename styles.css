@@ -785,8 +785,11 @@ main {
 .poe-item.currency { border-color: #aa9e82; }
 
 .poe-header {
-    text-align: center;
-    margin-bottom: 8px;
+    background: url('image/ItemsHeaderRareLeft.webp') top left no-repeat,
+    url('image/ItemsHeaderRareRight.webp') top right no-repeat,
+    url('image/ItemsHeaderRareMiddle.webp') top center repeat-x;
+    height: 54px;
+    background-size: auto 54px, auto 54px, auto 54px;
 }
 
 .poe-item-class {
@@ -804,8 +807,7 @@ main {
 .poe-name {
     color: #ffff77;
     font-size: 18px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding-top: 3px;
 }
 
 .poe-name.normal { color: #c8c8c8; }
@@ -814,14 +816,20 @@ main {
 .poe-name.unique { color: #af6025; }
 
 .poe-base-type {
-    color: #c8c8c8;
+    color: #ffff77;
     font-size: 16px;
     margin-bottom: 8px;
 }
 
+/* POE 分隔符樣式 - 針對不同稀有度 */
 .poe-separator {
-    border-top: 1px solid #8B4513;
-    margin: 8px 0;
+    background: url('image/seperator-rare.webp') center/contain no-repeat;
+    height: 10px;
+}
+
+/* 傳奇物品使用不同的分隔符 */
+.poe-item.unique .poe-separator {
+    background: url('image/seperator-unique.webp') center/contain no-repeat;
 }
 
 .poe-requirements {
