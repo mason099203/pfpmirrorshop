@@ -273,7 +273,7 @@ Elder Item
             mirrorFee: 60,
             category: "weapon",
             type: "Str Stacking Original Sin Molten Strike",
-            tags: ["new","Synthesised Item","Split"],
+            tags: ["Synthesised Item","Split"],
             owner: "福爾摩匹",
             contact: "福爾摩匹",
             itemData: `Item Class: Two Hand Swords
@@ -318,19 +318,56 @@ Split
 Synthesised Item
 
 `
+        },
+        {
+            id: 6,
+            name: "Dusk Whorl Synthesised Gold Ring",
+            mirrorFee: 20,
+            category: "accessory",
+            type: "+1 frenzy +1 power / charge build / Int stacking Trickster",
+            tags: ["new","Synthesised Item"],
+            owner: "福爾摩匹",
+            contact: "福爾摩匹",
+            itemData: `Item Class: Rings
+Rarity: Rare
+Dusk Whorl
+Synthesised Gold Ring
+--------
+Quality (Caster Modifiers): +20% (augmented)
+--------
+Requirements:
+Level: 65
+--------
+Item Level: 100
+--------
+Your Chilling Towers freeze enemies for 0.2 seconds while they are affected by chilling beams (enchant)
+--------
++1 to Maximum Frenzy Charges (implicit)
++1 to Maximum Power Charges (implicit)
+7% increased Spell Damage per Power Charge (implicit)
+--------
++55 to Intelligence
+19% increased Cast Speed
++25% to Global Critical Strike Multiplier
++47 to maximum Energy Shield
++55 to maximum Mana
+7% reduced Mana Cost of Skills
+Non-Channelling Skills have -7 to Total Mana Cost (crafted)
+--------
+Synthesised Item
+`
         }
-//         ,
-//         {
-//             id: 4,
-//             name: "Torment Shell Sacred Chainmail",
-//             mirrorFee: 20,
-//             category: "armor",
-//             type: "",
-//             tags: ["new"],
-//             owner: "福爾摩匹",
-//             contact: "福爾摩匹",
-//             pobLink: "#",
-//             itemData: `Item Class: Body Armours
+// ,
+// {
+// id: 4,
+// name: "Torment Shell Sacred Chainmail",
+// mirrorFee: 20,
+// category: "armor",
+// type: "",
+// tags: ["new"],
+// owner: "福爾摩匹",
+// contact: "福爾摩匹",
+// itemData: `Item Class: Body Armours
 // Rarity: Rare
 // Torment Shell
 // Sacred Chainmail
@@ -338,6 +375,8 @@ Synthesised Item
 //         }
     ];
     
+    // 按 ID 由大到小排序，讓 ID 最大的在第一個，ID 1 在最後
+    allItems.sort((a, b) => b.id - a.id);
     filteredItems = [...allItems];
     renderItems();
 }
@@ -410,7 +449,7 @@ function filterItems() {
 }
 
 /**
- * 根據選定的方式分組物品
+ * 根據選定的方式分組物品 (由大到小排序)
  */
 function groupItems() {
     const groupBySelect = document.getElementById('group-by');
@@ -418,18 +457,21 @@ function groupItems() {
 
     switch (groupBy) {
         case 'price':
-            filteredItems.sort((a, b) => a.mirrorFee - b.mirrorFee);
+            // 價格由高到低排序
+            filteredItems.sort((a, b) => b.mirrorFee - a.mirrorFee);
             break;
         case 'owner':
+            // 擁有者名稱由 Z 到 A 排序
             filteredItems.sort((a, b) => {
                 const ownerA = a.owner || a.contact;
                 const ownerB = b.owner || b.contact;
-                return ownerA.localeCompare(ownerB);
+                return ownerB.localeCompare(ownerA);
             });
             break;
         case 'type':
         default:
-            filteredItems.sort((a, b) => a.category.localeCompare(b.category));
+            // 類型由 Z 到 A 排序
+            filteredItems.sort((a, b) => b.category.localeCompare(a.category));
             break;
     }
 
@@ -551,7 +593,8 @@ function getItemImageUrl(itemName) {
         'Torment Shell Sacred Chainmail': './image/Torment Shell Sacred Chainmail.png',
         'Vengeance Sanctuary Necrotic Armour': './image/Vengeance Sanctuary Necrotic Armour.png',
         'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png',
-        'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png'
+        'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png',
+        'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png'
     };
 
     // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片
