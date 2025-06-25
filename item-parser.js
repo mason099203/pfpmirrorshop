@@ -65,9 +65,15 @@ class POEItemParser {
             // 分隔線
             if (line === '--------') {
                 separatorCount++;
-                if (separatorCount === 1) currentSection = 'requirements';
-                else if (separatorCount === 2) currentSection = 'properties';
-                else if (separatorCount === 3) currentSection = 'mods';
+                // 動態判斷下一個區塊的類型
+                const nextLine = i + 1 < lines.length ? lines[i + 1] : '';
+                if (nextLine === 'Requirements:') {
+                    currentSection = 'requirements';
+                } else if (separatorCount >= 3) {
+                    currentSection = 'mods';
+                } else {
+                    currentSection = 'properties';
+                }
                 continue;
             }
 
@@ -116,11 +122,14 @@ class POEItemParser {
      * @private
      */
     _parseRequirements(line, item) {
-        if (line.startsWith('Level:') && !item.level) {
+        if (line === 'Requirements:') {
+            // 跳過標題行
+            return;
+        } else if (line.startsWith('Level:') && !item.level) {
             // 寶石等級（不包含在 requirements 中，而是作為獨立屬性）
             item.level = line;
-        } else if (line.startsWith('Quality:') && !item.quality) {
-            // 品質
+        } else if (line.startsWith('Quality') && line.includes(':') && !item.quality) {
+            // 確保 Quality 在詞綴區也能被正確識別 - 能識別所有 Quality 格式
             item.quality = line;
         } else if (line.includes('Str') || line.includes('Dex') || line.includes('Int')) {
             item.requirements.push(line);
@@ -136,8 +145,8 @@ class POEItemParser {
     _parseProperties(line, item) {
         if (line.startsWith('Item Level:')) {
             item.itemLevel = line;
-        } else if (line.startsWith('Quality:') && !item.quality) {
-            // 處理品質（可能在屬性區塊中，但只設定一次）
+        } else if (line.startsWith('Quality') && line.includes(':') && !item.quality) {
+            // 處理品質（可能在屬性區塊中，但只設定一次）- 能識別所有 Quality 格式
             item.quality = line;
         } else if (line.includes('(enchant)')) {
             item.enchants.push(line);
@@ -160,8 +169,8 @@ class POEItemParser {
         if (line.startsWith('Level:') && !item.level) {
             // 確保 Level 在詞綴區也能被正確識別
             item.level = line;
-        } else if (line.startsWith('Quality:') && !item.quality) {
-            // 確保 Quality 在詞綴區也能被正確識別
+        } else if (line.startsWith('Quality') && line.includes(':') && !item.quality) {
+            // 確保 Quality 在詞綴區也能被正確識別 - 能識別所有 Quality 格式
             item.quality = line;
         } else if (line.includes('(implicit)')) {
             item.implicits.push(line);
@@ -200,27 +209,22 @@ class POEItemParser {
         // 需求
         if (item.requirements.length > 0) {
             html += this._generateRequirements(item);
-            html += '<div class="poe-separator"></div>';
         }
 
-        // 寶石等級
         if (item.level) {
             html += `<div class="poe-level">${item.level}</div>`;
+            html += '<div class="poe-separator"></div>';
+
         }
 
         // 品質
         if (item.quality) {
-            html += `<div class="poe-quality">${item.quality}</div>`;
+            const formattedQuality = this._formatQuality(item.quality);
+            html += `<div class="poe-quality">${formattedQuality}</div>`;
         }
 
         // 如果有 level 或 quality，添加分隔線
         if (item.level || item.quality) {
-            html += '<div class="poe-separator"></div>';
-        }
-
-        // 屬性
-        if (item.properties.length > 0) {
-            html += this._generateProperties(item);
             html += '<div class="poe-separator"></div>';
         }
 
@@ -294,7 +298,7 @@ class POEItemParser {
         let html = '<div class="poe-requirements">';
         html += 'Requirements:<br>';
         item.requirements.forEach(req => {
-            html += `${req}<br>`;
+            html += `${req} &nbsp;`;
         });
         html += '</div>';
         return html;
@@ -418,6 +422,33 @@ class POEItemParser {
         
         // 移除前後空白
         return processedText.trim();
+    }
+
+    /**
+     * 格式化品質顯示
+     * @param {string} qualityText - 原始品質文字
+     * @returns {string} 格式化後的品質文字
+     * @private
+     */
+    _formatQuality(qualityText) {
+        // 處理各種 Quality 格式：
+        // Quality (Caster Modifiers): +20% (augmented) → Quality: +20% (Caster Modifiers)
+        // Quality: +30% (augmented) → Quality: +30%
+        
+        let formatted = qualityText;
+        
+        // 移除 (augmented) 標記
+        formatted = formatted.replace(/\s*\(augmented\)/g, '');
+        
+        // 檢查是否有特殊修飾詞，如 (Caster Modifiers)
+        const modifierMatch = formatted.match(/Quality\s*(\([^)]+\)):\s*(.+)/);
+        if (modifierMatch) {
+            const modifier = modifierMatch[1]; // (Caster Modifiers)
+            const value = modifierMatch[2];    // +20%
+            formatted = `Quality: ${value} ${modifier}`;
+        }
+        
+        return formatted;
     }
 
     /**
