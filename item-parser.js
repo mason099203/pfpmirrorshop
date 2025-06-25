@@ -43,6 +43,8 @@ class POEItemParser {
             baseType: '',
             requirements: [],
             itemLevel: '',
+            level: '', // 寶石等級
+            quality: '', // 品質
             enchants: [],
             implicits: [],
             explicits: [],
@@ -114,8 +116,12 @@ class POEItemParser {
      * @private
      */
     _parseRequirements(line, item) {
-        if (line.startsWith('Level:')) {
-            item.requirements.push(line);
+        if (line.startsWith('Level:') && !item.level) {
+            // 寶石等級（不包含在 requirements 中，而是作為獨立屬性）
+            item.level = line;
+        } else if (line.startsWith('Quality:') && !item.quality) {
+            // 品質
+            item.quality = line;
         } else if (line.includes('Str') || line.includes('Dex') || line.includes('Int')) {
             item.requirements.push(line);
         }
@@ -130,6 +136,9 @@ class POEItemParser {
     _parseProperties(line, item) {
         if (line.startsWith('Item Level:')) {
             item.itemLevel = line;
+        } else if (line.startsWith('Quality:') && !item.quality) {
+            // 處理品質（可能在屬性區塊中，但只設定一次）
+            item.quality = line;
         } else if (line.includes('(enchant)')) {
             item.enchants.push(line);
         } else if (line.includes('Physical Damage:') || 
@@ -148,7 +157,13 @@ class POEItemParser {
      * @private
      */
     _parseMods(line, item) {
-        if (line.includes('(implicit)')) {
+        if (line.startsWith('Level:') && !item.level) {
+            // 確保 Level 在詞綴區也能被正確識別
+            item.level = line;
+        } else if (line.startsWith('Quality:') && !item.quality) {
+            // 確保 Quality 在詞綴區也能被正確識別
+            item.quality = line;
+        } else if (line.includes('(implicit)')) {
             item.implicits.push(line);
         } else if (line.includes('(enchant)')) {
             item.enchants.push(line);
@@ -182,18 +197,24 @@ class POEItemParser {
         // 物品標題區域
         html += this._generateHeader(item);
 
-        // 分隔線
-        // html += '<div class="poe-separator"></div>';
-
         // 需求
         if (item.requirements.length > 0) {
             html += this._generateRequirements(item);
             html += '<div class="poe-separator"></div>';
         }
 
-        // 物品等級
-        if (item.itemLevel) {
-            html += `<div class="poe-item-level">${item.itemLevel}</div>`;
+        // 寶石等級
+        if (item.level) {
+            html += `<div class="poe-level">${item.level}</div>`;
+        }
+
+        // 品質
+        if (item.quality) {
+            html += `<div class="poe-quality">${item.quality}</div>`;
+        }
+
+        // 如果有 level 或 quality，添加分隔線
+        if (item.level || item.quality) {
             html += '<div class="poe-separator"></div>';
         }
 
@@ -364,10 +385,12 @@ class POEItemParser {
     _processModText(text) {
         // 移除 (implicit), (crafted), (enchant), (fractured) 標記
         let processedText = text.replace(/\s*\((?:implicit|crafted|enchant|fractured)\)/g, '');
-        
+        // (augmented)
         // 移除系統標籤（從標籤開始到行尾）
-        processedText = processedText.replace(/^Rarity:.*$/g, '');
-        processedText = processedText.replace(/^Level:.*$/g, '');
+        // 注意：不移除 Level: 和 Quality: 因為這些是需要顯示的屬性
+        // processedText = processedText.replace(/^Rarity:.*$/g, '');
+        // processedText = processedText.replace(/^Level:.*$/g, '');
+        // processedText = processedText.replace(/^Quality:.*$/g, '');
         processedText = processedText.replace(/^Item Class:.*$/g, '');
         processedText = processedText.replace(/^Item Level:.*$/g, '');
         processedText = processedText.replace(/^Sockets:.*$/g, '');

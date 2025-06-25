@@ -842,6 +842,19 @@ main {
     font-size: 12px;
 }
 
+/* Level 和 Quality 樣式 */
+.poe-level {
+    color: #7f7f7f;
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.poe-quality {
+    color: #7f7f7f;
+    font-size: 12px;
+    margin: 2px 0;
+}
+
 .poe-enchant {
     color: #b4b4ff;
     font-style: italic;
