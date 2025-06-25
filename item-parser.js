@@ -370,6 +370,7 @@ class POEItemParser {
         processedText = processedText.replace(/^Level:.*$/g, '');
         processedText = processedText.replace(/^Item Class:.*$/g, '');
         processedText = processedText.replace(/^Item Level:.*$/g, '');
+        processedText = processedText.replace(/^Sockets:.*$/g, '');
         
         // 移除各種影響類型標籤
         const influenceTags = [

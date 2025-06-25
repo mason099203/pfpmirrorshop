@@ -3,6 +3,13 @@
  * 基於原始網站設計的現代化版本
  */
 
+/* 字體宣告 */
+@font-face {
+    font-family: 'FontinSmallCaps';
+    src: url('Fontin-SmallCaps.ttf') format('truetype');
+    /* src: url('Fontin-Italic.ttf') format('truetype'); */
+}
+
 /* 重置和基礎樣式 */
 * {
     margin: 0;
@@ -11,11 +18,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;;
     background-color: #1a1a1a;
     color: #e0e0e0;
     line-height: 1.6;
-    font-family: 'fontin';
 }
 
 .container {
@@ -760,9 +766,10 @@ main {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
     border: 2px solid #8B4513;
     border-radius: 8px;
+    text-transform: uppercase;
     padding: 15px;
     text-align: center;
-    font-family: 'fontin';
+    font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.4;
     max-width: 400px;
@@ -849,7 +856,7 @@ main {
 }
 
 .poe-synthesised {
-    color: #8e44ad;
+    color: #8888ff;
 }
 
 .poe-influenced {
@@ -869,7 +876,7 @@ main {
 }
 
 .poe-mod-line {
-    margin: 2px 0;
+    margin: 2px 4px;
 }
 
 
