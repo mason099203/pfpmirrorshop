@@ -530,7 +530,7 @@ function createItemCard(item) {
             
             <div class="item-info">
                 <h3 class="item-name">${item.name}</h3>
-                <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> DIVINE</div>
+                <div class="mirror-fee">FEE: <span class="fee-amount">${item.mirrorFee}</span> <img src="https://cdn.poedb.tw/image/Art/2DItems/Currency/CurrencyModValues.webp" alt="divine" style="height: 30px;"></div>
                 <div class="item-type">${item.type}</div>
             </div>
         </div>
