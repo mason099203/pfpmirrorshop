@@ -288,7 +288,15 @@ function getItemImageUrl(itemName) {
         'Vengeance Sanctuary Necrotic Armour': './image/Vengeance Sanctuary Necrotic Armour.png',
         'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png',
         'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png',
-        'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png'
+        'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png',
+        '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/Miracle Gutter Synthesised Reaver Sword.png',
+        '復仇 殿堂 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
+        '暮色 螺旋 追憶之 金光戒指':'./image/Dusk Whorl Synthesised Gold Ring.png',
+        '硫石 喪儀 靈石權杖':'./image/Brimstone Knell Opal Sceptre.png',
+        '責難 堅殼 神聖鎖甲':'./image/Torment Shell Sacred Chainmail.png',
+        '勝利 護冠 罪魔邪冠':'./image/Victory Cowl Archdemon Crown.png',
+        '榮耀 真實之衛 巨人殺手頭盔':'./image/Honour Ward Giantslayer Helmet.png',
+
     };
 
     // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片

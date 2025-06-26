@@ -350,7 +350,7 @@ const defaultItems_ch = [
     {
         id: 1,
         league: "Mercenaries",
-        name: "Brimstone Knell Opal Sceptre",
+        name: "硫石 喪儀 靈石權杖",
         mirrorFee: 0,
         category: "weapon",
         type: "RF / Ignite build / CWS",
@@ -359,8 +359,8 @@ const defaultItems_ch = [
         contact: "福爾摩匹",
         itemData: `Item Class: Sceptres
 Rarity: Rare
-Brimstone Knell
-Opal Sceptre
+硫石 喪儀 
+靈石權杖
 --------
 Sceptre
 Quality: +30% (augmented)
@@ -399,7 +399,7 @@ Hunter Item
     {
         id: 2,
         league: "Mercenaries",
-        name: "Honour Ward Giantslayer Helmet",
+        name: "榮耀 真實之衛 巨人殺手頭盔",
         mirrorFee: 0,
         category: "armor",
         type: "Warcry cri /Volcanic Fissure of Snaking",
@@ -408,8 +408,8 @@ Hunter Item
         contact: "福爾摩匹",
         itemData: `Item Class: Helmets
 Rarity: Rare
-Honour Ward
-Giantslayer Helmet
+榮耀 真實之衛
+巨人殺手頭盔
 --------
 Quality: +30% (augmented)
 Armour: 1739 (augmented)
@@ -425,7 +425,7 @@ Item Level: 85
 技能效果魔力保留效用提高12% (implicit)
 減少26%攻擊的魔力消耗 (implicit)
 --------
-每有一個站吼竭盡技能，其+3%暴擊率 (fractured)
+每有一個戰吼竭盡技能，其+3%暴擊率 (fractured)
 插槽中範圍寶石等級+2
 +58 智慧
 +536 點命中
@@ -444,7 +444,7 @@ Fractured Item
     {
         id: 3,
         league: "Mercenaries",
-        name: "Torment Shell Sacred Chainmail",
+        name: "責難 堅殼 神聖鎖甲",
         mirrorFee: 20,
         category: "armor",
         type: "Str Stacking Armour/Energy Enjoyer",
@@ -453,8 +453,8 @@ Fractured Item
         contact: "福爾摩匹",
         itemData: `Item Class: Body Armours
 Rarity: Rare
-Torment Shell
-Sacred Chainmail
+責難 堅殼 
+神聖鎖甲
 --------
 Quality: +30% (augmented)
 Armour: 3598 (augmented)
@@ -493,7 +493,7 @@ Fractured Item
     {
         id: 4,
         league: "Mercenaries",
-        name: "Vengeance Sanctuary Necrotic Armour",
+        name: "復仇 殿堂 亡者護甲",
         mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
@@ -502,8 +502,8 @@ Fractured Item
         contact: "福爾摩匹",
         itemData: `Item Class: Body Armours
 Rarity: Rare
-Vengeance Sanctuary
-Necrotic Armour
+復仇 殿堂 
+亡者護甲
 --------
 Quality: +30% (augmented)
 Evasion Rating: 3621 (augmented)
@@ -544,7 +544,7 @@ Sacred Chainmail
     {
         id: 5,
         league: "Mercenaries",
-        name: "Victory Cowl Archdemon Crown",
+        name: "勝利 護冠 罪魔邪冠",
         mirrorFee: 0,
         category: "armor",
         type: "Penance Brand / Blade vortex",
@@ -553,8 +553,8 @@ Sacred Chainmail
         contact: "福爾摩匹",
         itemData: `Item Class: Helmets
 Rarity: Rare
-Victory Cowl
-Archdemon Crown
+勝利 護冠 
+罪魔邪冠
 --------
 Quality: +20% (augmented)
 Armour: 254 (augmented)
@@ -592,7 +592,7 @@ Elder Item
     {
         id: 6,
         league: "Mercenaries",
-        name: "Miracle Gutter Synthesised Reaver Sword",
+        name: "奇蹟 剖刃 追憶之 殘暴巨劍",
         mirrorFee: 60,
         category: "weapon",
         type: "Str Stacking Original Sin Molten Strike",
@@ -601,8 +601,8 @@ Elder Item
         contact: "福爾摩匹",
         itemData: `Item Class: Two Hand Swords
 Rarity: Rare
-Miracle Gutter
-Synthesised Reaver Sword
+奇蹟 剖刃 
+追憶之 殘暴巨劍
 --------
 Two Handed Sword
 Quality: +30% (augmented)
@@ -644,7 +644,7 @@ Synthesised Item
     {
         id: 7,
         league: "Mercenaries",
-        name: "Dusk Whorl Synthesised Gold Ring",
+        name: "暮色 螺旋 追憶之 金光戒指",
         mirrorFee: 20,
         category: "accessory",
         type: "+1 frenzy +1 power / charge build / Int stacking Trickster",
@@ -653,8 +653,8 @@ Synthesised Item
         contact: "福爾摩匹",
         itemData: `Item Class: Rings
 Rarity: Rare
-Dusk Whorl
-Synthesised Gold Ring
+暮色 螺旋 
+追憶之 金光戒指
 --------
 Quality (Caster Modifiers): +20% (augmented)
 --------
