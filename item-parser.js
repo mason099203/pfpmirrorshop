@@ -371,7 +371,6 @@ class POEItemParser {
             }
             
             // 處理舊的邏輯（向後相容）
-            if (item.synthesised) cssClass = 'poe-synthesised';
             if (item.fractured && typeof explicit === 'string') cssClass = 'poe-fractured';
             
             const processedText = this._processModText(text);

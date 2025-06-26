@@ -10,6 +10,7 @@
 const defaultItems = [
     {
         id: 1,
+        league: "Mercenaries",
         name: "Brimstone Knell Opal Sceptre",
         mirrorFee: 0,
         category: "weapon",
@@ -58,6 +59,7 @@ Hunter Item
     },
     {
         id: 2,
+        league: "Mercenaries",
         name: "Honour Ward Giantslayer Helmet",
         mirrorFee: 0,
         category: "armor",
@@ -102,6 +104,7 @@ Fractured Item
     },
     {
         id: 3,
+        league: "Mercenaries",
         name: "Torment Shell Sacred Chainmail",
         mirrorFee: 20,
         category: "armor",
@@ -150,6 +153,7 @@ Fractured Item
     },
     {
         id: 4,
+        league: "Mercenaries",
         name: "Vengeance Sanctuary Necrotic Armour",
         mirrorFee: 20,
         category: "armor",
@@ -200,6 +204,7 @@ Sacred Chainmail
     },
     {
         id: 5,
+        league: "Mercenaries",
         name: "Victory Cowl Archdemon Crown",
         mirrorFee: 0,
         category: "armor",
@@ -247,6 +252,7 @@ Elder Item
     },
     {
         id: 6,
+        league: "Mercenaries",
         name: "Miracle Gutter Synthesised Reaver Sword",
         mirrorFee: 60,
         category: "weapon",
@@ -343,6 +349,7 @@ Synthesised Item
 const defaultItems_ch = [
     {
         id: 1,
+        league: "Mercenaries",
         name: "Brimstone Knell Opal Sceptre",
         mirrorFee: 0,
         category: "weapon",
@@ -391,6 +398,7 @@ Hunter Item
     },
     {
         id: 2,
+        league: "Mercenaries",
         name: "Honour Ward Giantslayer Helmet",
         mirrorFee: 0,
         category: "armor",
@@ -435,6 +443,7 @@ Fractured Item
     },
     {
         id: 3,
+        league: "Mercenaries",
         name: "Torment Shell Sacred Chainmail",
         mirrorFee: 20,
         category: "armor",
@@ -483,6 +492,7 @@ Fractured Item
     },
     {
         id: 4,
+        league: "Mercenaries",
         name: "Vengeance Sanctuary Necrotic Armour",
         mirrorFee: 20,
         category: "armor",
@@ -533,6 +543,7 @@ Sacred Chainmail
     },
     {
         id: 5,
+        league: "Mercenaries",
         name: "Victory Cowl Archdemon Crown",
         mirrorFee: 0,
         category: "armor",
@@ -580,6 +591,7 @@ Elder Item
     },
     {
         id: 6,
+        league: "Mercenaries",
         name: "Miracle Gutter Synthesised Reaver Sword",
         mirrorFee: 60,
         category: "weapon",
@@ -622,7 +634,7 @@ Item Level: 85
 附加 34 至 636 閃電傷害 
 增加 27% 攻擊速度 
 使用此武器攻擊穿透 16% 混沌抗性
-專注時有 30% 機率造成 2 倍傷害(crafted)
+專注時有 30% 機率造成 2 倍傷害 (crafted)
 --------
 Split
 --------
@@ -631,6 +643,7 @@ Synthesised Item
     },
     {
         id: 7,
+        league: "Mercenaries",
         name: "Dusk Whorl Synthesised Gold Ring",
         mirrorFee: 20,
         category: "accessory",
@@ -662,7 +675,7 @@ Item Level: 100
 +47 最大能量護盾
 +55 最大魔力
 減少 7% 技能魔力消耗
-非引導施放技能-7 總魔力消耗(crafted)
+非引導施放技能-7 總魔力消耗 (crafted)
 --------
 Synthesised Item
 `

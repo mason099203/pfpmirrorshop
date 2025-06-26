@@ -88,16 +88,25 @@ function showSection(sectionName) {
 }
 
 /**
- * 根據分類篩選物品
+ * 根據聯盟和分類篩選物品
  */
 function filterItems() {
     const categorySelect = document.getElementById('category-select');
+    const leagueSelect = document.getElementById('league-select');
     const selectedCategory = categorySelect.value;
+    const selectedLeague = leagueSelect.value;
 
-    if (selectedCategory === '') {
-        filteredItems = [...allItems];
-    } else {
-        filteredItems = allItems.filter(item => item.category === selectedCategory);
+    // 開始篩選所有物品
+    filteredItems = [...allItems];
+
+    // 根據聯盟篩選
+    if (selectedLeague !== '') {
+        filteredItems = filteredItems.filter(item => item.league === selectedLeague);
+    }
+
+    // 根據分類篩選
+    if (selectedCategory !== '') {
+        filteredItems = filteredItems.filter(item => item.category === selectedCategory);
     }
 
     renderItems();

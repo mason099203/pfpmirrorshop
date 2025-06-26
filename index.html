@@ -63,6 +63,11 @@
         <section id="items-section" class="section active">
             <div class="controls">
                 <div class="filter-group">
+                    <label for="league-select">聯盟</label>
+                    <select id="league-select" onchange="filterItems()">
+                        <option value="">所有聯盟</option>
+                        <option value="Mercenaries">輿圖之奧秘</option>
+                    </select>
                     <label for="category-select">物品分類</label>
                     <select id="category-select" onchange="filterItems()">
                         <option value="">所有分類</option>

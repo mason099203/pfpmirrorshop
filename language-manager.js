@@ -12,6 +12,10 @@ const languages = {
         twitchLabel: "poogf01",
         discordLabel: "渣P伺服器",
         shopLabel: "商店",
+
+        leagueLabel: "聯盟",
+        allLeagues: "所有聯盟",
+        mercenaries: "輿圖之奧秘",
         
         categoryLabel: "物品分類",
         allCategories: "所有分類",
@@ -59,6 +63,10 @@ const languages = {
         twitchLabel: "poogf01",
         discordLabel: "PFP Server",
         shopLabel: "Shop",
+        
+        leagueLabel: "League",
+        allLeagues: "All Leagues",
+        mercenaries: "Mercenaries",
         
         categoryLabel: "Item Category",
         allCategories: "All Categories",
@@ -173,7 +181,6 @@ function switchLanguage(language) {
         renderItems();
     }
     
-    console.log('語言已切換為:', language);
 }
 
 /**
@@ -189,6 +196,9 @@ function applyLanguage(language) {
     
     // 更新頁面元素
     updateElement('.subtitle', langData.pageSubtitle);
+    updateElement('label[for="league-select"]', langData.leagueLabel);
+    updateElement('#league-select option[value=""]', langData.allLeagues);
+    updateElement('#league-select option[value="Mercenaries"]', langData.mercenaries);
     updateElement('label[for="category-select"]', langData.categoryLabel);
     updateElement('#category-select option[value=""]', langData.allCategories);
     updateElement('#category-select option[value="weapon"]', langData.weapon);
