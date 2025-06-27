@@ -339,6 +339,55 @@ Non-Channelling Skills have -7 to Total Mana Cost (crafted)
 --------
 Synthesised Item
 `
+    },{
+        id: 8,
+        league: "Mercenaries",
+        name: "Rapture Song Synthesised Spine Bow",
+        mirrorFee: "Hinekora's Locks for 19% attack speed for 7 Mirrors",
+        category: "weapon",
+        type: "1456 physical damage bow",
+        tags: ["new","Synthesised Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Bows
+Rarity: Rare
+Rapture Song
+Synthesised Spine Bow
+--------
+Bow
+Quality: +30% (augmented)
+Physical Damage: 506-1131 (augmented)
+Critical Strike Chance: 8.58% (augmented)
+Attacks per Second: 1.78 (augmented)
+--------
+Requirements:
+Level: 68
+Dex: 212
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+8% increased Explicit Physical Modifier magnitudes (enchant)
+--------
+25% increased Physical Damage (implicit)
+Adds 9 to 13 Physical Damage (implicit)
+8% increased Attack Speed (implicit)
+Item sells for much more to vendors (implicit)
+--------
++28 to Strength and Intelligence
+276% increased Physical Damage
+Adds 50 to 89 Physical Damage
+19% increased Attack Speed
+32% increased Critical Strike Chance
+Bow Attacks fire 2 additional Arrows
++208 to Accuracy Rating
+--------
+Split
+--------
+Synthesised Item
+
+`
     }
 ];
 
@@ -678,6 +727,55 @@ Item Level: 100
 非引導施放技能-7 總魔力消耗 (crafted)
 --------
 Synthesised Item
+`
+    },{
+        id: 8,
+        league: "Mercenaries",
+        name: "Rapture Song Synthesised Spine Bow",
+        mirrorFee: "懸賞 髮絲 19%攻速  7 卡蘭德魔鏡",
+        category: "weapon",
+        type: "1456 physical damage bow",
+        tags: ["new","Synthesised Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Bows
+Rarity: Rare
+Rapture Song
+Synthesised Spine Bow
+--------
+Bow
+Quality: +30% (augmented)
+Physical Damage: 506-1131 (augmented)
+Critical Strike Chance: 8.58% (augmented)
+Attacks per Second: 1.78 (augmented)
+--------
+Requirements:
+Level: 68
+Dex: 212
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+增加 8% 變動物理詞綴的大小 (enchant)
+--------
+增加 25% 物理傷害 (implicit)
+附加 9 至 13 物理傷害 (implicit)
+增加 8% 攻擊速度 (implicit)
+物品販售給商人更有價值 (implicit)
+--------
++28 力量和智慧
+增加 276% 物理傷害
+附加 50 至 89 物理傷害
+增加 19% 攻擊速度
+增加 32% 暴擊率
+弓箭攻擊發射 2 個額外箭矢
++208 點命中
+--------
+Split
+--------
+Synthesised Item
+
 `
     }
 ];

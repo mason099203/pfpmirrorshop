@@ -289,6 +289,7 @@ function getItemImageUrl(itemName) {
         'Victory Cowl Archdemon Crown': './image/Victory Cowl Archdemon Crown.png',
         'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png',
         'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png',
+        'Rapture Song Synthesised Spine Bow': './image/Rapture Song Synthesised Spine Bow.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/Miracle Gutter Synthesised Reaver Sword.png',
         '復仇 殿堂 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/Dusk Whorl Synthesised Gold Ring.png',
