@@ -187,6 +187,7 @@ function createItemCard(item) {
         </div>` : '';
 
     const itemImageUrl = getItemImageUrl(item.name);
+    const itemSocketImageUrl = getSocketImageUrl(item.name);
     const itemTooltip = item.itemData ? 
         `<div class="item-tooltip">${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData))}</div>` : '';
 
@@ -205,6 +206,7 @@ function createItemCard(item) {
         </div>
                  <div class="item-image-container" ${item.itemData ? 'data-tooltip="true"' : ''}>
              <img src="${itemImageUrl}" class="item-image" alt="${item.name}">
+             <img src="${itemSocketImageUrl}" class="item-socket-image" alt="${item.name}">
              ${itemTooltip}
          </div>
         <div class="owner-info">
@@ -297,6 +299,36 @@ function getItemImageUrl(itemName) {
         '責難 堅殼 神聖鎖甲':'./image/Torment Shell Sacred Chainmail.png',
         '勝利 護冠 罪魔邪冠':'./image/Victory Cowl Archdemon Crown.png',
         '榮耀 真實之衛 巨人殺手頭盔':'./image/Honour Ward Giantslayer Helmet.png',
+
+    };
+
+    // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片
+    return itemImages[itemName] || `https://via.placeholder.com/64x64/2a2a2a/d4af37?text=${encodeURIComponent(itemName.charAt(0))}`;
+}
+
+/**
+ * 根據物品名稱獲取圖片URL
+ * @param {string} itemName - 物品名稱
+ * @returns {string} 圖片URL
+ */
+function getSocketImageUrl(itemName) {
+    // POE物品圖片映射表 - 使用本地圖片
+    const itemImages = {
+        'Brimstone Knell Opal Sceptre': './image/3sL.png',
+        'Honour Ward Giantslayer Helmet': './image/4s.png',
+        'Torment Shell Sacred Chainmail': './image/4s.png',
+        'Vengeance Sanctuary Necrotic Armour': './image/6s.png',
+        'Victory Cowl Archdemon Crown': './image/4s.png',
+        'Miracle Gutter Synthesised Reaver Sword': './image/6s.png',
+        'Dusk Whorl Synthesised Gold Ring': './image/ns.png',
+        'Rapture Song Synthesised Spine Bow': './image/6s.png',
+        '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/6s.png',
+        '復仇 殿堂 亡者護甲':'./image/6s.png',
+        '暮色 螺旋 追憶之 金光戒指':'./image/ns.png',
+        '硫石 喪儀 靈石權杖':'./image/3sL.png',
+        '責難 堅殼 神聖鎖甲':'./image/6s.png',
+        '勝利 護冠 罪魔邪冠':'./image/4s.png',
+        '榮耀 真實之衛 巨人殺手頭盔':'./image/4s.png',
 
     };
 

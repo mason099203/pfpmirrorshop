@@ -351,6 +351,26 @@ main {
     image-rendering: crisp-edges;
 }
 
+/* Socket 圖片樣式 */
+.item-socket-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80px;
+    max-height: 176px;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    z-index: 1;
+}
+
 .item-image-container:hover {
     border-color: #d4af37;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 
@@ -360,6 +380,10 @@ main {
 .item-image:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+}
+
+.item-socket-image:hover {
+    opacity: 0;
 }
 
 /* 物品資訊區域 */
@@ -386,6 +410,7 @@ main {
 .item-image-container[data-tooltip="true"]:hover .item-tooltip {
     opacity: 1;
     visibility: visible;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* 調整工具提示中的POE物品樣式 */
@@ -811,7 +836,7 @@ main {
 
 /* POE 物品顯示樣式 */
 .poe-item {
-    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    background: rgba(39, 39, 39, 0.8);
     border-radius: 8px;
     text-transform: uppercase;
     text-align: center;
