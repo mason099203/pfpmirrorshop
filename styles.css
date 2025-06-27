@@ -140,6 +140,38 @@ body {
     font-weight: 500;
 }
 
+/* Twitch 按鈕樣式 */
+.youtube-btn {
+    background: linear-gradient(145deg, #ff0000, #c2162d);
+    border: 2px solid #ff0000;
+    color: white;
+    max-width: 140px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(145, 70, 255, 0.3);
+}
+
+.youtube-btn:hover {
+    background: linear-gradient(145deg, #ff0000, #c2162d);
+    border-color: #ff0000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(145, 70, 255, 0.4);
+}
+
+.youtube-btn i {
+    font-size: 18px;
+}
+
+
 
 /* Twitch 按鈕樣式 */
 .shop-btn {
@@ -250,7 +282,12 @@ main {
 
 /* 物品卡片 */
 .item-card {
-    background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(image/4.png) ;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom+40px right;
+    
+    background-color: linear-gradient(145deg, #2a2a2a, #1e1e1e);
     border: 2px solid #444;
     border-radius: 12px;
     padding: 20px;
@@ -360,10 +397,10 @@ main {
 
 .item-name {
     color: #d4af37;
-    font-size: 1em;
+    font-size: 0.6em;
     margin-bottom: 8px;
     font-weight: 600;
-    min-height: 55px;
+    min-height: 20px;
     text-transform: uppercase;
     word-wrap: break-word;
 }

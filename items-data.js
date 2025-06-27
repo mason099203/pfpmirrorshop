@@ -316,7 +316,7 @@ Rarity: Rare
 Dusk Whorl
 Synthesised Gold Ring
 --------
-Quality (法術詞墜): +20% (augmented)
+Quality (Caster Modifiers): +20% (augmented)
 --------
 Requirements:
 Level: 65
@@ -343,7 +343,7 @@ Synthesised Item
         id: 8,
         league: "Mercenaries",
         name: "Rapture Song Synthesised Spine Bow",
-        mirrorFee: "Reward 7 Mirrors for 19% attack speed using Hinekora's Locks",
+        mirrorFee: "Reward 7 Mirrors for 19% attack speed",
         category: "weapon",
         type: "1456 physical damage bow",
         tags: ["new","Synthesised Item"],   
@@ -705,7 +705,7 @@ Rarity: Rare
 暮色 螺旋 
 追憶之 金光戒指
 --------
-Quality (Caster Modifiers): +20% (augmented)
+Quality (法術詞墜): +20% (augmented)
 --------
 Requirements:
 Level: 65
