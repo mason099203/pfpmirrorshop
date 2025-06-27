@@ -732,7 +732,7 @@ Synthesised Item
         id: 8,
         league: "Mercenaries",
         name: "Rapture Song Synthesised Spine Bow",
-        mirrorFee: "懸賞 髮絲 19%攻速  7 卡蘭德魔鏡",
+        mirrorFee: "19%攻速懸賞 7 卡蘭德魔鏡",
         category: "weapon",
         type: "1456 physical damage bow",
         tags: ["new","Synthesised Item"],   
