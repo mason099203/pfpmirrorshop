@@ -292,6 +292,7 @@ function getItemImageUrl(itemName) {
         'Miracle Gutter Synthesised Reaver Sword': './image/Miracle Gutter Synthesised Reaver Sword.png',
         'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png',
         'Rapture Song Synthesised Spine Bow': './image/Rapture Song Synthesised Spine Bow.png',
+        'Loath Shroud Sacrificial Garb': './image/Loath Shroud Sacrificial Garb.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/Miracle Gutter Synthesised Reaver Sword.png',
         '復仇 殿堂 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/Dusk Whorl Synthesised Gold Ring.png',
@@ -299,6 +300,7 @@ function getItemImageUrl(itemName) {
         '責難 堅殼 神聖鎖甲':'./image/Torment Shell Sacred Chainmail.png',
         '勝利 護冠 罪魔邪冠':'./image/Victory Cowl Archdemon Crown.png',
         '榮耀 真實之衛 巨人殺手頭盔':'./image/Honour Ward Giantslayer Helmet.png',
+        '惡行 幽影 祭禮束衣':'./image/Loath Shroud Sacrificial Garb.png',
 
     };
 
@@ -322,6 +324,7 @@ function getSocketImageUrl(itemName) {
         'Miracle Gutter Synthesised Reaver Sword': './image/6s.png',
         'Dusk Whorl Synthesised Gold Ring': './image/ns.png',
         'Rapture Song Synthesised Spine Bow': './image/6s.png',
+        'Loath Shroud Sacrificial Garb': './image/6s.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/6s.png',
         '復仇 殿堂 亡者護甲':'./image/6s.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/ns.png',

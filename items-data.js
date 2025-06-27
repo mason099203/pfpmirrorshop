@@ -388,6 +388,51 @@ Split
 Synthesised Item
 
 `
+    },{
+        id: 9,
+        league: "Mercenaries",
+        name: "Loath Shroud Sacrificial Garb",
+        mirrorFee: "Create all Tier 0 modifiers",
+        category: "armor",
+        type: "",
+        tags: ["new","Crusader Item","Redeemer Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Loath Shroud
+Sacrificial Garb
+--------
+Quality: +20% (augmented)
+Armour: 433 (augmented)
+Evasion Rating: 433 (augmented)
+Energy Shield: 88 (augmented)
+--------
+Requirements:
+Level: 76
+Str: 66
+Dex: 66
+Int: 66
+--------
+Sockets: G-G-R-B-G-R 
+--------
+Item Level: 94
+--------
++1 to Level of all Vaal Skill Gems (implicit)
+--------
++20% chance to Suppress Spell Damage
++184 to maximum Life
+9% increased Area of Effect
+13% of Physical Damage from Hits taken as Cold Damage
+Enemies you Kill have a 34% chance to Explode, dealing a tenth of their maximum Life as Physical Damage
+25% increased effect of Non-Curse Auras from your Skills
+--------
+Split
+--------
+Crusader Item
+Redeemer Item
+
+`
     }
 ];
 
@@ -775,6 +820,51 @@ Item Level: 86
 Split
 --------
 Synthesised Item
+
+`
+    },{
+        id: 9,
+        league: "Mercenaries",
+        name: "惡行 幽影 祭禮束衣",
+        mirrorFee: "製作全高尚詞中",
+        category: "armor",
+        type: "",
+        tags: ["new","Crusader Item","Redeemer Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Loath Shroud
+Sacrificial Garb
+--------
+Quality: +20% (augmented)
+Armour: 433 (augmented)
+Evasion Rating: 433 (augmented)
+Energy Shield: 88 (augmented)
+--------
+Requirements:
+Level: 76
+Str: 66
+Dex: 66
+Int: 66
+--------
+Sockets: G-G-R-B-G-R 
+--------
+Item Level: 94
+--------
++1 全部瓦爾技能寶石的等級 (implicit)
+--------
++20% 壓抑法術傷害率
++184 最大生命
+增加 9% 範圍效果
+承受 13% 的擊中物理傷害視為冰冷傷害
+你擊殺的敵人有 34% 機率爆炸，造成他們最大生命十分之一的物理傷害
+增加 25% 你技能的非詛咒光環效果
+--------
+Split
+--------
+Crusader Item
+Redeemer Item
 
 `
     }

@@ -282,7 +282,7 @@ main {
 
 /* 物品卡片 */
 .item-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(image/4.png) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),url(image/4.png) ;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom+40px right;
@@ -369,6 +369,7 @@ main {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     z-index: 1;
+    opacity: 0;
 }
 
 .item-image-container:hover {
@@ -383,7 +384,7 @@ main {
 }
 
 .item-socket-image:hover {
-    opacity: 0;
+    opacity: 1;
 }
 
 /* 物品資訊區域 */
