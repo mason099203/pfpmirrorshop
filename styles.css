@@ -19,7 +19,11 @@
 
 body {
     font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;;
-    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://web.poecdn.com/protected/image/layout/secretsoftheatlas-bg.jpg?v=1749513978961&key=n0J10opqiae8F7ay2Uab0A);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #e0e0e0;
     line-height: 1.6;
 }
@@ -32,7 +36,7 @@ body {
 
 /* 標題區域 */
 .header {
-    background: linear-gradient(135deg, #2c1810, #1a1a1a);
+    background: linear-gradient(135deg, #2c18106c, #1a1a1a71);
     border-bottom: 2px solid #d4af37;
     padding: 20px 0;
 }
@@ -140,7 +144,6 @@ body {
     font-weight: 500;
 }
 
-/* Twitch 按鈕樣式 */
 .youtube-btn {
     background: linear-gradient(145deg, #ff0000, #c2162d);
     border: 2px solid #ff0000;
@@ -169,6 +172,45 @@ body {
 
 .youtube-btn i {
     font-size: 18px;
+}
+
+.poe-trade-btn {
+    background: linear-gradient(145deg, #411e0d, #311507);
+    border: 2px solid #923d12;
+    color: white;
+    max-width: 140px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(145, 70, 255, 0.3);
+}
+
+.poe-trade-btn:hover {
+    background: linear-gradient(145deg, #411e0d, #311507);
+    border-color: #923d12;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(145, 70, 255, 0.4);
+}
+
+.poe-trade-btn i {
+    font-size: 18px;
+}
+
+.poe-icon{
+    background-image: url(https://web.poecdn.com/protected/image/trade/layout/logo.png?key=aifr8Q9qj0FYhhu8_rrfhw);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -243,7 +285,8 @@ main {
 
 .filter-group label {
     font-weight: 500;
-    color: #d4af37;
+    font-size: 1rem;
+    color: #d3d3d3f3;
 }
 
 .filter-group select {
@@ -285,7 +328,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),url(image/4.png) ;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: bottom+40px right;
+    background-position: bottom right;
     
     background-color: linear-gradient(145deg, #2a2a2a, #1e1e1e);
     border: 2px solid #444;
