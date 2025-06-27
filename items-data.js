@@ -343,7 +343,7 @@ Synthesised Item
         id: 8,
         league: "Mercenaries",
         name: "Rapture Song Synthesised Spine Bow",
-        mirrorFee: "Hinekora's Locks for 19% attack speed for 7 Mirrors",
+        mirrorFee: "Reward 7 Mirrors for 19% attack speed using Hinekora's Locks",
         category: "weapon",
         type: "1456 physical damage bow",
         tags: ["new","Synthesised Item"],   

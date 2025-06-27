@@ -462,12 +462,11 @@ function handleWhisper(e) {
     const mirrorFee = mirrorFeeElement ? mirrorFeeElement.textContent : '0';
     
     if (contact) {
-        // 生成英文格式的私聊訊息（全大寫）
-        let whisperMessage = `@${contact.toUpperCase()}  Hi, 老P like to mirror ${itemName.toUpperCase()}`;
-        
         // 如果有費用且不為0，添加費用信息
         if (mirrorFee > 0) {
-            whisperMessage += ` FOR ${mirrorFee} DIVINE`;
+            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to mirror ${itemName.toUpperCase()} FOR ${mirrorFee} DIVINE`;
+        }else{
+            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to ${mirrorFee}`;
         }
         
         // 嘗試複製私聊訊息到剪貼簿
