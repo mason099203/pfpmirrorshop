@@ -420,7 +420,7 @@ Sockets: G-G-R-B-G-R
 --------
 Item Level: 94
 --------
-12% increased Explicit Life Modifier magnitudes (enchant)
+15% increased Explicit Life Modifier magnitudes (enchant)
 --------
 +1 to Level of all Vaal Skill Gems (implicit)
 --------
@@ -859,7 +859,7 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 94
 --------
-增加 12% 變動生命詞綴的大小 (enchant)
+增加 15% 變動生命詞綴的大小 (enchant)
 --------
 +1 全部瓦爾技能寶石的等級 (implicit)
 --------

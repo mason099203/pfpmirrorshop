@@ -571,4 +571,61 @@ function importItemsFromJSON(jsonString) {
     }
 }
 
+/**
+ * 處理工具提示顯示
+ * @param {MouseEvent} e - 滑鼠事件
+ */
+function handleTooltipShow(e) {
+    const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    if (!imageContainer) return;
+
+    const tooltip = imageContainer.querySelector('.item-tooltip');
+    if (!tooltip) return;
+
+    const rect = imageContainer.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+
+    // 計算位置
+    let left = rect.right + 20; // 圖片右側20px
+    let top = rect.top - 10; // 圖片上方10px
+
+    // 檢查右邊界
+    if (left + tooltipRect.width > windowWidth) {
+        left = rect.left - tooltipRect.width - 20; // 顯示在圖片左側
+    }
+
+    // 檢查下邊界
+    if (top + tooltipRect.height > window.innerHeight) {
+        top = window.innerHeight - tooltipRect.height - 10;
+    }
+
+    // 檢查上邊界
+    if (top < 10) {
+        top = 10;
+    }
+
+    // 設置位置和顯示
+    tooltip.style.left = left + 'px';
+    tooltip.style.top = top + 'px';
+    tooltip.style.transform = 'none';
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+}
+
+/**
+ * 處理工具提示隱藏
+ * @param {MouseEvent} e - 滑鼠事件
+ */
+function handleTooltipHide(e) {
+    const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    if (!imageContainer) return;
+
+    const tooltip = imageContainer.querySelector('.item-tooltip');
+    if (tooltip) {
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = '0';
+    }
+}
+
 // 物品相關功能已移至 item-parser.js 模組 

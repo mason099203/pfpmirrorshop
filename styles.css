@@ -342,7 +342,7 @@ main {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom right;
-    
+    z-index: 1;
     background-color: linear-gradient(145deg, #2a2a2a, #1e1e1e);
     border: 2px solid #444;
     border-radius: 12px;
@@ -452,22 +452,23 @@ main {
 /* 物品工具提示 */
 .item-tooltip {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
+    top: -10px;
+    left: 100px;
+    z-index: 999999 !important; 
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     pointer-events: none;
     min-width: 300px;
     max-width: 400px;
-    transform: translate(0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .item-image-container[data-tooltip="true"]:hover .item-tooltip {
     opacity: 1;
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.2);
+    transform: translate(0px, -10px); /* 調整位置到圖片右側 */
 }
 
 /* 調整工具提示中的POE物品樣式 */
