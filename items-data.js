@@ -345,10 +345,11 @@ Synthesised Item
         name: "Rapture Song Synthesised Spine Bow",
         mirrorFee: "60",
         category: "weapon",
-        type: "#1 dps 1464 physical damage bow",
+        type: "Phy Bow / Tornado Shot (PDPS: 1464)",
         tags: ["new","Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
+        clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
 Rapture Song
@@ -392,21 +393,22 @@ Synthesised Item
         id: 9,
         league: "Mercenaries",
         name: "Loath Shroud Sacrificial Garb",
-        mirrorFee: "Create all Tier 0 modifiers",
+        mirrorFee: "60",
         category: "armor",
         type: "",
         tags: ["new","Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
+        clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Loath Shroud
 Sacrificial Garb
 --------
 Quality: +20% (augmented)
-Armour: 433 (augmented)
-Evasion Rating: 433 (augmented)
-Energy Shield: 88 (augmented)
+Armour: 454 (augmented)
+Evasion Rating: 454 (augmented)
+Energy Shield: 92 (augmented)
 --------
 Requirements:
 Level: 76
@@ -418,14 +420,17 @@ Sockets: G-G-R-B-G-R
 --------
 Item Level: 94
 --------
+12% increased Explicit Life Modifier magnitudes (enchant)
+--------
 +1 to Level of all Vaal Skill Gems (implicit)
 --------
-+20% chance to Suppress Spell Damage
-+184 to maximum Life
-9% increased Area of Effect
-13% of Physical Damage from Hits taken as Cold Damage
-Enemies you Kill have a 34% chance to Explode, dealing a tenth of their maximum Life as Physical Damage
-25% increased effect of Non-Curse Auras from your Skills
++22% chance to Suppress Spell Damage
++208 to maximum Life
+12% increased Area of Effect
+20% of Physical Damage from Hits taken as Cold Damage
+Enemies you Kill have a 35% chance to Explode, dealing a tenth of their maximum Life as Physical Damage
+30% increased effect of Non-Curse Auras from your Skills
+11% of Cold Damage taken as Life
 --------
 Split
 --------
@@ -779,10 +784,11 @@ Synthesised Item
         name: "奇蹟 戰角 追憶之 脊弓",
         mirrorFee: "60",
         category: "weapon",
-        type: "#1 dps 1464 physical damage bow",
+        type: "物理弓 / 龍捲射擊 (PDPS: 1464)",
         tags: ["new","Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
+        clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
 Rapture Song
@@ -826,21 +832,22 @@ Synthesised Item
         id: 9,
         league: "Mercenaries",
         name: "惡行 幽影 祭禮束衣",
-        mirrorFee: "製作全高尚詞中",
+        mirrorFee: "60",
         category: "armor",
         type: "",
         tags: ["new","Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
+        clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Loath Shroud
 Sacrificial Garb
 --------
 Quality: +20% (augmented)
-Armour: 433 (augmented)
-Evasion Rating: 433 (augmented)
-Energy Shield: 88 (augmented)
+Armour: 454 (augmented)
+Evasion Rating: 454 (augmented)
+Energy Shield: 92 (augmented)
 --------
 Requirements:
 Level: 76
@@ -848,18 +855,21 @@ Str: 66
 Dex: 66
 Int: 66
 --------
-Sockets: G-G-R-B-G-R 
+Sockets: W-W-W-W-W-W 
 --------
 Item Level: 94
 --------
+增加 12% 變動生命詞綴的大小 (enchant)
+--------
 +1 全部瓦爾技能寶石的等級 (implicit)
 --------
-+20% 壓抑法術傷害率
-+184 最大生命
-增加 9% 範圍效果
-承受 13% 的擊中物理傷害視為冰冷傷害
-你擊殺的敵人有 34% 機率爆炸，造成他們最大生命十分之一的物理傷害
-增加 25% 你技能的非詛咒光環效果
++22% 壓抑法術傷害率
++208 最大生命
+增加 12% 範圍效果
+承受 20% 的擊中物理傷害視為冰冷傷害
+你擊殺的敵人有 35% 機率爆炸，造成他們最大生命十分之一的物理傷害
+增加 30% 你技能的非詛咒光環效果
+11% 承受的冰冷傷害補償為生命
 --------
 Split
 --------

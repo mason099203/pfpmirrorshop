@@ -213,6 +213,15 @@ body {
     background-position: center;
 }
 
+.lp-icon{
+    background-image: url(image/4.png);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 /* Twitch 按鈕樣式 */
@@ -244,6 +253,10 @@ body {
 
 .shop-btn i {
     font-size: 18px;
+}
+
+.action-btn.clip-btn{
+    padding: 0px;
 }
 
 .image-icon {
@@ -602,6 +615,13 @@ main {
 .item-actions {
     display: flex;
     gap: 10px;
+}
+
+.item-actions a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .action-btn {
