@@ -301,7 +301,7 @@ function getItemImageUrl(itemName) {
         '勝利 護冠 罪魔邪冠':'./image/Victory Cowl Archdemon Crown.png',
         '榮耀 真實之衛 巨人殺手頭盔':'./image/Honour Ward Giantslayer Helmet.png',
         '惡行 幽影 祭禮束衣':'./image/Loath Shroud Sacrificial Garb.png',
-        '狂喜 之曲 追憶之 脊弓':'./image/Rapture Song Synthesised Spine Bow.png',
+        '奇蹟 戰角 追憶之 脊弓':'./image/Rapture Song Synthesised Spine Bow.png',
 
     };
 
