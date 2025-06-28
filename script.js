@@ -55,6 +55,10 @@ function setupEventListeners() {
             handleWhisper(e);
         }
     });
+
+    // 工具提示位置計算
+    document.addEventListener('mouseover', handleTooltipShow);
+    document.addEventListener('mouseout', handleTooltipHide);
 }
 
 /**
@@ -188,8 +192,6 @@ function createItemCard(item) {
 
     const itemImageUrl = getItemImageUrl(item.name);
     const itemSocketImageUrl = getSocketImageUrl(item.name);
-    const itemTooltip = item.itemData ? 
-        `<div class="item-tooltip">${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData))}</div>` : '';
 
     card.innerHTML = `
         <div class="item-header">
@@ -207,7 +209,6 @@ function createItemCard(item) {
                  <div class="item-image-container" ${item.itemData ? 'data-tooltip="true"' : ''}>
              <img src="${itemImageUrl}" class="item-image" alt="${item.name}">
              <img src="${itemSocketImageUrl}" class="item-socket-image" alt="${item.name}">
-             ${itemTooltip}
          </div>
         <div class="owner-info">
             ${ownerInfo}
@@ -219,6 +220,20 @@ function createItemCard(item) {
             ${item.clip ? `<a href="${item.clip}" target="_blank" class="action-btn clip-btn"><i class="lp-icon"></i>${typeof getText === 'function' ? getText('clip') : '剪輯'}</a>` : ''}
         </div>
     `;
+
+    // 如果有物品資料，創建工具提示並附加到 body
+    if (item.itemData) {
+        const tooltip = document.createElement('div');
+        tooltip.className = 'item-tooltip';
+        tooltip.innerHTML = itemParser.generateItemHtml(itemParser.parseItemData(item.itemData));
+        tooltip.style.display = 'none';
+        document.body.appendChild(tooltip);
+        
+        // 為圖片容器添加工具提示引用
+        const imageContainer = card.querySelector('.item-image-container');
+        imageContainer.setAttribute('data-tooltip-id', tooltip.id || 'tooltip-' + Date.now());
+        imageContainer.tooltipElement = tooltip;
+    }
 
     return card;
 }
@@ -579,25 +594,24 @@ function handleTooltipShow(e) {
     const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
     if (!imageContainer) return;
 
-    const tooltip = imageContainer.querySelector('.item-tooltip');
+    const tooltip = imageContainer.tooltipElement;
     if (!tooltip) return;
 
     const rect = imageContainer.getBoundingClientRect();
-    const tooltipRect = tooltip.getBoundingClientRect();
     const windowWidth = window.innerWidth;
 
-    // 計算位置
+    // 計算位置 - 顯示在圖片右側
     let left = rect.right + 20; // 圖片右側20px
-    let top = rect.top - 10; // 圖片上方10px
+    let top = rect.top - 10; // 與圖片頂部對齊
 
     // 檢查右邊界
-    if (left + tooltipRect.width > windowWidth) {
-        left = rect.left - tooltipRect.width - 20; // 顯示在圖片左側
+    if (left + 400 > windowWidth) { // 400px 是工具提示的最大寬度
+        left = rect.left - 420; // 顯示在圖片左側
     }
 
     // 檢查下邊界
-    if (top + tooltipRect.height > window.innerHeight) {
-        top = window.innerHeight - tooltipRect.height - 10;
+    if (top + 600 > window.innerHeight) { // 估計工具提示高度
+        top = window.innerHeight - 620;
     }
 
     // 檢查上邊界
@@ -611,6 +625,7 @@ function handleTooltipShow(e) {
     tooltip.style.transform = 'none';
     tooltip.style.visibility = 'visible';
     tooltip.style.opacity = '1';
+    tooltip.style.display = 'block';
 }
 
 /**
@@ -621,10 +636,11 @@ function handleTooltipHide(e) {
     const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
     if (!imageContainer) return;
 
-    const tooltip = imageContainer.querySelector('.item-tooltip');
+    const tooltip = imageContainer.tooltipElement;
     if (tooltip) {
         tooltip.style.visibility = 'hidden';
         tooltip.style.opacity = '0';
+        tooltip.style.display = 'none';
     }
 }
 
