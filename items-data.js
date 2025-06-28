@@ -421,6 +421,7 @@ Sockets: G-G-R-B-G-R
 Item Level: 94
 --------
 15% increased Explicit Life Modifier magnitudes (enchant)
+50% reduced Explicit Life Modifier magnitudes (enchant)
 --------
 +1 to Level of all Vaal Skill Gems (implicit)
 --------
@@ -431,6 +432,7 @@ Item Level: 94
 Enemies you Kill have a 35% chance to Explode, dealing a tenth of their maximum Life as Physical Damage
 30% increased effect of Non-Curse Auras from your Skills
 11% of Cold Damage taken as Life
+3% increased Physical Damage Reduction (crafted)
 --------
 Split
 --------
@@ -832,7 +834,7 @@ Synthesised Item
         id: 9,
         league: "Mercenaries",
         name: "惡行 幽影 祭禮束衣",
-        mirrorFee: "60 (製作中)",
+        mirrorFee: "60",
         category: "armor",
         type: "",
         tags: ["new","Crusader Item","Redeemer Item"],   
@@ -860,6 +862,7 @@ Sockets: W-W-W-W-W-W
 Item Level: 94
 --------
 增加 15% 變動生命詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
 --------
 +1 全部瓦爾技能寶石的等級 (implicit)
 --------
@@ -870,6 +873,7 @@ Item Level: 94
 你擊殺的敵人有 35% 機率爆炸，造成他們最大生命十分之一的物理傷害
 增加 30% 你技能的非詛咒光環效果
 11% 承受的冰冷傷害補償為生命
+3% 額外物理傷害減免 (crafted)
 --------
 Split
 --------
