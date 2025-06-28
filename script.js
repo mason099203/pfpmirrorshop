@@ -334,7 +334,7 @@ function getSocketImageUrl(itemName) {
         '勝利 護冠 罪魔邪冠':'./image/4s.png',
         '榮耀 真實之衛 巨人殺手頭盔':'./image/4s.png',
         '惡行 幽影 祭禮束衣':'./image/6s.png',
-        '狂喜 之曲 追憶之 脊弓':'./image/6s.png',
+        '奇蹟 戰角 追憶之 脊弓':'./image/6s.png',
 
     };
 
