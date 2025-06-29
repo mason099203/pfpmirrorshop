@@ -493,10 +493,10 @@ Elder Item
     },{
         id: 11,
         league: "Mercenaries",
-        name: "榮耀 神袍 暮光法衣",
+        name: "Honour Coat Twilight Regalia",
         mirrorFee: "20",
         category: "armor",
-        type: "護甲人 ",
+        type: "Armour stack / Energy Shield stack",
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
@@ -516,17 +516,17 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 91
 --------
-增加 8% 變動防禦詞綴的大小 (enchant)
+8% increased Explicit Defence Modifier magnitudes (enchant)
 --------
-優雅增加 30% 光環效果 (implicit)
-增加 20% 你技能的非詛咒光環效果 (implicit)
+Grace has 30% increased Aura Effect (implicit)
+20% increased effect of Non-Curse Auras from your Skills (implicit)
 --------
-護甲被超過上限的火焰抗性增加 (fractured)
-+58 智慧
-+108 最大能量護盾
-增加 118% 能量護盾
-+48% 火焰抗性
-專注時 +7 最大護體 (crafted)
+Armour is increased by Overcapped Fire Resistance (fractured)
++58 to Intelligence
++108 to maximum Energy Shield
+118% increased Energy Shield
++48% to Fire Resistance
++7 to maximum Fortification while Focused (crafted)
 --------
 Split
 Searing Exarch Item
@@ -977,62 +977,12 @@ Redeemer Item
 
 `
     },{
-        id: 10,
-        league: "Mercenaries",
-        name: "怒火 之鋸 翻天魂刃",
-        mirrorFee: "60",
-        category: "weapon",
-        type: "閃現打擊 / 12L 近戰技能",
-        tags: ["new","Shaper Item","Elder Item"],   
-        owner: "Baned_BlueBin",
-        contact: "福爾摩匹",
-        itemData: `Item Class: One Hand Swords
-Rarity: Rare
-怒火 之鋸
-翻天魂刃
---------
-One Handed Sword
-Quality: +20% (augmented)
-Physical Damage: 79-146 (augmented)
-Critical Strike Chance: 8.38% (augmented)
-Attacks per Second: 1.97 (augmented)
-Weapon Range: 1.1 metres
---------
-Requirements:
-Level: 70
-Str: 121
-Dex: 121
---------
-Sockets: W-W-W 
---------
-Item Level: 86
---------
-品質不會增加物理傷害 (enchant)
-每 8% 品質增加 1% 攻擊速度 (enchant)
---------
-使用此武器攻擊時 100% 物理傷害轉化為隨機元素傷害 (implicit)
---------
-插槽中寶石被等級 20 的增加暴擊率輔助
-插槽中寶石被等級 20 的殘暴輔助
-插槽中寶石被等級 20 的快速攻擊輔助
-此物品上寶石受到等級 20 的元素傷害攻擊輔助
-插槽中的技能造成 40% 更多攻擊傷害
-插槽中位移技能不消耗魔力
-增加 131% 物理傷害
-增加 21% 攻擊速度
-增加 29% 暴擊率
-攻擊技能增加 37% 元素傷害
---------
-Shaper Item
-Elder Item
-`
-    },{
         id: 11,
         league: "Mercenaries",
-        name: "Honour Coat Twilight Regalia",
+        name: "榮耀 神袍 暮光法衣",
         mirrorFee: "20",
         category: "armor",
-        type: "Armour stack / Energy Shield stack",
+        type: "護甲人 ",
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
@@ -1052,17 +1002,17 @@ Sockets: W-W-W-W-W-W
 --------
 Item Level: 91
 --------
-8% increased Explicit Defence Modifier magnitudes (enchant)
+增加 8% 變動防禦詞綴的大小 (enchant)
 --------
-Grace has 30% increased Aura Effect (implicit)
-20% increased effect of Non-Curse Auras from your Skills (implicit)
+優雅增加 30% 光環效果 (implicit)
+增加 20% 你技能的非詛咒光環效果 (implicit)
 --------
-Armour is increased by Overcapped Fire Resistance (fractured)
-+58 to Intelligence
-+108 to maximum Energy Shield
-118% increased Energy Shield
-+48% to Fire Resistance
-+7 to maximum Fortification while Focused (crafted)
+護甲被超過上限的火焰抗性增加 (fractured)
++58 智慧
++108 最大能量護盾
+增加 118% 能量護盾
++48% 火焰抗性
+專注時 +7 最大護體 (crafted)
 --------
 Split
 Searing Exarch Item
