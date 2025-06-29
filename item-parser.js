@@ -154,7 +154,15 @@ class POEItemParser {
                    line.includes('Elemental Damage:') ||
                    line.includes('Critical Strike Chance:') ||
                    line.includes('Attacks per Second:') ||
-                   line.includes('Weapon Range:')) {
+                   line.includes('Weapon Range:') ||
+                   line.includes('Armour:') ||
+                   line.includes('Evasion Rating:') ||
+                   line.includes('Energy Shield:') ||
+                   line.includes('Ward:') ||
+                   line.includes('Block:') ||
+                   line.includes('Chance to Block:') ||
+                   line.includes('Movement Speed:') ||
+                   line.includes('Sockets:')) {
             item.properties.push(line);
         }
     }
@@ -206,17 +214,6 @@ class POEItemParser {
         // 物品標題區域
         html += this._generateHeader(item);
 
-        // 需求
-        if (item.requirements.length > 0) {
-            html += this._generateRequirements(item);
-        }
-
-        if (item.level) {
-            html += `<div class="poe-level">${item.level}</div>`;
-            html += '<div class="poe-separator"></div>';
-
-        }
-
         // 品質
         if (item.quality) {
             const formattedQuality = this._formatQuality(item.quality);
@@ -225,6 +222,20 @@ class POEItemParser {
 
         // 如果有 level 或 quality，添加分隔線
         if (item.level || item.quality) {
+        }
+
+        // 屬性（數值）
+        if (item.properties.length > 0) {
+            html += this._generateProperties(item);
+            html += '<div class="poe-separator"></div>';
+        }
+        if (item.level) {
+            html += `<div class="poe-level">${item.level}</div>`;
+
+        }
+        // 需求
+        if (item.requirements.length > 0) {
+            html += this._generateRequirements(item);
             html += '<div class="poe-separator"></div>';
         }
 
@@ -296,7 +307,7 @@ class POEItemParser {
      */
     _generateRequirements(item) {
         let html = '<div class="poe-requirements">';
-        html += 'Requirements:<br>';
+        html += 'Requirements: &nbsp;';
         item.requirements.forEach(req => {
             html += `${req} &nbsp;`;
         });
@@ -313,7 +324,9 @@ class POEItemParser {
     _generateProperties(item) {
         let html = '';
         item.properties.forEach(prop => {
-            html += `<div class="poe-mod-line poe-property">${prop}</div>`;
+            // 屬性也需要經過 _processModText 處理以移除 (augmented) 標記
+            const processedText = this._processModText(prop);
+            html += `<div class="poe-mod-line poe-property">${processedText}</div>`;
         });
         return html;
     }
@@ -386,14 +399,10 @@ class POEItemParser {
      * @private
      */
     _processModText(text) {
-        // 移除 (implicit), (crafted), (enchant), (fractured) 標記
-        let processedText = text.replace(/\s*\((?:implicit|crafted|enchant|fractured)\)/g, '');
-        // (augmented)
+        // 移除 (implicit), (crafted), (enchant), (fractured), (augmented) 標記
+        let processedText = text.replace(/\s*\((?:implicit|crafted|enchant|fractured|augmented)\)/g, '');
         // 移除系統標籤（從標籤開始到行尾）
         // 注意：不移除 Level: 和 Quality: 因為這些是需要顯示的屬性
-        // processedText = processedText.replace(/^Rarity:.*$/g, '');
-        // processedText = processedText.replace(/^Level:.*$/g, '');
-        // processedText = processedText.replace(/^Quality:.*$/g, '');
         processedText = processedText.replace(/^Item Class:.*$/g, '');
         processedText = processedText.replace(/^Item Level:.*$/g, '');
         processedText = processedText.replace(/^Sockets:.*$/g, '');
@@ -476,259 +485,7 @@ class POEItemParser {
 
         return html;
     }
-
-    /**
-     * 從物品資料自動填充表單
-     * @param {Object} item - 解析後的物品物件
-     */
-    autoFillForm(item) {
-        // 自動填充物品名稱
-        if (item.name) {
-            const nameField = document.getElementById('item-name');
-            if (nameField) nameField.value = item.name;
-        }
-
-        // 根據物品類型設定分類
-        if (item.itemClass) {
-            const categoryMap = {
-                'Jewels': 'accessory',
-                'Rings': 'accessory',
-                'Amulets': 'accessory',
-                'Belts': 'accessory',
-                'One Hand Weapons': 'weapon',
-                'Two Hand Weapons': 'weapon',
-                'Bows': 'weapon',
-                'Claws': 'weapon',
-                'Daggers': 'weapon',
-                'Wands': 'weapon',
-                'Staves': 'weapon',
-                'Swords': 'weapon',
-                'Axes': 'weapon',
-                'Maces': 'weapon',
-                'Body Armours': 'armor',
-                'Helmets': 'armor',
-                'Gloves': 'armor',
-                'Boots': 'armor',
-                'Shields': 'armor'
-            };
-
-            const category = categoryMap[item.itemClass] || '';
-            const categoryField = document.getElementById('item-category');
-            if (category && categoryField) {
-                categoryField.value = category;
-            }
-        }
-
-        // 自動填充描述
-        if (item.baseType && item.baseType !== item.name) {
-            const descField = document.getElementById('item-description');
-            if (descField) descField.value = item.baseType;
-        }
-
-        // 根據物品屬性設定標籤
-        this._autoSetTags(item);
-    }
-
-    /**
-     * 自動設定標籤
-     * @param {Object} item - 物品物件
-     * @private
-     */
-    _autoSetTags(item) {
-        const tagsCheckboxes = document.querySelectorAll('input[name="tags"]');
-        tagsCheckboxes.forEach(checkbox => checkbox.checked = false);
-
-        // 根據物品特性設定標籤
-        if (item.synthesised) {
-            const synthCheckbox = document.querySelector('input[name="tags"][value="synthesised"]');
-            if (synthCheckbox) synthCheckbox.checked = true;
-        }
-
-        if (item.corrupted) {
-            // 可以添加腐化標籤（如果有的話）
-        }
-
-        // 如果是稀有物品，標記為新物品
-        if (item.rarity === 'rare') {
-            const newCheckbox = document.querySelector('input[name="tags"][value="new"]');
-            if (newCheckbox) newCheckbox.checked = true;
-        }
-
-        // 如果是傳奇物品
-        if (item.rarity === 'unique') {
-            // 可以添加傳奇標籤
-        }
-    }
-
-    /**
-     * 檢測物品的影響類型
-     * @param {Object} item - 物品物件
-     * @returns {Array} 影響類型陣列
-     */
-    detectInfluences(item) {
-        const influences = [];
-        const itemText = JSON.stringify(item);
-
-        if (itemText.includes('Shaper')) influences.push('shaper');
-        if (itemText.includes('Elder')) influences.push('elder');
-        if (itemText.includes('Hunter')) influences.push('hunter');
-        if (itemText.includes('Redeemer')) influences.push('redeemer');
-        if (itemText.includes('Crusader')) influences.push('crusader');
-        if (itemText.includes('Warlord')) influences.push('warlord');
-
-        return influences;
-    }
-
-    /**
-     * 獲取物品的估值信息（預留功能）
-     * @param {Object} item - 物品物件
-     * @returns {Object} 估值信息
-     */
-    getItemValue(item) {
-        // 這裡可以添加與 POE API 或價格檢查服務的集成
-        return {
-            estimated: 0,
-            currency: 'DIVINE',
-            confidence: 'low',
-            source: 'manual'
-        };
-    }
-}
-
-/**
- * 物品顯示管理器
- */
-class ItemDisplayManager {
-    constructor(parser) {
-        this.parser = parser || new POEItemParser();
-    }
-
-    /**
-     * 預覽物品功能
-     */
-    previewItem() {
-        const itemDataField = document.getElementById('item-data');
-        const previewContainer = document.getElementById('item-preview');
-        const itemDisplay = document.getElementById('item-display');
-
-        if (!itemDataField || !previewContainer || !itemDisplay) {
-            console.error('無法找到必要的 DOM 元素');
-            return;
-        }
-
-        const itemData = itemDataField.value.trim();
-
-        if (!itemData) {
-            previewContainer.style.display = 'none';
-            return;
-        }
-
-        try {
-            const parsedItem = this.parser.parseItemData(itemData);
-            const itemHtml = this.parser.generateItemHtml(parsedItem);
-            itemDisplay.innerHTML = itemHtml;
-            previewContainer.style.display = 'block';
-
-            // 自動填充表單欄位
-            this.parser.autoFillForm(parsedItem);
-
-            // 添加成功動畫
-            this._addPreviewAnimation(previewContainer);
-        } catch (error) {
-            console.error('解析物品失敗:', error);
-            this._showError('無法解析物品資料，請檢查格式是否正確');
-        }
-    }
-
-    /**
-     * 切換物品詳情顯示
-     * @param {HTMLElement} button - 點擊的按鈕元素
-     */
-    toggleItemDetails(button) {
-        const itemCard = button.closest('.item-card');
-        const itemDetails = itemCard.querySelector('.item-details');
-        
-        if (!itemDetails) return;
-
-        const isVisible = itemDetails.style.display !== 'none';
-        itemDetails.style.display = isVisible ? 'none' : 'block';
-        button.textContent = isVisible ? '物品詳情' : '隱藏詳情';
-        
-        // 添加動畫效果
-        if (!isVisible) {
-            this._addToggleAnimation(itemDetails);
-        }
-    }
-
-    /**
-     * 為預覽添加動畫效果
-     * @param {HTMLElement} container - 容器元素
-     * @private
-     */
-    _addPreviewAnimation(container) {
-        container.style.opacity = '0';
-        container.style.transform = 'translateY(-10px)';
-        
-        setTimeout(() => {
-            container.style.transition = 'all 0.3s ease';
-            container.style.opacity = '1';
-            container.style.transform = 'translateY(0)';
-        }, 10);
-    }
-
-    /**
-     * 為切換添加動畫效果
-     * @param {HTMLElement} element - 要動畫的元素
-     * @private
-     */
-    _addToggleAnimation(element) {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(-10px)';
-        
-        setTimeout(() => {
-            element.style.transition = 'all 0.3s ease';
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, 10);
-    }
-
-    /**
-     * 顯示錯誤訊息
-     * @param {string} message - 錯誤訊息
-     * @private
-     */
-    _showError(message) {
-        // 這個函數應該與主應用的錯誤顯示系統集成
-        if (typeof showMessage === 'function') {
-            showMessage(message, 'error');
-        } else {
-            console.error(message);
-            alert(message);
-        }
-    }
 }
 
 // 創建全域實例
 const itemParser = new POEItemParser();
-const itemDisplayManager = new ItemDisplayManager(itemParser);
-
-// 全域函數，供 HTML 調用
-function previewItem() {
-    itemDisplayManager.previewItem();
-}
-
-function toggleItemDetails(button) {
-    itemDisplayManager.toggleItemDetails(button);
-}
-
-function parseItemData(itemText) {
-    return itemParser.parseItemData(itemText);
-}
-
-function generatePoeItemHtml(item) {
-    return itemParser.generateItemHtml(item);
-}
-
-function autoFillFormFromItemData(item) {
-    return itemParser.autoFillForm(item);
-} 

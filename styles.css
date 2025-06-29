@@ -1037,7 +1037,11 @@ main {
     margin: 2px 4px;
 }
 
-
+.poe-property {
+    color: #e2e2e2;
+    font-size: 14px;
+    margin: 2px 0;
+}
 
 /* 預覽按鈕 */
 .preview-btn {
