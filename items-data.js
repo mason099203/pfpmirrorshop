@@ -490,6 +490,51 @@ Socketed Movement Skills Cost no Mana
 Shaper Item
 Elder Item
 `
+    },{
+        id: 11,
+        league: "Mercenaries",
+        name: "榮耀 神袍 暮光法衣",
+        mirrorFee: "20",
+        category: "armor",
+        type: "護甲人 ",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "Baned_BlueBin",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Honour Coat
+Twilight Regalia
+--------
+Quality: +30% (augmented)
+Energy Shield: 1162 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 293
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 91
+--------
+增加 8% 變動防禦詞綴的大小 (enchant)
+--------
+優雅增加 30% 光環效果 (implicit)
+增加 20% 你技能的非詛咒光環效果 (implicit)
+--------
+護甲被超過上限的火焰抗性增加 (fractured)
++58 智慧
++108 最大能量護盾
+增加 118% 能量護盾
++48% 火焰抗性
+專注時 +7 最大護體 (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+
+`
     }
 ];
 
@@ -980,6 +1025,51 @@ Item Level: 86
 --------
 Shaper Item
 Elder Item
+`
+    },{
+        id: 11,
+        league: "Mercenaries",
+        name: "Honour Coat Twilight Regalia",
+        mirrorFee: "20",
+        category: "armor",
+        type: "Armour stack / Energy Shield stack",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "Baned_BlueBin",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Honour Coat
+Twilight Regalia
+--------
+Quality: +30% (augmented)
+Energy Shield: 1162 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 293
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 91
+--------
+8% increased Explicit Defence Modifier magnitudes (enchant)
+--------
+Grace has 30% increased Aura Effect (implicit)
+20% increased effect of Non-Curse Auras from your Skills (implicit)
+--------
+Armour is increased by Overcapped Fire Resistance (fractured)
++58 to Intelligence
++108 to maximum Energy Shield
+118% increased Energy Shield
++48% to Fire Resistance
++7 to maximum Fortification while Focused (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+
 `
     }
 ];
