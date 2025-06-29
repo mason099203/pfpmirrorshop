@@ -309,6 +309,7 @@ function getItemImageUrl(itemName) {
         'Dusk Whorl Synthesised Gold Ring': './image/Dusk Whorl Synthesised Gold Ring.png',
         'Rapture Song Synthesised Spine Bow': './image/Rapture Song Synthesised Spine Bow.png',
         'Loath Shroud Sacrificial Garb': './image/Loath Shroud Sacrificial Garb.png',
+        'Rage Saw Anarchic Spiritblade': './image/Rage Saw Anarchic Spiritblade.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/Miracle Gutter Synthesised Reaver Sword.png',
         '復仇 殿堂 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/Dusk Whorl Synthesised Gold Ring.png',
@@ -318,6 +319,7 @@ function getItemImageUrl(itemName) {
         '榮耀 真實之衛 巨人殺手頭盔':'./image/Honour Ward Giantslayer Helmet.png',
         '惡行 幽影 祭禮束衣':'./image/Loath Shroud Sacrificial Garb.png',
         '奇蹟 戰角 追憶之 脊弓':'./image/Rapture Song Synthesised Spine Bow.png',
+        '怒火 之鋸 翻天魂刃':'./image/Rage Saw Anarchic Spiritblade.png',
 
     };
 
@@ -342,6 +344,7 @@ function getSocketImageUrl(itemName) {
         'Dusk Whorl Synthesised Gold Ring': './image/ns.png',
         'Rapture Song Synthesised Spine Bow': './image/6s.png',
         'Loath Shroud Sacrificial Garb': './image/6s.png',
+        'Rage Saw Anarchic Spiritblade': './image/3sL.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/6s.png',
         '復仇 殿堂 亡者護甲':'./image/6s.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/ns.png',
@@ -351,6 +354,7 @@ function getSocketImageUrl(itemName) {
         '榮耀 真實之衛 巨人殺手頭盔':'./image/4s.png',
         '惡行 幽影 祭禮束衣':'./image/6s.png',
         '奇蹟 戰角 追憶之 脊弓':'./image/6s.png',
+        '怒火 之鋸 翻天魂刃':'./image/3sL.png',
 
     };
 

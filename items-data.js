@@ -393,7 +393,7 @@ Synthesised Item
         id: 9,
         league: "Mercenaries",
         name: "Loath Shroud Sacrificial Garb",
-        mirrorFee: "60 (crafting)",
+        mirrorFee: "60",
         category: "armor",
         type: "",
         tags: ["new","Crusader Item","Redeemer Item"],   
@@ -439,6 +439,56 @@ Split
 Crusader Item
 Redeemer Item
 
+`
+    },{
+        id: 10,
+        league: "Mercenaries",
+        name: "Rage Saw Anarchic Spiritblade",
+        mirrorFee: "60",
+        category: "weapon",
+        type: "Flicker Strike / 12L melee skill",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "Baned_BlueBin",
+        contact: "福爾摩匹",
+        itemData: `Item Class: One Hand Swords
+Rarity: Rare
+Rage Saw
+Anarchic Spiritblade
+--------
+One Handed Sword
+Quality: +20% (augmented)
+Physical Damage: 79-146 (augmented)
+Critical Strike Chance: 8.38% (augmented)
+Attacks per Second: 1.97 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 70
+Str: 121
+Dex: 121
+--------
+Sockets: W-W-W 
+--------
+Item Level: 86
+--------
+Quality does not increase Physical Damage (enchant)
+1% increased Attack Speed per 8% Quality (enchant)
+--------
+100% of Physical Damage from Hits with this Weapon is Converted to a random Element (implicit)
+--------
+Socketed Gems are Supported by Level 20 Increased Critical Strikes
+Socketed Gems are Supported by Level 20 Ruthless
+Socketed Gems are Supported by Level 20 Faster Attacks
+Socketed Gems are supported by Level 20 Elemental Damage with Attacks
+Socketed Skills deal 40% more Attack Damage
+Socketed Movement Skills Cost no Mana
+131% increased Physical Damage
+21% increased Attack Speed
+29% increased Critical Strike Chance
+37% increased Elemental Damage with Attack Skills
+--------
+Shaper Item
+Elder Item
 `
     }
 ];
@@ -880,6 +930,56 @@ Split
 Crusader Item
 Redeemer Item
 
+`
+    },{
+        id: 10,
+        league: "Mercenaries",
+        name: "怒火 之鋸 翻天魂刃",
+        mirrorFee: "60",
+        category: "weapon",
+        type: "閃現打擊 / 12L 近戰技能",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "Baned_BlueBin",
+        contact: "福爾摩匹",
+        itemData: `Item Class: One Hand Swords
+Rarity: Rare
+怒火 之鋸
+翻天魂刃
+--------
+One Handed Sword
+Quality: +20% (augmented)
+Physical Damage: 79-146 (augmented)
+Critical Strike Chance: 8.38% (augmented)
+Attacks per Second: 1.97 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 70
+Str: 121
+Dex: 121
+--------
+Sockets: W-W-W 
+--------
+Item Level: 86
+--------
+品質不會增加物理傷害 (enchant)
+每 8% 品質增加 1% 攻擊速度 (enchant)
+--------
+使用此武器攻擊時 100% 物理傷害轉化為隨機元素傷害 (implicit)
+--------
+插槽中寶石被等級 20 的增加暴擊率輔助
+插槽中寶石被等級 20 的殘暴輔助
+插槽中寶石被等級 20 的快速攻擊輔助
+此物品上寶石受到等級 20 的元素傷害攻擊輔助
+插槽中的技能造成 40% 更多攻擊傷害
+插槽中位移技能不消耗魔力
+增加 131% 物理傷害
+增加 21% 攻擊速度
+增加 29% 暴擊率
+攻擊技能增加 37% 元素傷害
+--------
+Shaper Item
+Elder Item
 `
     }
 ];
