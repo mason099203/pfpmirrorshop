@@ -950,18 +950,29 @@ main {
 
 /* POE 分隔符樣式 - 針對不同稀有度 */
 .poe-separator {
-    background: url('image/seperator-rare.webp') center/contain no-repeat;
+    background: url('image/seperator-rare.webp') center no-repeat;
+    background-size: auto 13px;
     height: 10px;
 }
 
 /* 傳奇物品使用不同的分隔符 */
 .poe-item.unique .poe-separator {
-    background: url('image/seperator-unique.webp') center/contain no-repeat;
+    background: url('image/seperator-unique.webp') center no-repeat;
+    background-size: auto 10px;
 }
 
 .poe-requirements {
     color: #7f7f7f;
     font-size: 12px;
+}
+
+.poe-requirements-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .poe-item-level {
@@ -971,15 +982,30 @@ main {
 
 /* Level 和 Quality 樣式 */
 .poe-level {
-    color: #e2e2e2;
-    font-size: 14px;
+    color: #7f7f7f;
+    font-size: 12px;
     margin: 2px 0;
 }
 
 .poe-quality {
-    color: #e2e2e2;
-    font-size: 14px;
+    color: #0a86ce;
+    font-size: 12px;
     margin: 2px 0;
+}
+
+/* 標籤和數值樣式 */
+.poe-label {
+    color: #7f7f7f;
+}
+
+.poe-value-white {
+    font-size: 16px;
+    color: #e2e2e2;
+}
+
+.poe-value-quality {
+    font-size: 16px;
+    color: #8888ff;
 }
 
 .poe-enchant {

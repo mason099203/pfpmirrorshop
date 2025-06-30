@@ -217,25 +217,41 @@ class POEItemParser {
         // 品質
         if (item.quality) {
             const formattedQuality = this._formatQuality(item.quality);
-            html += `<div class="poe-quality">${formattedQuality}</div>`;
+            const qualityParts = formattedQuality.split(':');
+            if (qualityParts.length === 2) {
+                const label = qualityParts[0].trim();
+                const value = qualityParts[1].trim();
+                html += `<div class="poe-quality"><span class="poe-label">${label}:</span> <span class="poe-value-quality">${value}</span></div>`;
+            } else {
+                html += `<div class="poe-quality">${formattedQuality}</div>`;
+            }
         }
 
-        // 如果有 level 或 quality，添加分隔線
-        if (item.level || item.quality) {
-        }
+
+
 
         // 屬性（數值）
         if (item.properties.length > 0) {
             html += this._generateProperties(item);
             html += '<div class="poe-separator"></div>';
         }
+        // 等級
         if (item.level) {
-            html += `<div class="poe-level">${item.level}</div>`;
+            html += '<div class="poe-requirements-container">';
+            const levelParts = item.level.split(':');
+            html += '<span class="poe-label">Requires</span> &nbsp;';
 
+            if (levelParts.length === 2) {
+                const label = levelParts[0].trim();
+                const value = levelParts[1].trim();
+                html += `<div class="poe-level"><span class="poe-label">${label}:</span> <span class="poe-value-white">${value}&nbsp;</span></div>`;
+            } else {
+                html += `<div class="poe-level">${item.level}</div>`;
+            }
         }
         // 需求
         if (item.requirements.length > 0) {
-            html += this._generateRequirements(item);
+            html += this._generateRequirements(item) + '</div>';
             html += '<div class="poe-separator"></div>';
         }
 
@@ -307,9 +323,16 @@ class POEItemParser {
      */
     _generateRequirements(item) {
         let html = '<div class="poe-requirements">';
-        html += 'Requirements: &nbsp;';
         item.requirements.forEach(req => {
-            html += `${req} &nbsp;`;
+            // 分離標籤和數值
+            const parts = req.split(':');
+            if (parts.length === 2) {
+                const label = parts[0].trim();
+                const value = parts[1].trim();
+                html += `<span class="poe-label">${label}:</span> <span class="poe-value-white">${value}</span> &nbsp;`;
+            } else {
+                html += `${req} &nbsp;`;
+            }
         });
         html += '</div>';
         return html;
@@ -326,7 +349,16 @@ class POEItemParser {
         item.properties.forEach(prop => {
             // 屬性也需要經過 _processModText 處理以移除 (augmented) 標記
             const processedText = this._processModText(prop);
-            html += `<div class="poe-mod-line poe-property">${processedText}</div>`;
+            
+            // 分離標籤和數值
+            const parts = processedText.split(':');
+            if (parts.length === 2) {
+                const label = parts[0].trim();
+                const value = parts[1].trim();
+                html += `<div class="poe-mod-line poe-property"><span class="poe-label">${label}:</span> <span class="poe-value-white">${value}</span></div>`;
+            } else {
+                html += `<div class="poe-mod-line poe-property">${processedText}</div>`;
+            }
         });
         return html;
     }
