@@ -460,7 +460,7 @@ main {
     visibility: hidden;
     transition: all 0.3s ease;
     pointer-events: none;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 400px;
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -848,7 +848,7 @@ main {
     }
     
     .item-tooltip {
-        min-width: 200px;
+        min-width: 300px;
     }
 }
 
