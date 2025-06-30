@@ -311,6 +311,7 @@ function getItemImageUrl(itemName) {
         'Loath Shroud Sacrificial Garb': './image/Loath Shroud Sacrificial Garb.png',
         'Rage Saw Anarchic Spiritblade': './image/Rage Saw Anarchic Spiritblade.png',
         'Honour Coat Twilight Regalia': './image/Honour Coat Twilight Regalia.png',
+        'Dread Jack Necrotic Armour': './image/Vengeance Sanctuary Necrotic Armour.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/Miracle Gutter Synthesised Reaver Sword.png',
         '復仇 殿堂 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/Dusk Whorl Synthesised Gold Ring.png',
@@ -322,6 +323,7 @@ function getItemImageUrl(itemName) {
         '奇蹟 戰角 追憶之 脊弓':'./image/Rapture Song Synthesised Spine Bow.png',
         '怒火 之鋸 翻天魂刃':'./image/Rage Saw Anarchic Spiritblade.png',
         '榮耀 神袍 暮光法衣':'./image/Honour Coat Twilight Regalia.png',
+        '恐慌 保身 亡者護甲':'./image/Vengeance Sanctuary Necrotic Armour.png',
 
     };
 
@@ -348,6 +350,7 @@ function getSocketImageUrl(itemName) {
         'Loath Shroud Sacrificial Garb': './image/6s.png',
         'Rage Saw Anarchic Spiritblade': './image/3sL.png',
         'Honour Coat Twilight Regalia': './image/6s.png',
+        'Dread Jack Necrotic Armour': './image/6s.png',
         '奇蹟 剖刃 追憶之 殘暴巨劍':'./image/6s.png',
         '復仇 殿堂 亡者護甲':'./image/6s.png',
         '暮色 螺旋 追憶之 金光戒指':'./image/ns.png',
@@ -359,6 +362,7 @@ function getSocketImageUrl(itemName) {
         '奇蹟 戰角 追憶之 脊弓':'./image/6s.png',
         '怒火 之鋸 翻天魂刃':'./image/3sL.png',
         '榮耀 神袍 暮光法衣':'./image/6s.png',
+        '恐慌 保身 亡者護甲':'./image/6s.png',
     };
 
     // 如果找到對應的圖片，返回圖片URL，否則返回預設圖片

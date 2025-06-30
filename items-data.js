@@ -535,6 +535,54 @@ Eater of Worlds Item
 Fractured Item
 
 `
+    },{
+        id: 12,
+        league: "Mercenaries",
+        name: "Dread Jack Necrotic Armour",
+        mirrorFee: "20",
+        category: "armor",
+        type: "bow / Tornado Shot / Lightning Arrow",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Dread Jack
+Necrotic Armour
+--------
+Quality: +30% (augmented)
+Evasion Rating: 2409 (augmented)
+Energy Shield: 484 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 88
+--------
+12% increased Explicit Defence Modifier magnitudes (enchant)
+50% reduced Explicit Resistance Modifier magnitudes (enchant)
+--------
+Hatred has 36% increased Aura Effect (implicit)
+16% increased effect of Non-Curse Auras from your Skills (implicit)
+--------
+Adds 1 to 5 Lightning Damage for each Shocked Enemy you've Killed Recently (fractured)
++22% chance to Suppress Spell Damage
+123% increased Evasion and Energy Shield
+35% chance to Avoid Elemental Ailments
+30% chance to Avoid being Stunned
+10% increased Mana Reservation Efficiency of Skills
++25 to Dexterity and Intelligence (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
     }
 ];
 
@@ -1020,6 +1068,54 @@ Eater of Worlds Item
 --------
 Fractured Item
 
+`
+    },{
+        id: 12,
+        league: "Mercenaries",
+        name: "恐慌 保身 亡者護甲",
+        mirrorFee: "20",
+        category: "armor",
+        type: "弓 / 龍捲射擊 / 閃電箭矢",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+恐慌 保身 
+亡者護甲
+--------
+Quality: +30% (augmented)
+Evasion Rating: 2409 (augmented)
+Energy Shield: 484 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 88
+--------
+增加 12% 變動防禦詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
+--------
+憎恨增加 36% 光環效果 (implicit)
+增加 16% 你技能的非詛咒光環效果 (implicit)
+--------
+近期內每擊殺一個感電怪物獲得 1 至 5 附加閃電傷害 (fractured)
++22% 壓抑法術傷害率
+增加 123% 閃避與能量護盾
+35% 機率避免元素異常狀態
+30% 機率避免被暈眩
+增加 10% 技能的魔力保留效用
++25 敏捷和智慧 (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
 `
     }
 ];
