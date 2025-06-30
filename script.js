@@ -606,33 +606,69 @@ function handleTooltipShow(e) {
 
     const rect = imageContainer.getBoundingClientRect();
     const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
 
-    // 計算位置 - 顯示在圖片右側
-    let left = rect.right + 20; // 圖片右側20px
-    let top = rect.top - 10; // 與圖片頂部對齊
+    // 檢查是否為小螢幕（小於480px）
+    if (windowWidth <= 480) {
+        // 小螢幕：顯示在正上方
+        let left = rect.left + (rect.width / 2) - 150; // 居中對齊，tooltip寬度約300px
+        let top = rect.top - 20; // 圖片上方20px
 
-    // 檢查右邊界
-    if (left + 400 > windowWidth) { // 400px 是工具提示的最大寬度
-        left = rect.left - 420; // 顯示在圖片左側
+        // 檢查左邊界
+        if (left < 10) {
+            left = 10;
+        }
+
+        // 檢查右邊界
+        if (left + 300 > windowWidth) {
+            left = windowWidth - 310;
+        }
+
+        // 檢查上邊界
+        if (top < 10) {
+            top = rect.bottom + 20; // 如果上方空間不夠，顯示在下方
+        }
+
+        // 檢查下邊界（如果顯示在下方）
+        if (top > windowHeight - 100) {
+            top = windowHeight - 110;
+        }
+
+        // 設置位置和顯示
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+        tooltip.style.transform = 'none';
+        tooltip.style.visibility = 'visible';
+        tooltip.style.opacity = '1';
+        tooltip.style.display = 'block';
+    } else {
+        // 大螢幕：顯示在圖片右側
+        let left = rect.right + 20; // 圖片右側20px
+        let top = rect.top - 10; // 與圖片頂部對齊
+
+        // 檢查右邊界
+        if (left + 400 > windowWidth) { // 400px 是工具提示的最大寬度
+            left = rect.left - 420; // 顯示在圖片左側
+        }
+
+        // 檢查下邊界
+        if (top + 600 > windowHeight) { // 估計工具提示高度
+            top = windowHeight - 620;
+        }
+
+        // 檢查上邊界
+        if (top < 10) {
+            top = 10;
+        }
+
+        // 設置位置和顯示
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+        tooltip.style.transform = 'none';
+        tooltip.style.visibility = 'visible';
+        tooltip.style.opacity = '1';
+        tooltip.style.display = 'block';
     }
-
-    // 檢查下邊界
-    if (top + 600 > window.innerHeight) { // 估計工具提示高度
-        top = window.innerHeight - 620;
-    }
-
-    // 檢查上邊界
-    if (top < 10) {
-        top = 10;
-    }
-
-    // 設置位置和顯示
-    tooltip.style.left = left + 'px';
-    tooltip.style.top = top + 'px';
-    tooltip.style.transform = 'none';
-    tooltip.style.visibility = 'visible';
-    tooltip.style.opacity = '1';
-    tooltip.style.display = 'block';
 }
 
 /**
