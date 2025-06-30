@@ -1212,6 +1212,13 @@ main {
 
 /* 超小螢幕適配 */
 @media (max-width: 480px) {
+    .social-links-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 每列 2 欄 */
+        grid-template-rows: repeat(2, auto);   /* 2 列 */
+        justify-items: center;
+    }
+    
     .report-button-container {
         bottom: 15px;
         right: 15px;
