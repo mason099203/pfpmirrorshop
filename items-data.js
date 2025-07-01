@@ -314,7 +314,7 @@ Synthesised Item
         mirrorFee: 20,
         category: "accessory",
         type: "+1 frenzy +1 power / charge build / Int stacking Trickster",
-        tags: ["new","Synthesised Item"],
+        tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.png",
@@ -354,7 +354,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "weapon",
         type: "Phy Bow / Tornado Shot (PDPS: 1464)",
-        tags: ["new","Synthesised Item"],   
+        tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.png",
@@ -406,7 +406,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "armor",
         type: "",
-        tags: ["new","Crusader Item","Redeemer Item"],   
+        tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.png",
@@ -600,6 +600,49 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+`
+    },{
+        id: 13,
+        league: "Mercenaries",
+        name: "Cataclysm Fist Warlock Gloves",
+        mirrorFee: "20",
+        category: "armor",
+        type: "9Link spark gloves",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Warlock Gloves.png",
+        socketimageUrl: "./image/4s.png",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+Cataclysm Fist
+Warlock Gloves
+--------
+Quality: +30% (augmented)
+Energy Shield: 188 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 94
+--------
+Socketed Gems are Supported by Level 20 Slower Projectiles
+Socketed Gems are supported by Level 25 Faster Projectiles
+Socketed Gems are Supported by Level 25 Faster Casting
+Socketed Gems have +3.5% Critical Strike Chance
+Socketed Spells have +90% to Critical Strike Multiplier
+14% increased Cast Speed
+30% increased Projectile Speed
+25% increased Projectile Damage
+74% increased Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
 `
     }
 ];
@@ -922,7 +965,7 @@ Synthesised Item
         mirrorFee: 20,
         category: "accessory",
         type: "+1 狂怒球 +1 暴擊球 / 充能流派 / 千智 詐欺師",
-        tags: ["new","Synthesised Item"],
+        tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.png",
@@ -962,7 +1005,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "weapon",
         type: "物理弓 / 龍捲射擊 (PDPS: 1464)",
-        tags: ["new","Synthesised Item"],   
+        tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.png",
@@ -1014,7 +1057,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "armor",
         type: "爆炸衣 非詛咒效果",
-        tags: ["new","Crusader Item","Redeemer Item"],   
+        tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.png",
@@ -1067,7 +1110,7 @@ Redeemer Item
         mirrorFee: "20",
         category: "armor",
         type: "護甲人 ",
-        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
         imageUrl: "./image/Honour Coat Twilight Regalia.png",
@@ -1156,6 +1199,49 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+`
+    },{
+        id: 13,
+        league: "Mercenaries",
+        name: "Cataclysm Fist Warlock Gloves",
+        mirrorFee: "20",
+        category: "armor",
+        type: "9L 電球手套",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Warlock Gloves.png",
+        socketimageUrl: "./image/4s.png",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+Cataclysm Fist
+Warlock Gloves
+--------
+Quality: +30% (augmented)
+Energy Shield: 188 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 94
+--------
+插槽中寶石被等級 20 的投射物減速輔助
+插槽中寶石被等級 25 的快速投射輔助
+插槽中寶石被等級 25 的快速施放輔助
+此物品插槽中寶石有 +3.5% 暴擊率
+插槽中的法術 +90% 暴擊加成
+增加 14% 施放速度
+增加 30% 投射物速度
+增加 25% 投射物傷害
+R3增加 74% 能量護盾 (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
 `
     }
 ];
