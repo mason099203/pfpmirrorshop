@@ -206,10 +206,10 @@ function createItemCard(item) {
             <div class="tags-row">${tagsHtml}</div>
             ${itemDetailsSection}
         </div>
-                 <div class="item-image-container" ${item.itemData ? 'data-tooltip="true"' : ''}>
-             <img src="${itemImageUrl}" class="item-image" alt="${item.name}">
-             <img src="${itemSocketImageUrl}" class="item-socket-image" alt="${item.name}">
-         </div>
+        <div class="item-image-container" ${item.itemData ? 'data-tooltip="true"' : ''}>
+            <img src="${item.imageUrl}" class="item-image" alt="${item.name}">
+            <img src="${item.socketimageUrl}" class="item-socket-image" alt="${item.name}">
+        </div>
         <div class="owner-info">
             ${ownerInfo}
             <div>聯絡: <span class="contact">${item.contact}</span></div>

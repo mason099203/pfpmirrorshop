@@ -6,7 +6,7 @@
 /* 字體宣告 */
 @font-face {
     font-family: 'FontinSmallCaps';
-    src: url('Fontin-SmallCaps.ttf') format('truetype');
+    src: url('font/Fontin-SmallCaps.ttf') format('truetype');
     /* src: url('Fontin-Italic.ttf') format('truetype'); */
 }
 

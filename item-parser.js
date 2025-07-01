@@ -253,6 +253,8 @@ class POEItemParser {
         if (item.requirements.length > 0) {
             html += this._generateRequirements(item) + '</div>';
             html += '<div class="poe-separator"></div>';
+        }else{
+            html += '</div><div class="poe-separator"></div>';
         }
 
         // 附魔
