@@ -1,6 +1,6 @@
-# Settlers Shop - POE 物品交易平台
+# PFP Mirror Shop - POE 物品交易平台
 
-基於 [The Settlers Shop](https://www.thesettle.shop/) 的現代化物品交易網頁，專為 Path of Exile 玩家設計的鏡像服務平台。
+基於 [PFP Mirror Shop](https://www.pfpmirror.shop/) 的現代化物品交易網頁，專為 Path of Exile 玩家設計的鏡像服務平台。
 
 ## 功能特色
 
