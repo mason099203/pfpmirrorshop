@@ -362,12 +362,12 @@ Synthesised Item
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
-Rapture Song
+Miracle Horn
 Synthesised Spine Bow
 --------
 Bow
 Quality: +30% (augmented)
-Physical Damage: 506-1131 (augmented)
+Physical Damage: 507-1139 (augmented)
 Critical Strike Chance: 8.58% (augmented)
 Attacks per Second: 1.78 (augmented)
 --------
@@ -387,17 +387,16 @@ Adds 9 to 13 Physical Damage (implicit)
 Item sells for much more to vendors (implicit)
 --------
 +28 to Strength and Intelligence
-276% increased Physical Damage
-Adds 50 to 89 Physical Damage
+277% increased Physical Damage
+Adds 50 to 90 Physical Damage
 19% increased Attack Speed
 32% increased Critical Strike Chance
 Bow Attacks fire 2 additional Arrows
-+208 to Accuracy Rating
++199 to Accuracy Rating
 --------
 Split
 --------
 Synthesised Item
-
 `
     },{
         id: 9,
@@ -1013,12 +1012,12 @@ Synthesised Item
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
-Rapture Song
-Synthesised Spine Bow
+奇蹟 戰角 
+追憶之 脊弓
 --------
 Bow
 Quality: +30% (augmented)
-Physical Damage: 506-1131 (augmented)
+Physical Damage: 507-1139 (augmented)
 Critical Strike Chance: 8.58% (augmented)
 Attacks per Second: 1.78 (augmented)
 --------
@@ -1035,20 +1034,25 @@ Item Level: 86
 增加 25% 物理傷害 (implicit)
 附加 9 至 13 物理傷害 (implicit)
 增加 8% 攻擊速度 (implicit)
-物品販售給商人更有價值 (implicit)
+物品販售給商人更有價值(implicit)
+--------
+增加 8% 變動物理詞綴的大小
+增加 25% 物理傷害
+附加 9 至 13 物理傷害 (部分)
+增加 8% 攻擊速度 (部分)
+物品販售給商人更有價值
 --------
 +28 力量和智慧
-增加 276% 物理傷害
-附加 50 至 89 物理傷害
+增加 277% 物理傷害
+附加 50 至 90 物理傷害
 增加 19% 攻擊速度
 增加 32% 暴擊率
-弓箭攻擊發射 2 個額外箭矢
-+208 點命中
+弓攻擊發射 2 個額外箭矢
++199 命中值
 --------
 Split
 --------
 Synthesised Item
-
 `
     },{
         id: 9,
