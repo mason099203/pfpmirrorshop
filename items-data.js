@@ -18,8 +18,8 @@ const defaultItems = [
         tags: ["Hunter Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Brimstone Knell Opal Sceptre.png",
-        socketimageUrl: "./image/3s.png",
+        imageUrl: "./image/Brimstone Knell Opal Sceptre.webp",
+        socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Sceptres
 Rarity: Rare
 Brimstone Knell
@@ -68,8 +68,8 @@ Hunter Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Honour Ward Giantslayer Helmet.png",
-        socketimageUrl: "./image/4s.png",
+        imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
 Rarity: Rare
 Honour Ward
@@ -114,8 +114,8 @@ Fractured Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Torment Shell Sacred Chainmail.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Torment Shell
@@ -164,8 +164,8 @@ Fractured Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Vengeance Sanctuary
@@ -216,8 +216,8 @@ Sacred Chainmail
         tags: ["Shaper Item","Elder Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Victory Cowl Archdemon Crown.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Helmets
 Rarity: Rare
 Victory Cowl
@@ -265,8 +265,8 @@ Elder Item
         tags: ["Synthesised Item","Split"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Two Hand Swords
 Rarity: Rare
 Miracle Gutter
@@ -317,8 +317,8 @@ Synthesised Item
         tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.png",
-        socketimageUrl: "./image/ns.png",
+        imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.webp",
+        socketimageUrl: "./image/ns.webp",
         itemData: `Item Class: Rings
 Rarity: Rare
 Dusk Whorl
@@ -357,8 +357,8 @@ Synthesised Item
         tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Rapture Song Synthesised Spine Bow.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
+        socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
@@ -409,8 +409,8 @@ Synthesised Item
         tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Loath Shroud Sacrificial Garb.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
+        socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
         itemData: `Item Class: Body Armours
 Rarity: Rare
@@ -462,8 +462,8 @@ Redeemer Item
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
-        imageUrl: "./image/Rage Saw Anarchic Spiritblade.png",
-        socketimageUrl: "./image/3sL.png",
+        imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
+        socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: One Hand Swords
 Rarity: Rare
 Rage Saw
@@ -514,8 +514,8 @@ Elder Item
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
-        imageUrl: "./image/Honour Coat Twilight Regalia.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Honour Coat Twilight Regalia.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Honour Coat
@@ -561,8 +561,8 @@ Fractured Item
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Dread Jack
@@ -611,8 +611,8 @@ Fractured Item
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Warlock Gloves.png",
-        socketimageUrl: "./image/4s.png",
+        imageUrl: "./image/Warlock Gloves.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Gloves
 Rarity: Rare
 Cataclysm Fist
@@ -662,8 +662,8 @@ const defaultItems_ch = [
         tags: ["Hunter Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Brimstone Knell Opal Sceptre.png",
-        socketimageUrl: "./image/3sL.png",
+        imageUrl: "./image/Brimstone Knell Opal Sceptre.webp",
+        socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Sceptres
 Rarity: Rare
 硫石 喪儀 
@@ -713,8 +713,8 @@ Hunter Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Honour Ward Giantslayer Helmet.png",
-        socketimageUrl: "./image/4s.png",
+        imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
 Rarity: Rare
 榮耀 真實之衛
@@ -760,8 +760,8 @@ Fractured Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Torment Shell Sacred Chainmail.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 責難 堅殼 
@@ -811,8 +811,8 @@ Fractured Item
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 復仇 殿堂 
@@ -864,8 +864,8 @@ Sacred Chainmail
         tags: ["Shaper Item","Elder Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Victory Cowl Archdemon Crown.png",
-        socketimageUrl: "./image/4s.png",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
 Rarity: Rare
 勝利 護冠 
@@ -914,8 +914,8 @@ Elder Item
         tags: ["Synthesised Item","Split"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Two Hand Swords
 Rarity: Rare
 奇蹟 剖刃 
@@ -968,8 +968,8 @@ Synthesised Item
         tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.png",
-        socketimageUrl: "./image/ns.png",
+        imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.webp",
+        socketimageUrl: "./image/ns.webp",
         itemData: `Item Class: Rings
 Rarity: Rare
 暮色 螺旋 
@@ -1008,8 +1008,8 @@ Synthesised Item
         tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Rapture Song Synthesised Spine Bow.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
+        socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
         itemData: `Item Class: Bows
 Rarity: Rare
@@ -1060,8 +1060,8 @@ Synthesised Item
         tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Loath Shroud Sacrificial Garb.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
+        socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
         itemData: `Item Class: Body Armours
 Rarity: Rare
@@ -1113,8 +1113,8 @@ Redeemer Item
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
-        imageUrl: "./image/Rage Saw Anarchic Spiritblade.png",
-        socketimageUrl: "./image/3sL.png",
+        imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
+        socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: One Hand Swords
 Rarity: Rare
 Rage Saw
@@ -1165,8 +1165,8 @@ Elder Item
         tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
-        imageUrl: "./image/Honour Coat Twilight Regalia.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Honour Coat Twilight Regalia.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 Honour Coat
@@ -1212,8 +1212,8 @@ Fractured Item
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.png",
-        socketimageUrl: "./image/6s.png",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
 恐慌 保身 
@@ -1262,8 +1262,8 @@ Fractured Item
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
-        imageUrl: "./image/Warlock Gloves.png",
-        socketimageUrl: "./image/4s.png",
+        imageUrl: "./image/Warlock Gloves.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Gloves
 Rarity: Rare
 Cataclysm Fist
