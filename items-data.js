@@ -604,14 +604,14 @@ Fractured Item
         id: 13,
         league: "Mercenaries",
         name: "Cataclysm Fist Warlock Gloves",
-        mirrorFee: "Exploded 💣",
+        mirrorFee: "20",
         category: "armor",
         type: "9Link spark gloves",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Warlock Gloves.webp",
-        socketimageUrl: "./image/bom.png",
+        socketimageUrl: "./image/4s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/UglyAdorableKoalaTheRinger-VBnRb4x5YIXB0rJl",
         itemData: `Item Class: Gloves
 Rarity: Rare
@@ -1254,20 +1254,20 @@ Fractured Item
     },{
         id: 13,
         league: "Mercenaries",
-        name: "Cataclysm Fist Warlock Gloves",
-        mirrorFee: "爆炸 💣",
+        name: "昏暗 爪鋒 術士手套 轉世1",
+        mirrorFee: "20",
         category: "armor",
         type: "9L 電球手套",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Warlock Gloves.webp",
-        socketimageUrl: "./image/bom.png",
+        socketimageUrl: "./image/4s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/UglyAdorableKoalaTheRinger-VBnRb4x5YIXB0rJl",
         itemData: `Item Class: Gloves
 Rarity: Rare
-Cataclysm Fist
-Warlock Gloves
+昏暗 爪鋒
+術士手套
 --------
 Quality: +30% (augmented)
 Energy Shield: 188 (augmented)
