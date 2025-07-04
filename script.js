@@ -214,7 +214,7 @@ function createItemCard(item) {
         </div>
         <div class="item-actions">
             <button class="action-btn pob-btn" data-pob="${item.itemData}"><i class="bi bi-copy"></i>${typeof getText === 'function' ? getText('copyPoB') : '複製 PoB'}</button>
-            <button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>${typeof getText === 'function' ? getText('whisper') : '私訊'}</button>
+            ${!isNaN(item.mirrorFee) && item.mirrorFee !== null && item.mirrorFee !== undefined ? `<button class="action-btn whisper-btn" data-contact="${item.contact}" data-item-name="${item.name}"><i class="bi bi-chat-left-dots"></i>${typeof getText === 'function' ? getText('whisper') : '私訊'}</button>` : ''}
             ${item.clip ? `<a href="${item.clip}" target="_blank" class="action-btn clip-btn"><i class="lp-icon"></i>${typeof getText === 'function' ? getText('clip') : '剪輯'}</a>` : ''}
         </div>
     `;
