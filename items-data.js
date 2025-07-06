@@ -313,7 +313,7 @@ Synthesised Item
         name: "Dusk Whorl Synthesised Gold Ring",
         mirrorFee: 20,
         category: "accessory",
-        type: "+1 frenzy +1 power / charge build / Int stacking Trickster",
+        type: "+1 frenzy +1 power / charge build / Int stack Trickster",
         tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "福爾摩匹",
@@ -458,7 +458,7 @@ Redeemer Item
         mirrorFee: "60",
         category: "weapon",
         type: "Flicker Strike / 12L melee skill",
-        tags: ["new","Shaper Item","Elder Item"],   
+        tags: ["Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
@@ -510,7 +510,7 @@ Elder Item
         mirrorFee: "20",
         category: "armor",
         type: "Armour stack / Energy Shield stack",
-        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
         imageUrl: "./image/Honour Coat Twilight Regalia.webp",
@@ -557,7 +557,7 @@ Fractured Item
         mirrorFee: "20",
         category: "armor",
         type: "bow / Tornado Shot / Lightning Arrow",
-        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -638,6 +638,106 @@ Socketed Spells have +90% to Critical Strike Multiplier
 30% increased Projectile Speed
 25% increased Projectile Damage
 74% increased Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },{
+        id: 14,
+        league: "Mercenaries",
+        name: "Grim Clutches Warlock Gloves",
+        mirrorFee: "60",
+        category: "armor",
+        type: "Penance Brand(Fubgun)",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/GlovesInt4.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+Grim Clutches
+Warlock Gloves
+--------
+Quality: +30% (augmented)
+Energy Shield: 343 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 84
+--------
+35% of Physical Damage Converted to Lightning Damage (implicit)
+30% chance to Unnerve Enemies for 4 seconds on Hit (implicit)
+--------
++48% to Cold Resistance (fractured)
+50% increased Damage with Hits against Chilled Enemies (fractured)
+Has 1 Abyssal Socket
++49 to maximum Energy Shield
+100% increased Energy Shield
+28% increased Brand Attachment range
+12% increased Area of Effect (crafted)
+16% increased Area Damage (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    },{
+        id: 15,
+        league: "Mercenaries",
+        name: "Carrion Skewer Imperial Claw",
+        mirrorFee: "60",
+        category: "weapon",
+        type: "int stack / Spectral Throw",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Claw7.png",
+        socketimageUrl: "./image/3sl.webp",
+        itemData: `Item Class: Claws
+Rarity: Rare
+Carrion Skewer
+Imperial Claw
+--------
+Claw
+Quality: +30% (augmented)
+Physical Damage: 25-65
+Critical Strike Chance: 9.03% (augmented)
+Attacks per Second: 1.98 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 68
+Dex: 131
+Int: 95
+--------
+Sockets: W-W-W 
+--------
+Item Level: 86
+--------
+Quality does not increase Physical Damage (enchant)
+1% increased Attack Speed per 8% Quality (enchant)
+--------
+Grants 46 Life per Enemy Hit (implicit)
+--------
+Socketed Gems are Supported by Level 20 Increased Critical Strikes
+Socketed Gems are Supported by Level 20 Faster Attacks
+Socketed Gems are supported by Level 20 Increased Critical Damage
+Socketed Gems are supported by Level 20 Elemental Damage with Attacks
+Socketed Skills deal 40% more Attack Damage
+21% increased Attack Speed
+29% increased Critical Strike Chance
++29% to Global Critical Strike Multiplier
+Adds 1 to 6 Lightning Damage to Attacks with this Weapon per 10 Intelligence
+37% increased Elemental Damage with Attack Skills
 --------
 Split
 --------
@@ -1109,7 +1209,7 @@ Redeemer Item
         mirrorFee: "60",
         category: "weapon",
         type: "閃現打擊 / 12L 近戰技能",
-        tags: ["new","Shaper Item","Elder Item"],   
+        tags: ["Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
         contact: "福爾摩匹",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
@@ -1208,7 +1308,7 @@ Fractured Item
         mirrorFee: "20",
         category: "armor",
         type: "弓 / 龍捲射擊 / 閃電箭矢",
-        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -1289,6 +1389,106 @@ Item Level: 94
 增加 30% 投射物速度
 增加 25% 投射物傷害
 R3增加 74% 能量護盾 (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },{
+        id: 14,
+        league: "Mercenaries",
+        name: "冷酷 靈掌 術士手套",
+        mirrorFee: "60",
+        category: "armor",
+        type: "贖罪烙印(Fubgun)",
+        tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/GlovesInt4.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+冷酷 靈掌
+術士手套
+--------
+Quality: +30% (augmented)
+Energy Shield: 343 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 84
+--------
+35% 物理傷害轉換為閃電傷害 (implicit)
+擊中時有 30% 機率使敵人膽怯 4 秒 (implicit)
+--------
++48% 冰冷抗性 (fractured)
+擊中冰緩敵人增加 50% 傷害 (fractured)
+有 1 個深淵插槽
++49 最大能量護盾
+增加 100% 能量護盾
+增加 28% 烙印附著距離
+增加 12% 範圍效果 (crafted)
+增加 16% 範圍傷害 (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    },{
+        id: 15,
+        league: "Mercenaries",
+        name: "腐屍 銳刃 帝國戰爪",
+        mirrorFee: "60",
+        category: "weapon",
+        type: "千智 / 靈體投擲",
+        tags: ["new","Shaper Item","Elder Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Claw7.png",
+        socketimageUrl: "./image/3sl.webp",
+        itemData: `Item Class: Claws
+Rarity: Rare
+腐屍 銳刃
+帝國戰爪
+--------
+Claw
+Quality: +30% (augmented)
+Physical Damage: 25-65
+Critical Strike Chance: 9.03% (augmented)
+Attacks per Second: 1.98 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 68
+Dex: 131
+Int: 95
+--------
+Sockets: W-W-W 
+--------
+Item Level: 86
+--------
+品質不會增加物理傷害 (enchant)
+每 8% 品質增加 1% 攻擊速度 (enchant)
+--------
+每擊中一個敵人，獲得 46 生命 (implicit)
+--------
+插槽中寶石被等級 20 的增加暴擊率輔助
+插槽中寶石被等級 20 的快速攻擊輔助
+插槽中寶石被等級 20 的增加暴擊傷害輔助
+此物品上寶石受到等級 20 的元素傷害攻擊輔助
+插槽中的技能造成 40% 更多攻擊傷害
+增加 21% 攻擊速度
+增加 29% 暴擊率
++29% 全域暴擊加成
+使用此武器攻擊，每 10 點智慧附加 1 至 6 閃電傷害
+攻擊技能增加 37% 元素傷害
 --------
 Split
 --------
