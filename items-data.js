@@ -1452,7 +1452,7 @@ Fractured Item
         owner: "福爾摩匹",
         contact: "福爾摩匹",
         imageUrl: "./image/Claw7.png",
-        socketimageUrl: "./image/3sl.webp",
+        socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Claws
 Rarity: Rare
 腐屍 銳刃
