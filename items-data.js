@@ -744,6 +744,53 @@ Split
 Shaper Item
 Elder Item
 `
+    },{
+        id: 16,
+        league: "Mercenaries",
+        name: "Dread Cry Synthesised Profane Wand",
+        mirrorFee: "80",
+        category: "weapon",
+        type: "Mana stack / Hierophant",
+        tags: ["new","Synthesised Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Wand7.png",
+        socketimageUrl: "./image/3s.png",
+        itemData: `Item Class: Wands
+Rarity: Rare
+Dread Cry
+Synthesised Profane Wand
+--------
+Wand
+Quality: +30% (augmented)
+Physical Damage: 30-56
+Critical Strike Chance: 8.50%
+Attacks per Second: 1.45
+Memory Strands: 55
+--------
+Requirements:
+Level: 70
+Int: 237
+--------
+Sockets: W-W-W 
+--------
+Item Level: 84
+--------
+Quality does not increase Physical Damage (enchant)
+Grants 1% increased Elemental Damage per 2% Quality (enchant)
+--------
+12% increased Cast Speed (implicit)
++26% to Global Critical Strike Multiplier (implicit)
+Spells have a 10% chance to deal Double Damage (implicit)
+--------
+146% increased Spell Damage
+32% increased Cast Speed
++204 to maximum Mana
++40% Critical Strike Multiplier while a Rare or Unique Enemy is Nearby
+5% chance to deal Double Damage (crafted)
+--------
+Synthesised Item
+`
     }
 ];
 
@@ -802,8 +849,7 @@ Split
 --------
 Hunter Item
 `
-    },
-    {
+    },{
         id: 2,
         league: "Mercenaries",
         name: "榮耀 真實之衛 巨人殺手頭盔",
@@ -849,8 +895,7 @@ Eater of Worlds Item
 Fractured Item
 
 `
-    },
-    {
+    },{
         id: 3,
         league: "Mercenaries",
         name: "責難 堅殼 神聖鎖甲",
@@ -900,8 +945,7 @@ Eater of Worlds Item
 --------
 Fractured Item
 `
-    },
-    {
+    },{
         id: 4,
         league: "Mercenaries",
         name: "復仇 殿堂 亡者護甲",
@@ -953,8 +997,7 @@ Fractured Item
 
 Sacred Chainmail
 `
-    },
-    {
+    },{
         id: 5,
         league: "Mercenaries",
         name: "勝利 護冠 罪魔邪冠",
@@ -1003,8 +1046,7 @@ Shaper Item
 Elder Item
 
 `
-    },
-    {
+    },{
         id: 6,
         league: "Mercenaries",
         name: "奇蹟 剖刃 追憶之 殘暴巨劍",
@@ -1057,8 +1099,7 @@ Split
 --------
 Synthesised Item
 `
-    },
-    {
+    },{
         id: 7,
         league: "Mercenaries",
         name: "暮色 螺旋 追憶之 金光戒指",
@@ -1494,6 +1535,55 @@ Split
 --------
 Shaper Item
 Elder Item
+`
+    },{
+        id: 16,
+        league: "Mercenaries",
+        name: "恐慌 戰具 追憶之 褻瀆法杖",
+        mirrorFee: "80",
+        category: "weapon",
+        type: "魔力 / 聖宗",
+        tags: ["new","Synthesised Item"],   
+        owner: "福爾摩匹",
+        contact: "福爾摩匹",
+        imageUrl: "./image/Wand7.png",
+        socketimageUrl: "./image/3s.png",
+        itemData: `Item Class: Wands
+Rarity: Rare
+恐慌 戰具
+追憶之 褻瀆法杖
+--------
+Wand
+Quality: +30% (augmented)
+Physical Damage: 30-56
+Critical Strike Chance: 8.50%
+Attacks per Second: 1.45
+Memory Strands: 55
+--------
+Requirements:
+Level: 70
+Int: 237
+--------
+Sockets: W-W-W 
+--------
+Item Level: 84
+--------
+品質不會增加物理傷害 (enchant)
+每 2% 品質增加 1% 元素傷害 (enchant)
+--------
+增加 12% 施放速度 (implicit)
++26% 全域暴擊加成 (implicit)
+法術有 10% 機率造成 2 倍傷害 (implicit)
+--------
+增加 146% 法術傷害
+增加 32% 施放速度
++204 最大魔力
++204 to maximum Mana
+當附近有稀有或傳奇敵人時，+40% 暴擊加成
+5% 機率造成 2 倍傷害 (crafted)
+--------
+Synthesised Item
+
 `
     }
 ];
