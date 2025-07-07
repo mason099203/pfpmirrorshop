@@ -56,6 +56,20 @@ body {
     margin-bottom: 30px;
 }
 
+.red-text{
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background: rgba(255, 0, 0, 0.1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #ff0000;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
 /* 導航選單 */
 .nav-menu {
     display: flex;
