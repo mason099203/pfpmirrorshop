@@ -17,7 +17,7 @@ const defaultItems = [
         type: "RF / Ignite build / CWS",
         tags: ["Hunter Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Brimstone Knell Opal Sceptre.webp",
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Sceptres
@@ -67,7 +67,7 @@ Hunter Item
         type: "Warcry cri /Volcanic Fissure of Snaking",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
         socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
@@ -113,7 +113,7 @@ Fractured Item
         type: "Str Stacking Armour/Energy Enjoyer",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -163,7 +163,7 @@ Fractured Item
         type: "Int Stacking Trickster",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -215,7 +215,7 @@ Sacred Chainmail
         type: "Penance Brand / Blade vortex",
         tags: ["Shaper Item","Elder Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Helmets
@@ -264,7 +264,7 @@ Elder Item
         type: "Str Stacking Original Sin Molten Strike",
         tags: ["Synthesised Item","Split"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Two Hand Swords
@@ -316,7 +316,7 @@ Synthesised Item
         type: "+1 frenzy +1 power / charge build / Int stack Trickster",
         tags: ["Synthesised Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.webp",
         socketimageUrl: "./image/ns.webp",
         itemData: `Item Class: Rings
@@ -356,7 +356,7 @@ Synthesised Item
         type: "Phy Bow / Tornado Shot (PDPS: 1464)",
         tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
         socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
@@ -407,7 +407,7 @@ Synthesised Item
         type: " Explode /Increased effect of Non-Curse",
         tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
         socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
@@ -460,7 +460,7 @@ Redeemer Item
         type: "Flicker Strike / 12L melee skill",
         tags: ["Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: One Hand Swords
@@ -512,7 +512,7 @@ Elder Item
         type: "Armour stack / Energy Shield stack",
         tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Coat Twilight Regalia.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -559,7 +559,7 @@ Fractured Item
         type: "bow / Tornado Shot / Lightning Arrow",
         tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -609,7 +609,7 @@ Fractured Item
         type: "9Link spark gloves",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Warlock Gloves.webp",
         socketimageUrl: "./image/4s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/UglyAdorableKoalaTheRinger-VBnRb4x5YIXB0rJl",
@@ -653,7 +653,7 @@ Elder Item
         type: "Penance Brand(Fubgun)",
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/GlovesInt4.png",
         socketimageUrl: "./image/4l1b.png",
         itemData: `Item Class: Gloves
@@ -699,7 +699,7 @@ Fractured Item
         type: "int stack / Spectral Throw",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Claw7.png",
         socketimageUrl: "./image/3sl.webp",
         itemData: `Item Class: Claws
@@ -753,7 +753,7 @@ Elder Item
         type: "Mana stack / Hierophant",
         tags: ["new","Synthesised Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Wand7.png",
         socketimageUrl: "./image/3s.png",
         itemData: `Item Class: Wands
@@ -808,7 +808,7 @@ const defaultItems_ch = [
         type: "正義之火 / 點燃流派 / 暈眩時施放",
         tags: ["Hunter Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Brimstone Knell Opal Sceptre.webp",
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Sceptres
@@ -858,7 +858,7 @@ Hunter Item
         type: "戰吼/炎火脈動．蜿蜒",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
         socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
@@ -904,7 +904,7 @@ Fractured Item
         type: "力量護甲人/能量護盾",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -954,7 +954,7 @@ Fractured Item
         type: "千智 詐欺師",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -1006,7 +1006,7 @@ Sacred Chainmail
         type: "贖罪烙印 / Bv 飛刃風暴",
         tags: ["Shaper Item","Elder Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
@@ -1055,7 +1055,7 @@ Elder Item
         type: "力量 原罪 熔岩之擊",
         tags: ["Synthesised Item","Split"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Two Hand Swords
@@ -1108,7 +1108,7 @@ Synthesised Item
         type: "+1 狂怒球 +1 暴擊球 / 充能流派 / 千智 詐欺師",
         tags: ["Synthesised Item"],
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Dusk Whorl Synthesised Gold Ring.webp",
         socketimageUrl: "./image/ns.webp",
         itemData: `Item Class: Rings
@@ -1148,7 +1148,7 @@ Synthesised Item
         type: "物理弓 / 龍捲射擊 (PDPS: 1464)",
         tags: ["Synthesised Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
         socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/GenerousHilariousRaccoonOSsloth-hT-lWR7B1GrbHr-B",
@@ -1199,7 +1199,7 @@ Synthesised Item
         type: "爆炸衣 非詛咒效果",
         tags: ["Crusader Item","Redeemer Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
         socketimageUrl: "./image/6s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/PlayfulSuccessfulSamosaLitty-h3x1gp5sxjFONc8o",
@@ -1252,7 +1252,7 @@ Redeemer Item
         type: "閃現打擊 / 12L 近戰技能",
         tags: ["Shaper Item","Elder Item"],   
         owner: "Baned_BlueBin",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: One Hand Swords
@@ -1304,7 +1304,7 @@ Elder Item
         type: "護甲人 ",
         tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "Baned_BlueBin",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Coat Twilight Regalia.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -1351,7 +1351,7 @@ Fractured Item
         type: "弓 / 龍捲射擊 / 閃電箭矢",
         tags: ["Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
@@ -1401,7 +1401,7 @@ Fractured Item
         type: "9L 電球手套",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Warlock Gloves.webp",
         socketimageUrl: "./image/4s.webp",
         clip: "https://www.twitch.tv/poogf01/clip/UglyAdorableKoalaTheRinger-VBnRb4x5YIXB0rJl",
@@ -1445,7 +1445,7 @@ Elder Item
         type: "贖罪烙印(Fubgun)",
         tags: ["new","Searing Exarch Item","Eater of Worlds Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/GlovesInt4.png",
         socketimageUrl: "./image/4l1b.png",
         itemData: `Item Class: Gloves
@@ -1491,7 +1491,7 @@ Fractured Item
         type: "千智 / 靈體投擲",
         tags: ["new","Shaper Item","Elder Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Claw7.png",
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: Claws
@@ -1545,7 +1545,7 @@ Elder Item
         type: "魔力 / 聖宗",
         tags: ["new","Synthesised Item"],   
         owner: "福爾摩匹",
-        contact: "httpswwwpfpmirrorshop",
+        contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Wand7.png",
         socketimageUrl: "./image/3s.png",
         itemData: `Item Class: Wands
