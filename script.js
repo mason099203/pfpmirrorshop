@@ -28,8 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
  * 初始化預設物品資料
  */
 function initializeItems() {
-    // 從物品資料模組載入預設物品
-    allItems = getDefaultItems();
+    // 從 POE 1 和 POE 2 物品資料模組載入所有物品
+    const poe1Items = getPoe1Items();
+    const poe2Items = getPoe2Items();
+    
+    // 合併兩個版本的物品
+    allItems = [...poe1Items, ...poe2Items];
     
     // 按 ID 由大到小排序，讓 ID 最大的在第一個，ID 1 在最後
     allItems.sort((a, b) => b.id - a.id);
@@ -92,16 +96,29 @@ function showSection(sectionName) {
 }
 
 /**
- * 根據聯盟和分類篩選物品
+ * 根據版本、聯盟和分類篩選物品
  */
 function filterItems() {
+    const versionSelect = document.getElementById('version-select');
     const categorySelect = document.getElementById('category-select');
     const leagueSelect = document.getElementById('league-select');
+    const selectedVersion = versionSelect.value;
     const selectedCategory = categorySelect.value;
     const selectedLeague = leagueSelect.value;
 
     // 開始篩選所有物品
     filteredItems = [...allItems];
+
+    // 根據版本篩選
+    if (selectedVersion !== '') {
+        if (selectedVersion === 'poe1') {
+            // POE 1 物品：根據 version 屬性
+            filteredItems = filteredItems.filter(item => item.version === 'poe1');
+        } else if (selectedVersion === 'poe2') {
+            // POE 2 物品：根據 version 屬性
+            filteredItems = filteredItems.filter(item => item.version === 'poe2');
+        }
+    }
 
     // 根據聯盟篩選
     if (selectedLeague !== '') {
@@ -172,6 +189,11 @@ function createItemCard(item) {
     card.className = 'item-card';
     card.setAttribute('data-category', item.category);
 
+    // 確定物品版本
+    const itemVersion = item.version || 'poe1'; // 預設為 POE 1
+    const versionLabel = itemVersion === 'poe1' ? 'POE 1' : 'POE 2';
+    const versionClass = itemVersion === 'poe1' ? 'version-poe1' : 'version-poe2';
+
     const tagsHtml = item.tags.map(tag => 
         `<span class="tag ${tag}">${getTagDisplayName(tag)}</span>`
     ).join('');
@@ -186,14 +208,14 @@ function createItemCard(item) {
     const itemDetailsSection = item.itemData ? 
         `<div class="item-details" style="display: none;">
             <div class="poe-item-display">
-                ${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData))}
+                ${itemParser.generateItemHtml(itemParser.parseItemData(item.itemData), item.id, item.version)}
             </div>
         </div>` : '';
 
 
     card.innerHTML = `
         <div class="item-header">
-            
+            <div class="version-badge ${versionClass}">${versionLabel}</div>
             <div class="item-info">
                 <h3 class="item-name">${item.name}</h3>
                 <div class="mirror-fee">${typeof getText === 'function' ? getText('feeLabel') : 'FEE'}: <span class="fee-amount">${item.mirrorFee}</span> <img src="https://cdn.poedb.tw/image/Art/2DItems/Currency/CurrencyModValues.webp" alt="divine" style="height: 30px;"></div>
@@ -223,7 +245,7 @@ function createItemCard(item) {
     if (item.itemData) {
         const tooltip = document.createElement('div');
         tooltip.className = 'item-tooltip';
-        tooltip.innerHTML = itemParser.generateItemHtml(itemParser.parseItemData(item.itemData));
+        tooltip.innerHTML = itemParser.generateItemHtml(itemParser.parseItemData(item.itemData), item.id, item.version);
         tooltip.style.display = 'none';
         document.body.appendChild(tooltip);
         

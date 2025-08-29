@@ -206,13 +206,15 @@ class POEItemParser {
     /**
      * 生成 POE 物品 HTML
      * @param {Object} item - 解析後的物品物件
+     * @param {number} itemId - 物品 ID（用於判斷版本）
+     * @param {string} version - 物品版本（poe1 或 poe2）
      * @returns {string} HTML 字串
      */
-    generateItemHtml(item) {
+    generateItemHtml(item, itemId = null, version = null) {
         let html = `<div class="poe-item ${item.rarity}">`;
 
         // 物品標題區域
-        html += this._generateHeader(item);
+        html += this._generateHeader(item, itemId, version);
 
         // 品質
         if (item.quality) {
@@ -290,11 +292,18 @@ class POEItemParser {
     /**
      * 生成物品標題 HTML
      * @param {Object} item - 物品物件
+     * @param {number} itemId - 物品 ID（用於判斷版本）
+     * @param {string} version - 物品版本（poe1 或 poe2）
      * @returns {string} HTML 字串
      * @private
      */
-    _generateHeader(item) {
-        let html = '<div class="poe-header">';
+    _generateHeader(item, itemId = null, version = null) {
+        // 根據傳入的 version 參數判斷版本
+        const isPoe2 = (version === 'poe2');
+        console.log('Version:', version, 'isPoe2:', isPoe2);
+        const headerClass = isPoe2 ? 'poe2-header' : 'poe-header';
+        
+        let html = `<div class="${headerClass}">`;
         
         // if (item.itemClass) {
         //     html += `<div class="poe-item-class">${item.itemClass}</div>`;

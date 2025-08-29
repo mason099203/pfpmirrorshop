@@ -388,6 +388,34 @@ main {
     align-items: flex-start;
     gap: 15px;
     margin-bottom: 15px;
+    position: relative;
+}
+
+/* 版本標籤樣式 */
+.version-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.version-poe1 {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    color: #FFD700;
+    border: 1px solid #DAA520;
+}
+
+.version-poe2 {
+    background: linear-gradient(135deg, #2E8B57, #3CB371);
+    color: #98FB98;
+    border: 1px solid #90EE90;
 }
 
 /* 物品圖片容器 */
@@ -929,6 +957,14 @@ main {
     background: url('image/ItemsHeaderRareLeft.webp') top left no-repeat,
     url('image/ItemsHeaderRareRight.webp') top right no-repeat,
     url('image/ItemsHeaderRareMiddle.webp') top center repeat-x;
+    height: 54px;
+    background-size: auto 54px, auto 54px, auto 54px;
+}
+
+.poe2-header {
+    background: url('image/header-rare-left.webp') top left no-repeat,
+    url('image/header-rare-right.webp') top right no-repeat,
+    url('image/header-rare-middle.webp') top center repeat-x;
     height: 54px;
     background-size: auto 54px, auto 54px, auto 54px;
 }

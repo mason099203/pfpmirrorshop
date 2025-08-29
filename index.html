@@ -96,6 +96,12 @@
         <section id="items-section" class="section active">
             <div class="controls">
                 <div class="filter-group">
+                    <label for="version-select">遊戲版本</label>
+                    <select id="version-select" onchange="filterItems()">
+                        <option value="">所有版本</option>
+                        <option value="poe1">POE 1</option>
+                        <option value="poe2">POE 2</option>
+                    </select>
                     <label for="league-select">聯盟</label>
                     <select id="league-select" onchange="filterItems()">
                         <option value="">所有聯盟</option>
@@ -139,7 +145,8 @@
     
     <script src="language-manager.js"></script>
     <script src="item-parser.js"></script>
-    <script src="items-data.js"></script>
+    <script src="items-data-poe1.js"></script>
+    <script src="items-data-poe2.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
