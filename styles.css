@@ -19,9 +19,9 @@
 
 body {
     font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://web.poecdn.com/protected/image/layout/secretsoftheatlas-bg.jpg?v=1749513978961&key=n0J10opqiae8F7ay2Uab0A);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://web.poecdn.com/protected/image/promo/keepers/panels/Panel1.webp?key=noAgivj51XVCb-SXeYLomA);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 120%;
     background-position: center;
     background-repeat: no-repeat;
     color: #e0e0e0;
