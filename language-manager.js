@@ -17,12 +17,12 @@ const languages = {
         allVersions: "所有版本",
 
         leagueLabel: "聯盟",
-        allLeagues: "所有聯盟",
+        allLeagues: "全部",
         mercenaries: "輿圖之奧秘",
         keepers:"黯焰看守者",
         
         categoryLabel: "物品分類",
-        allCategories: "所有分類",
+        allCategories: "全部",
         weapon: "武器",
         armor: "護甲", 
         accessory: "飾品",
@@ -69,15 +69,15 @@ const languages = {
         shopLabel: "Shop",
 
         versionLabel: "Version",
-        allVersions: "All Versions",
+        allVersions: "All",
         
         leagueLabel: "League",
-        allLeagues: "All Leagues",
+        allLeagues: "All",
         mercenaries: "Mercenaries",
         keepers:"Keepers",
         
-        categoryLabel: "Item Category",
-        allCategories: "All Categories",
+        categoryLabel: "Category",
+        allCategories: "All",
         weapon: "Weapon",
         armor: "Armor",
         accessory: "Accessory",
