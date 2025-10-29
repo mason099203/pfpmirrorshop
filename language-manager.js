@@ -13,9 +13,13 @@ const languages = {
         discordLabel: "渣P伺服器",
         shopLabel: "商店",
 
+        versionLabel: "遊戲版本",
+        allVersions: "所有版本",
+
         leagueLabel: "聯盟",
         allLeagues: "所有聯盟",
         mercenaries: "輿圖之奧秘",
+        keepers:"黯焰看守者",
         
         categoryLabel: "物品分類",
         allCategories: "所有分類",
@@ -63,10 +67,14 @@ const languages = {
         twitchLabel: "poogf01",
         discordLabel: "PFP Server",
         shopLabel: "Shop",
+
+        versionLabel: "Version",
+        allVersions: "All Versions",
         
         leagueLabel: "League",
         allLeagues: "All Leagues",
         mercenaries: "Mercenaries",
+        keepers:"Keepers",
         
         categoryLabel: "Item Category",
         allCategories: "All Categories",
@@ -196,9 +204,13 @@ function applyLanguage(language) {
     
     // 更新頁面元素
     updateElement('.subtitle', langData.pageSubtitle);
+    updateElement('label[for="version-select"]', langData.versionLabel);
+    updateElement('#version-select option[value=""]', langData.allVersions);
+
     updateElement('label[for="league-select"]', langData.leagueLabel);
     updateElement('#league-select option[value=""]', langData.allLeagues);
     updateElement('#league-select option[value="Mercenaries"]', langData.mercenaries);
+    updateElement('#league-select option[value="Keepers"]', langData.keepers);
     updateElement('label[for="category-select"]', langData.categoryLabel);
     updateElement('#category-select option[value=""]', langData.allCategories);
     updateElement('#category-select option[value="weapon"]', langData.weapon);

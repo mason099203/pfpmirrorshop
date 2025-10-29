@@ -9,37 +9,37 @@
  */
 const poe2Items = [    
 {
-    id: 1,
-    version: "poe2",
-    league: "Mercenaries",
-    name: "Honour Coat Twilight Regalia",
-    mirrorFee: "20",
-    category: "armor",
-    type: "Armour stack / Energy Shield stack",
-    tags: ["Searing Exarch Item","Eater of Worlds Item"],   
-    owner: "Baned_BlueBin",
-    contact: "十六鏡流派打得過123凋落嗎 ",
-    imageUrl: "./image/BreachRing.webp",
-    socketimageUrl: "./image/3sL.webp",
-    itemData: `Item Class: Rings
-Rarity: Rare
-Hate Twirl
-Breach Ring
---------
-Quality (Mana Modifiers): +50% (augmented)
---------
-Requirements:
-Level: 61
---------
-Item Level: 82
---------
-Maximum Quality is 50% (implicit)
---------
-27% increased Lightning Damage
-+267 to maximum Mana
-49% increased Rarity of Items found
-24% increased Cast Speed
-+33 to Intelligence`
+//     id: 1,
+//     version: "poe2",
+//     league: "Mercenaries",
+//     name: "Honour Coat Twilight Regalia",
+//     mirrorFee: "20",
+//     category: "armor",
+//     type: "Armour stack / Energy Shield stack",
+//     tags: ["Searing Exarch Item","Eater of Worlds Item"],   
+//     owner: "Baned_BlueBin",
+//     contact: "十六鏡流派打得過123凋落嗎 ",
+//     imageUrl: "./image/BreachRing.webp",
+//     socketimageUrl: "./image/3sL.webp",
+//     itemData: `Item Class: Rings
+// Rarity: Rare
+// Hate Twirl
+// Breach Ring
+// --------
+// Quality (Mana Modifiers): +50% (augmented)
+// --------
+// Requirements:
+// Level: 61
+// --------
+// Item Level: 82
+// --------
+// Maximum Quality is 50% (implicit)
+// --------
+// 27% increased Lightning Damage
+// +267 to maximum Mana
+// 49% increased Rarity of Items found
+// 24% increased Cast Speed
+// +33 to Intelligence`
 }
 ];
 
