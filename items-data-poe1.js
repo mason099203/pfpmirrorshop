@@ -1099,7 +1099,7 @@ Elder Item
         version: "poe1",
         league: "Keepers",
         name: "復仇 殿堂 亡者護甲",
-        mirrorFee: 20,
+        mirrorFee: 10,
         category: "armor",
         type: "千智 詐欺師",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
