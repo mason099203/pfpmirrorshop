@@ -210,7 +210,9 @@ function createItemCard(item) {
     const versionLabel = itemVersion === 'poe1' ? 'POE 1' : 'POE 2';
     const versionClass = itemVersion === 'poe1' ? 'version-poe1' : 'version-poe2';
 
-    const tagsHtml = item.tags.map(tag => 
+    // 確保 tags 是一個數組，如果不存在或不是數組則使用空數組
+    const tags = Array.isArray(item.tags) ? item.tags : [];
+    const tagsHtml = tags.map(tag => 
         `<span class="tag ${tag}">${getTagDisplayName(tag)}</span>`
     ).join('');
 

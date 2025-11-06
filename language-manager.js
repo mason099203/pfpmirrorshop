@@ -50,7 +50,7 @@ const languages = {
         
         messages: {
             pobCopied: "PoB 已複製到剪貼簿",
-            whisperCopied: "私訊內容已複製到剪貼簿",
+            whisperCopied: "已複製到剪貼簿",
             itemAdded: "物品已成功新增",
             itemError: "新增物品時發生錯誤"
         },
@@ -107,7 +107,7 @@ const languages = {
         
         messages: {
             pobCopied: "PoB copied to clipboard",
-            whisperCopied: "Whisper message copied to clipboard",
+            whisperCopied: "copied to clipboard",
             itemAdded: "Item added successfully",
             itemError: "Error adding item"
         },
