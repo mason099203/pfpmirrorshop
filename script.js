@@ -43,16 +43,33 @@ function setupEventListeners() {
         postForm.addEventListener('submit', handleFormSubmit);
     }
 
-    // 動作按鈕事件委派
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('pob-btn')) {
-            handleCopyPoB(e);
-        } else if (e.target.classList.contains('whisper-btn')) {
-            handleWhisper(e);
+    // 動作按鈕事件委派 - 確保在語言切換後也能正常工作
+    // 移除舊的事件監聽器（如果存在）以避免重複綁定
+    const existingHandler = window._buttonClickHandler;
+    if (existingHandler) {
+        document.removeEventListener('click', existingHandler);
+    }
+    
+    // 創建新的事件處理函數
+    window._buttonClickHandler = function(e) {
+        // 檢查目標元素或其父元素是否為按鈕
+        const pobBtn = e.target.closest('.pob-btn');
+        const whisperBtn = e.target.closest('.whisper-btn');
+        
+        if (pobBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            handleCopyPoB(e, pobBtn);
+        } else if (whisperBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            handleWhisper(e, whisperBtn);
         }
-    });
+    };
+    
+    document.addEventListener('click', window._buttonClickHandler);
 
-    // 工具提示位置計算
+    // 工具提示位置計算 - 使用事件委派，確保在動態創建的元素上也能正常工作
     document.addEventListener('mouseover', handleTooltipShow);
     document.addEventListener('mouseout', handleTooltipHide);
 }
@@ -164,6 +181,12 @@ function renderItems() {
     const itemsGrid = document.getElementById('items-grid');
     if (!itemsGrid) return;
 
+    // 清理所有舊的 tooltip 元素，避免重複或關聯錯誤
+    const oldTooltips = document.querySelectorAll('.item-tooltip');
+    oldTooltips.forEach(tooltip => {
+        tooltip.remove();
+    });
+
     itemsGrid.innerHTML = '';
 
     filteredItems.forEach(item => {
@@ -238,14 +261,28 @@ function createItemCard(item) {
     if (item.itemData) {
         const tooltip = document.createElement('div');
         tooltip.className = 'item-tooltip';
+        // 使用穩定的 ID，避免重複創建時 ID 衝突
+        const tooltipId = 'tooltip-item-' + item.id;
+        tooltip.id = tooltipId;
         tooltip.innerHTML = itemParser.generateItemHtml(itemParser.parseItemData(item.itemData), item.id, item.version);
         tooltip.style.display = 'none';
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = '0';
+        tooltip.style.position = 'fixed';
+        tooltip.style.zIndex = '9999999';
+        tooltip.style.pointerEvents = 'none';
         document.body.appendChild(tooltip);
         
         // 為圖片容器添加工具提示引用
         const imageContainer = card.querySelector('.item-image-container');
-        imageContainer.setAttribute('data-tooltip-id', tooltip.id || 'tooltip-' + Date.now());
-        imageContainer.tooltipElement = tooltip;
+        if (imageContainer) {
+            imageContainer.setAttribute('data-tooltip-id', tooltipId);
+            imageContainer.tooltipElement = tooltip;
+            // 確保 data-tooltip 屬性存在
+            if (!imageContainer.hasAttribute('data-tooltip')) {
+                imageContainer.setAttribute('data-tooltip', 'true');
+            }
+        }
     }
 
     return card;
@@ -426,21 +463,37 @@ function toggleItemDetails(button) {
 /**
  * 處理複製 POB 連結
  * @param {Event} e - 點擊事件
+ * @param {HTMLElement} button - 按鈕元素（可選，如果未提供則從 e.target 查找）
  */
-function handleCopyPoB(e) {
-    const pobLink = e.target.getAttribute('data-pob');
+function handleCopyPoB(e, button = null) {
+    // 如果沒有提供 button，嘗試從 e.target 查找
+    if (!button) {
+        button = e.target.closest('.pob-btn');
+        if (!button) {
+            console.error('找不到 PoB 按鈕元素', e.target);
+            return;
+        }
+    }
+    
+    // 確保 button 是有效的元素
+    if (!button || !button.nodeName) {
+        console.error('無效的按鈕元素', button);
+        return;
+    }
+    
+    const pobLink = button.getAttribute('data-pob');
     
     if (pobLink && pobLink !== '#') {
         // 嘗試複製到剪貼簿
         navigator.clipboard.writeText(pobLink).then(() => {
             // 顯示視覺回饋
-            const originalText = e.target.textContent;
-            e.target.textContent = '已複製！';
-            e.target.style.background = 'linear-gradient(145deg, #4CAF50, #45a049)';
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="bi bi-check"></i>' + (typeof getText === 'function' ? getText('messages.pobCopied') : '已複製！');
+            button.style.background = 'linear-gradient(145deg, #4CAF50, #45a049)';
             
             setTimeout(() => {
-                e.target.textContent = originalText;
-                e.target.style.background = '';
+                button.innerHTML = originalText;
+                button.style.background = '';
             }, 1500);
         }).catch(() => {
             alert('POB 連結: ' + pobLink);
@@ -453,37 +506,69 @@ function handleCopyPoB(e) {
 /**
  * 處理私聊功能
  * @param {Event} e - 點擊事件
+ * @param {HTMLElement} button - 按鈕元素（可選，如果未提供則從 e.target 查找）
  */
-function handleWhisper(e) {
-    const contact = e.target.getAttribute('data-contact');
-    const itemCard = e.target.closest('.item-card');
-    const itemName = itemCard.querySelector('.item-name').textContent;
+function handleWhisper(e, button = null) {
+    // 如果沒有提供 button，嘗試從 e.target 查找
+    if (!button) {
+        button = e.target.closest('.whisper-btn');
+        if (!button) {
+            console.error('找不到 Whisper 按鈕元素', e.target);
+            return;
+        }
+    }
+    
+    // 確保 button 是有效的元素
+    if (!button || !button.nodeName) {
+        console.error('無效的按鈕元素', button);
+        return;
+    }
+    
+    const contact = button.getAttribute('data-contact');
+    const itemCard = button.closest('.item-card');
+    
+    if (!itemCard) {
+        console.error('找不到物品卡片', button);
+        return;
+    }
+    
+    const itemName = itemCard.querySelector('.item-name');
     const mirrorFeeElement = itemCard.querySelector('.fee-amount');
+    
+    if (!itemName) {
+        console.error('找不到物品名稱');
+        return;
+    }
+    
+    const itemNameText = itemName.textContent;
     const mirrorFee = mirrorFeeElement ? mirrorFeeElement.textContent : '0';
     
     if (contact) {
+        let whisperMessage;
         // 如果有費用且不為0，添加費用信息
-        if (mirrorFee > 0) {
-            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to mirror ${itemName.toUpperCase()} FOR ${mirrorFee} DIVINE`;
-        }else{
-            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to ${mirrorFee}`;
+        if (parseInt(mirrorFee) > 0) {
+            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to mirror ${itemNameText.toUpperCase()} FOR ${mirrorFee} DIVINE`;
+        } else {
+            whisperMessage = `@${contact.toUpperCase()}  Hi, I'd like to mirror ${itemNameText.toUpperCase()} FOR FREE`;
         }
         
         // 嘗試複製私聊訊息到剪貼簿
         navigator.clipboard.writeText(whisperMessage).then(() => {
             // 顯示視覺回饋
-            const originalText = e.target.textContent;
-            e.target.textContent = '已複製私聊訊息！';
-            e.target.style.background = 'linear-gradient(145deg, #2196F3, #1976D2)';
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="bi bi-check"></i>' + (typeof getText === 'function' ? getText('messages.whisperCopied') : '已複製私聊訊息！');
+            button.style.background = 'linear-gradient(145deg, #2196F3, #1976D2)';
             
             setTimeout(() => {
-                e.target.textContent = originalText;
-                e.target.style.background = '';
+                button.innerHTML = originalText;
+                button.style.background = '';
             }, 2000);
         }).catch(() => {
             // 如果複製失敗，顯示訊息
             alert('私聊訊息: ' + whisperMessage);
         });
+    } else {
+        console.error('找不到聯絡資訊');
     }
 }
 
@@ -537,11 +622,39 @@ function importItemsFromJSON(jsonString) {
  * @param {MouseEvent} e - 滑鼠事件
  */
 function handleTooltipShow(e) {
-    const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    // 檢查目標元素是否為圖片容器或其子元素（圖片）
+    let imageContainer = null;
+    
+    // 如果目標是圖片容器本身
+    if (e.target.classList && e.target.classList.contains('item-image-container') && e.target.hasAttribute('data-tooltip')) {
+        imageContainer = e.target;
+    } 
+    // 如果目標是圖片（.item-image 或 .item-socket-image），向上查找容器
+    else if (e.target.classList && (e.target.classList.contains('item-image') || e.target.classList.contains('item-socket-image'))) {
+        imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    }
+    // 其他情況也嘗試查找容器
+    else {
+        imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    }
+    
     if (!imageContainer) return;
 
-    const tooltip = imageContainer.tooltipElement;
-    if (!tooltip) return;
+    // 嘗試從 imageContainer 獲取 tooltip 引用
+    let tooltip = imageContainer.tooltipElement;
+    
+    // 如果找不到，嘗試通過 ID 查找
+    if (!tooltip) {
+        const tooltipId = imageContainer.getAttribute('data-tooltip-id');
+        if (tooltipId) {
+            tooltip = document.getElementById(tooltipId);
+        }
+    }
+    
+    if (!tooltip) {
+        console.warn('Tooltip element not found for image container', imageContainer);
+        return;
+    }
 
     const rect = imageContainer.getBoundingClientRect();
     const windowWidth = window.innerWidth;
@@ -615,10 +728,35 @@ function handleTooltipShow(e) {
  * @param {MouseEvent} e - 滑鼠事件
  */
 function handleTooltipHide(e) {
-    const imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    // 檢查目標元素是否為圖片容器或其子元素（圖片）
+    let imageContainer = null;
+    
+    // 如果目標是圖片容器本身
+    if (e.target.classList && e.target.classList.contains('item-image-container') && e.target.hasAttribute('data-tooltip')) {
+        imageContainer = e.target;
+    } 
+    // 如果目標是圖片（.item-image 或 .item-socket-image），向上查找容器
+    else if (e.target.classList && (e.target.classList.contains('item-image') || e.target.classList.contains('item-socket-image'))) {
+        imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    }
+    // 其他情況也嘗試查找容器
+    else {
+        imageContainer = e.target.closest('.item-image-container[data-tooltip="true"]');
+    }
+    
     if (!imageContainer) return;
 
-    const tooltip = imageContainer.tooltipElement;
+    // 嘗試從 imageContainer 獲取 tooltip 引用
+    let tooltip = imageContainer.tooltipElement;
+    
+    // 如果找不到，嘗試通過 ID 查找
+    if (!tooltip) {
+        const tooltipId = imageContainer.getAttribute('data-tooltip-id');
+        if (tooltipId) {
+            tooltip = document.getElementById(tooltipId);
+        }
+    }
+    
     if (tooltip) {
         tooltip.style.visibility = 'hidden';
         tooltip.style.opacity = '0';

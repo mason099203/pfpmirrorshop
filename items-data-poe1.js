@@ -4,10 +4,10 @@
  */
 
 /**
- * POE 1 物品資料陣列（英文版）
+ * mercenaries
  * @type {Array<Object>}
  */
-const poe1Items = [
+const poe1Items_mercenaries_en = [
     {
         id: 1,
         version: "poe1",
@@ -522,10 +522,10 @@ Elder Item
 ];
 
 /**
- * POE 1 物品資料陣列（中文版）
+ * mercenaries
  * @type {Array<Object>}
  */
-const poe1Items_ch = [
+const poe1Items_mercenaries_ch = [
     {
         id: 1,
         version: "poe1",
@@ -1039,6 +1039,10 @@ Elder Item
     }
 ];
 
+/**
+ * keepers
+ * @type {Array<Object>}
+ */
 const poe1Items_keepers_ch = [
     {
         id: 1,
@@ -1143,6 +1147,10 @@ Fractured Item
 `
     }
 ];
+/**
+ * keepers
+ * @type {Array<Object>}
+ */
 const poe1Items_keepers_en = [
     {
         id: 1,
@@ -1247,6 +1255,9 @@ Fractured Item
 `
     }
 ];
+
+const poe1Items = [...poe1Items_mercenaries_en, ...poe1Items_keepers_en];
+const poe1Items_ch = [...poe1Items_mercenaries_ch, ...poe1Items_keepers_ch];
 /**
  * 取得所有 POE 1 物品資料（根據當前語言）
  * @returns {Array<Object>} POE 1 物品資料陣列的副本
@@ -1257,9 +1268,9 @@ function getPoe1Items() {
     
     // 根據語言返回對應的物品陣列
     if (currentLang === 'en-US') {
-        return [...poe1Items, ...poe1Items_keepers_en];
+        return [...poe1Items];
     } else {
-        return [...poe1Items_ch, ...poe1Items_keepers_ch];
+        return [...poe1Items_ch];
     }
 }
 
