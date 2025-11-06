@@ -30,6 +30,7 @@ const languages = {
         
         feeLabel: "FEE",
         ownerLabel: "擁有者",
+        contactLabel: "聯絡",
         itemDetailsLabel: "物品詳情",
         hideDetailsLabel: "隱藏詳情",
         
@@ -45,6 +46,7 @@ const languages = {
         
         copyPoB: "複製 PoB",
         whisper: "私訊",
+        clip: "剪輯",
         
         messages: {
             pobCopied: "PoB 已複製到剪貼簿",
@@ -85,6 +87,7 @@ const languages = {
         
         feeLabel: "FEE",
         ownerLabel: "Owner",
+        contactLabel: "Contact",
         itemDetailsLabel: "Item Details",
         hideDetailsLabel: "Hide Details",
         
@@ -100,6 +103,7 @@ const languages = {
         
         copyPoB: "Copy PoB",
         whisper: "Whisper",
+        clip: "Clip",
         
         messages: {
             pobCopied: "PoB copied to clipboard",
@@ -182,13 +186,15 @@ function switchLanguage(language) {
     // 更新語言切換按鈕狀態
     updateLanguageSwitcherButtons();
     
-    // 重新載入物品資料並渲染（切換語言版本的物品）
-    if (typeof initializeItems === 'function') {
-        initializeItems();
-    } else if (typeof renderItems === 'function') {
-        renderItems();
+    // 語言切換後套用篩選條件並重新渲染
+    // filterItems 會：
+    // 1. 根據當前篩選條件（版本、聯盟、分類）重新篩選物品
+    // 2. 調用 renderItems() 重新渲染篩選後的物品
+    // 3. 渲染時使用新語言（因為 currentLanguage 已更新，getText() 會使用新語言）
+    if (typeof filterItems === 'function') {
+        filterItems();
     }
-    
+    window.location.reload();
 }
 
 /**

@@ -223,7 +223,7 @@ Fractured Item
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
-        socketimageUrl: "./image/6s.webp",
+        socketimageUrl: "./image/4s.webp",
         itemData: `Item Class: Helmets
 Rarity: Rare
 Victory Cowl
@@ -1039,6 +1039,214 @@ Elder Item
     }
 ];
 
+const poe1Items_keepers_ch = [
+    {
+        id: 1,
+        version: "poe1",
+        league: "Keepers",
+        name: "勝利 護冠 罪魔邪冠",
+        mirrorFee: 10,
+        category: "armor",
+        type: "贖罪烙印 / Bv 飛刃風暴",
+        tags: ["Shaper Item","Elder Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+勝利 護冠 
+罪魔邪冠
+--------
+Quality: +20% (augmented)
+Armour: 254 (augmented)
+Energy Shield: 106 (augmented)
+--------
+Requirements:
+Level: 75
+Str: 79
+Int: 79
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+此物品插槽中輔助寶石等級 -2 (implicit)
+此物品插槽中技能寶石等級 +2 (implicit)
+--------
+插槽中範圍效果寶石等級 +2
+插槽中寶石被等級 25 的集中效應輔助
+插槽中寶石被等級 25 的急凍輔助
+插槽中的寶石造成 30% 更多元素傷害
+插槽中的法術 +4% 暴擊率
+增加 10% 範圍效果
+增加 25% 範圍傷害
+增加 20% 冰冷異常狀態效果
++70 最大生命 (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },
+    {
+        id: 2,
+        version: "poe1",
+        league: "Keepers",
+        name: "復仇 殿堂 亡者護甲",
+        mirrorFee: 20,
+        category: "armor",
+        type: "千智 詐欺師",
+        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+復仇 殿堂 
+亡者護甲
+--------
+Quality: +30% (augmented)
+Evasion Rating: 3612 (augmented)
+Energy Shield: 736 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+增加 12% 變動防禦詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
+--------
+承受 12% 的擊中物理傷害視為混沌傷害 (implicit)
++2% 最大全部抗性 (implicit)
+--------
+增加 56% 全域防禦 (fractured)
++22% 壓抑法術傷害率
++58 智慧
++415 點閃避值 
+增加 123% 閃避與能量護盾 
++87 最大能量護盾 
+增加 6% 所有屬性 (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    }
+];
+const poe1Items_keepers_en = [
+    {
+        id: 1,
+        version: "poe1",
+        league: "Keepers",
+        name: "Phoenix Horn Archdemon Crown",
+        mirrorFee: 10,
+        category: "armor",
+        type: "Penance Brand / Blade vortex",
+        tags: ["Shaper Item","Elder Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Victory Cowl
+Archdemon Crown
+--------
+Quality: +20% (augmented)
+Armour: 254 (augmented)
+Energy Shield: 106 (augmented)
+--------
+Requirements:
+Level: 75
+Str: 79
+Int: 79
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+-2 to Level of Socketed Support Gems (implicit)
++2 to Level of Socketed Skill Gems (implicit)
+--------
++2 to Level of Socketed AoE Gems
+Socketed Gems are Supported by Level 25 Concentrated Effect
+Socketed Gems are Supported by Level 25 Hypothermia
+Socketed Gems deal 30% more Elemental Damage
+Socketed Spells have +4% to Critical Strike Chance
+10% increased Area of Effect
+25% increased Area Damage
+20% increased Effect of Cold Ailments
++45 to maximum Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },
+    {
+        id: 2,
+        version: "poe1",
+        league: "Keepers",
+        name: "Phoenix Horn Archdemon Crown",
+        mirrorFee: 10,
+        category: "armor",
+        type: "Int Stacking Trickster",
+        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Phoenix Horn
+Archdemon Crown
+--------
+Quality: +30% (augmented)
+Evasion Rating: 3612 (augmented)
+Energy Shield: 736 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+12% increased Explicit Defence Modifier magnitudes (enchant)
+50% reduced Explicit Resistance Modifier magnitudes (enchant)
+--------
+12% of Physical Damage from Hits taken as Chaos Damage (implicit)
++2% to all maximum Resistances (implicit)
+--------
+56% increased Global Defences (fractured)
++22% chance to Suppress Spell Damage
++58 to Intelligence
++415 to Evasion Rating
+123% increased Evasion and Energy Shield
++87 to maximum Energy Shield
+6% increased Attributes (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    }
+];
 /**
  * 取得所有 POE 1 物品資料（根據當前語言）
  * @returns {Array<Object>} POE 1 物品資料陣列的副本
@@ -1049,9 +1257,9 @@ function getPoe1Items() {
     
     // 根據語言返回對應的物品陣列
     if (currentLang === 'en-US') {
-        return [...poe1Items];
+        return [...poe1Items, ...poe1Items_keepers_en];
     } else {
-        return [...poe1Items_ch];
+        return [...poe1Items_ch, ...poe1Items_keepers_ch];
     }
 }
 

@@ -104,9 +104,9 @@
                     </select>
                     <label for="league-select">聯盟</label>
                     <select id="league-select" onchange="filterItems()">
-                        <option value="">所有聯盟</option>
-                        <option value="Mercenaries">輿圖之奧秘</option>
                         <option value="Keepers">黯焰看守者</option>
+                        <option value="Mercenaries">輿圖之奧秘</option>
+                        <option value="">所有聯盟</option>
                     </select>
                     <label for="category-select">物品分類</label>
                     <select id="category-select" onchange="filterItems()">
@@ -149,5 +149,12 @@
     <script src="items-data-poe1.js"></script>
     <script src="items-data-poe2.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeItems();
+            filterItems(); 
+            setupEventListeners();
+        });
+    </script>
 </body>
 </html> 

@@ -349,6 +349,7 @@ main {
 
 /* 物品網格 */
 .items-grid {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;

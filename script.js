@@ -15,14 +15,6 @@ let allItems = [];
  */
 let filteredItems = [];
 
-/**
- * 頁面載入完成後初始化
- */
-document.addEventListener('DOMContentLoaded', function() {
-    initializeItems();
-    updateItemCount();
-    setupEventListeners();
-});
 
 /**
  * 初始化預設物品資料
@@ -102,6 +94,7 @@ function filterItems() {
     const versionSelect = document.getElementById('version-select');
     const categorySelect = document.getElementById('category-select');
     const leagueSelect = document.getElementById('league-select');
+    console.log("versionSelect.value: " + versionSelect.value, "categorySelect.value: " + categorySelect.value, "leagueSelect.value: " + leagueSelect.value);
     const selectedVersion = versionSelect.value;
     const selectedCategory = categorySelect.value;
     const selectedLeague = leagueSelect.value;
@@ -232,7 +225,7 @@ function createItemCard(item) {
         </div>
         <div class="owner-info">
             ${ownerInfo}
-            <div>聯絡: <span class="contact">${item.contact}</span></div>
+            <div>${typeof getText === 'function' ? getText('contactLabel') : '聯絡'}: <span class="contact">${item.contact}</span></div>
         </div>
         <div class="item-actions">
             <button class="action-btn pob-btn" data-pob="${item.itemData}"><i class="bi bi-copy"></i>${typeof getText === 'function' ? getText('copyPoB') : '複製 PoB'}</button>
