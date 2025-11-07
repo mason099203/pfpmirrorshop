@@ -1145,6 +1145,56 @@ Eater of Worlds Item
 --------
 Fractured Item
 `
+    },
+    {
+        id: 3,
+        version: "poe1",
+        league: "Keepers",
+        name: "Rune Veil Twilight Regalia",
+        mirrorFee: 10,
+        category: "armor",
+        type: "千智",
+        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/BodyStrDexInt1C.png",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Rune Veil
+Twilight Regalia
+--------
+Quality: +30% (augmented)
+Energy Shield: 1164 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 879 (augmented)
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 94
+--------
+增加 15% 變動防禦詞綴的大小 (enchant)
+增加 200% 能力值需求 (enchant)
+--------
+每 180 點智慧，承受 1% 更少傷害 (implicit)
+增加 16% 你技能的非詛咒光環效果 (implicit)
+--------
+增加 57% 全域防禦 (fractured)
++55 智慧
++105 最大能量護盾
+增加 120% 能量護盾
+增加 9% 技能的魔力保留效用
+增加 6% 所有屬性 (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+--------
+`
     }
 ];
 /**
@@ -1252,6 +1302,56 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+`
+    },
+    {
+        id: 3,
+        version: "poe1",
+        league: "Keepers",
+        name: "Rune Veil Twilight Regalia",
+        mirrorFee: 10,
+        category: "armor",
+        type: "Int Stacking Trickster",
+        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        owner: "福爾摩匹",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/BodyStrDexInt1C.png",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Rune Veil
+Twilight Regalia
+--------
+Quality: +30% (augmented)
+Energy Shield: 1164 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 879 (augmented)
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 94
+--------
+15% increased Explicit Defence Modifier magnitudes (enchant)
+200% increased Attribute Requirements (enchant)
+--------
+1% less Damage Taken per 180 Intelligence (implicit)
+16% increased effect of Non-Curse Auras from your Skills (implicit)
+--------
+57% increased Global Defences (fractured)
++55 to Intelligence
++105 to maximum Energy Shield
+120% increased Energy Shield
+9% increased Mana Reservation Efficiency of Skills
+6% increased Attributes (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+--------
 `
     }
 ];
