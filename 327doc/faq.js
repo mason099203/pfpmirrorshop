@@ -61,9 +61,13 @@ https://reurl.cc/4bRNK2 搭配金司馬自己的史瓦林自己打
 
 參考DS 或直接TFT + 五軍
 
-## 問題 15: 衛士沒魔血版本
+## 問題 15: 衛士pob
 
 https://poedb.tw/pob/eKvEcHKlAt
+
+衛士機制詳解與中高配注意事項影片: https://youtu.be/t3ghZfC5vBU 
+衛士低配影片(技能串法別抄,直接抄高配的): https://youtu.be/-hobbJ8in1E
+
 
 
 ## 聯絡方式

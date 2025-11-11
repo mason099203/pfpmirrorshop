@@ -1150,7 +1150,7 @@ Fractured Item
         id: 3,
         version: "poe1",
         league: "Keepers",
-        name: "Rune Veil Twilight Regalia",
+        name: "奇術 之暮 暮光法衣",
         mirrorFee: 10,
         category: "armor",
         type: "千智",
@@ -1193,6 +1193,101 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+--------
+`
+    },
+    {
+        id: 4,
+        version: "poe1",
+        league: "Keepers",
+        name: "遺忘 夜幕 暮光法衣",
+        mirrorFee: 10,
+        category: "armor",
+        type: "千智流派",
+        tags: ["Elder Item","Crusader Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/BodyStrDexInt1C.png",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+遺忘 夜幕 
+暮光法衣
+--------
+Quality: +30% (augmented)
+Energy Shield: 1475 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 879 (augmented)
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 89
+--------
+增加 15% 變動防禦詞綴的大小 (enchant)
+增加 200% 能力值需求 (enchant)
+--------
+此物品插槽中智慧寶石等級 +1
++55 智慧
+增加 8% 所有屬性
+增加 12% 智慧
++115 最大能量護盾
+增加 172% 能量護盾
+增加 18% 暈眩恢復和格擋恢復
+--------
+Split
+--------
+Elder Item
+Crusader Item
+--------
+`
+    },
+    {
+        id: 5,
+        version: "poe1",
+        league: "Keepers",
+        name: "心靈 之途 風暴者短靴",
+        mirrorFee: 10,
+        category: "armor",
+        type: "命中流派",
+        tags: ["Hunter Item","Redeemer Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/RitualDexBoots.png",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Boots
+Rarity: Rare
+心靈 之途
+風暴者短靴
+--------
+Quality: +20% (augmented)
+Evasion Rating: 509 (augmented)
+--------
+Requirements:
+Level: 80
+Dex: 124
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+每 200 命中值附加 1 至 6 攻擊閃電傷害 (implicit)
+更少 25% 命中值 (implicit)
+--------
++58 智慧
+增加 30% 移動速度
+100% 機率避免被冰緩
+擊殺時 10% 機率獲得 4 秒猛攻
+暴擊時有 19% 機率獲得靈巧
+你有猛攻時，增加 7% 攻擊、施放和移動速度
+增加 10% 靈巧效果
+增加 25% 你身上流順之風的效果
+若你近期有造成暴擊，你獲得流順之風
+增加 74% 閃避值 (crafted)
+--------
+Redeemer Item
+Hunter Item
 --------
 `
     }
@@ -1351,6 +1446,101 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+--------
+`
+    },
+    {
+        id: 4,
+        version: "poe1",
+        league: "Keepers",
+        name: "Oblivion Curtain Twilight Regalia",
+        mirrorFee: 10,
+        category: "armor",
+        type: "int Stacker",
+        tags: ["Elder Item","Crusader Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/BodyStrDexInt1C.png",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Oblivion Curtain
+Twilight Regalia
+--------
+Quality: +30% (augmented)
+Energy Shield: 1475 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 879 (augmented)
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 89
+--------
+15% increased Explicit Defence Modifier magnitudes (enchant)
+200% increased Attribute Requirements (enchant)
+--------
++1 to Level of Socketed Intelligence Gems
++55 to Intelligence
+8% increased Attributes
+12% increased Intelligence
++115 to maximum Energy Shield
+172% increased Energy Shield
+18% increased Stun and Block Recovery
+--------
+Split
+--------
+Elder Item
+Crusader Item
+--------
+`
+    },
+    {
+        id: 5,
+        version: "poe1",
+        league: "Keepers",
+        name: "Mind Road Stormrider Boots",
+        mirrorFee: 10,
+        category: "armor",
+        type: "Accuracy Stacker",
+        tags: ["Hunter Item","Redeemer Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/RitualDexBoots.png",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Boots
+Rarity: Rare
+Mind Road
+Stormrider Boots
+--------
+Quality: +20% (augmented)
+Evasion Rating: 509 (augmented)
+--------
+Requirements:
+Level: 80
+Dex: 124
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+1 to 6 Added Attack Lightning Damage per 200 Accuracy Rating (implicit)
+25% less Accuracy Rating (implicit)
+--------
++58 to Intelligence
+30% increased Movement Speed
+100% chance to Avoid being Chilled
+10% chance to gain Onslaught for 4 seconds on Kill
+19% chance to gain Elusive on Critical Strike
+7% increased Attack, Cast and Movement Speed while you have Onslaught
+10% increased Elusive Effect
+25% increased Effect of Tailwind on you
+You have Tailwind if you have dealt a Critical Strike Recently
+74% increased Evasion Rating (crafted)
+--------
+Redeemer Item
+Hunter Item
 --------
 `
     }
