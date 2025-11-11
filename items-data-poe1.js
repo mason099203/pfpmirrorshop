@@ -1161,8 +1161,8 @@ Fractured Item
         socketimageUrl: "./image/6s.webp",
         itemData: `Item Class: Body Armours
 Rarity: Rare
-Rune Veil
-Twilight Regalia
+奇術 之暮
+暮光法衣
 --------
 Quality: +30% (augmented)
 Energy Shield: 1164 (augmented)
