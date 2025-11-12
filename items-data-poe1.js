@@ -1290,6 +1290,59 @@ Redeemer Item
 Hunter Item
 --------
 `
+    },
+    {
+        id: 5,
+        version: "poe1",
+        league: "Keepers",
+        name: "惡魔 刀鋒 追憶之 動能魔杖",
+        mirrorFee: 20,
+        category: "weapon",
+        type: "物理法杖",
+        tags: ["Synthesised Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Wand3.png",
+        socketimageUrl: "./image/3s.png",
+        itemData: `Item Class: Wands
+Rarity: Rare
+惡魔 刀鋒
+追憶之 動能魔杖
+--------
+Wand
+Quality: +30% (augmented)
+Physical Damage: 327-587 (augmented)
+Critical Strike Chance: 10.62% (augmented)
+Attacks per Second: 2.03 (augmented)
+--------
+Requirements:
+Level: 66
+Int: 188
+--------
+Sockets: W-W-W 
+--------
+Item Level: 93
+--------
+增加 8% 變動物理詞綴的大小 (enchant)
+--------
+附加 7 至 10 物理傷害 (implicit)
+增加 8% 攻擊速度 (implicit)
+你擊殺的敵人有 15% 機率爆炸，造成他們最大生命十分之一的物理傷害 (implicit)
+物品販售給商人更有價值 (implicit)
+--------
+增加 276% 物理傷害
+附加 31 至 56 物理傷害
+增加 19% 攻擊速度
++38% 全域暴擊加成
++198 命中值
++24 力量和智慧 (crafted)
+增加 25% 暴擊率 (crafted)
+--------
+Split
+--------
+Synthesised Item
+--------
+`
     }
 ];
 /**
@@ -1541,6 +1594,59 @@ You have Tailwind if you have dealt a Critical Strike Recently
 --------
 Redeemer Item
 Hunter Item
+--------
+`
+    },
+    {
+        id: 5,
+        version: "poe1",
+        league: "Keepers",
+        name: "Demon Edge Synthesised Kinetic Wand",
+        mirrorFee: 20,
+        category: "weapon",
+        type: "Physical Wand",
+        tags: ["Synthesised Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Wand3.png",
+        socketimageUrl: "./image/3s.png",
+        itemData: `Item Class: Wands
+Rarity: Rare
+Demon Edge
+Synthesised Kinetic Wand
+--------
+Wand
+Quality: +30% (augmented)
+Physical Damage: 327-587 (augmented)
+Critical Strike Chance: 10.62% (augmented)
+Attacks per Second: 2.03 (augmented)
+--------
+Requirements:
+Level: 66
+Int: 188
+--------
+Sockets: W-W-W 
+--------
+Item Level: 93
+--------
+8% increased Explicit Physical Modifier magnitudes (enchant)
+--------
+Adds 7 to 10 Physical Damage (implicit)
+8% increased Attack Speed (implicit)
+Enemies you Kill have a 15% chance to Explode, dealing a tenth of their maximum Life as Physical Damage (implicit)
+Item sells for much more to vendors (implicit)
+--------
+276% increased Physical Damage
+Adds 31 to 56 Physical Damage
+19% increased Attack Speed
++38% to Global Critical Strike Multiplier
++198 to Accuracy Rating
++24 to Strength and Intelligence (crafted)
+25% increased Critical Strike Chance (crafted)
+--------
+Split
+--------
+Synthesised Item
 --------
 `
     }
