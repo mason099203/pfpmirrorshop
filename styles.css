@@ -19,11 +19,11 @@
 
 body {
     font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(image/background.webp);
-    background-attachment: fixed;
-    background-size: 120%;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(image/background.png);
+    background-size:auto 1200px ;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 背景固定不隨頁面滾動 */
     color: #e0e0e0;
     line-height: 1.6;
 }

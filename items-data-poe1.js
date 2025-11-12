@@ -1359,7 +1359,7 @@ const poe1Items_keepers_en = [
         category: "armor",
         type: "Penance Brand / Blade vortex",
         tags: ["Shaper Item","Elder Item"],
-        owner: "福爾摩匹",
+        owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
