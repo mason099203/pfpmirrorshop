@@ -1049,7 +1049,7 @@ const poe1Items_keepers_ch = [
         version: "poe1",
         league: "Keepers",
         name: "勝利 護冠 罪魔邪冠",
-        mirrorFee: 10,
+        mirrorFee: 0,
         category: "armor",
         type: "贖罪烙印 / Bv 飛刃風暴",
         tags: ["Shaper Item","Elder Item"],
@@ -1057,6 +1057,7 @@ const poe1Items_keepers_ch = [
         contact: "我的酋長不行了",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
+        clip:"https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
         itemData: `Item Class: Helmets
 Rarity: Rare
 勝利 護冠 
@@ -1355,7 +1356,7 @@ const poe1Items_keepers_en = [
         version: "poe1",
         league: "Keepers",
         name: "Phoenix Horn Archdemon Crown",
-        mirrorFee: 10,
+        mirrorFee: 0,
         category: "armor",
         type: "Penance Brand / Blade vortex",
         tags: ["Shaper Item","Elder Item"],
@@ -1363,6 +1364,7 @@ const poe1Items_keepers_en = [
         contact: "我的酋長不行了",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
+        clip:"https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
         itemData: `Item Class: Helmets
 Rarity: Rare
 Victory Cowl
