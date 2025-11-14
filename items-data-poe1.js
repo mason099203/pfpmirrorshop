@@ -1049,7 +1049,7 @@ const poe1Items_keepers_ch = [
         version: "poe1",
         league: "Keepers",
         name: "勝利 護冠 罪魔邪冠",
-        mirrorFee: 0,
+        mirrorFee: 20,
         category: "armor",
         type: "贖罪烙印 / Bv 飛刃風暴",
         tags: ["Shaper Item","Elder Item"],
@@ -1100,7 +1100,7 @@ Elder Item
         version: "poe1",
         league: "Keepers",
         name: "復仇 殿堂 亡者護甲",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "千智 詐欺師",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
@@ -1152,7 +1152,7 @@ Fractured Item
         version: "poe1",
         league: "Keepers",
         name: "奇術 之暮 暮光法衣",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "千智",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
@@ -1202,7 +1202,7 @@ Fractured Item
         version: "poe1",
         league: "Keepers",
         name: "遺忘 夜幕 暮光法衣",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "千智流派",
         tags: ["Elder Item","Crusader Item"],
@@ -1344,6 +1344,50 @@ Split
 Synthesised Item
 --------
 `
+    },
+    {
+        id: 6,
+        version: "poe1",
+        league: "Keepers",
+        name: "死寂 之幕 巫妖之冠",
+        mirrorFee: 20,
+        category: "armor",
+        type: "千智流派",
+        tags: ["Synthesised Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/HelmetInt8.png",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+死寂 之幕
+巫妖之冠
+--------
+Quality: +30% (augmented)
+Energy Shield: 548 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 224 
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 86
+--------
++60 智慧
+增加 12% 智慧
++61 最大能量護盾
+增加 42% 能量護盾
+增加 17% 暈眩恢復和格擋恢復
+每 10 點力量增加 1% 暴擊率
+獲得等同你力量點的命中值
+增加 74% 能量護盾 (crafted)
+--------
+Split
+--------
+Hunter Item
+Warlord Item
+`
     }
 ];
 /**
@@ -1356,7 +1400,7 @@ const poe1Items_keepers_en = [
         version: "poe1",
         league: "Keepers",
         name: "Phoenix Horn Archdemon Crown",
-        mirrorFee: 0,
+        mirrorFee: 20,
         category: "armor",
         type: "Penance Brand / Blade vortex",
         tags: ["Shaper Item","Elder Item"],
@@ -1407,7 +1451,7 @@ Elder Item
         version: "poe1",
         league: "Keepers",
         name: "Phoenix Horn Archdemon Crown",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
@@ -1459,7 +1503,7 @@ Fractured Item
         version: "poe1",
         league: "Keepers",
         name: "Rune Veil Twilight Regalia",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
         tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
@@ -1509,7 +1553,7 @@ Fractured Item
         version: "poe1",
         league: "Keepers",
         name: "Oblivion Curtain Twilight Regalia",
-        mirrorFee: 10,
+        mirrorFee: 20,
         category: "armor",
         type: "int Stacker",
         tags: ["Elder Item","Crusader Item"],
@@ -1650,6 +1694,50 @@ Split
 --------
 Synthesised Item
 --------
+`
+    },
+    {
+        id: 6,
+        version: "poe1",
+        league: "Keepers",
+        name: "Death Veil Lich's Circlet",
+        mirrorFee: 20,
+        category: "armor",
+        type: "Physical Wand",
+        tags: ["Synthesised Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/HelmetInt8.png",
+        socketimageUrl: "./image/4s.png",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Death Veil
+Lich's Circlet
+--------
+Quality: +30% (augmented)
+Energy Shield: 548 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 224 
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 86
+--------
++60 to Intelligence
+12% increased Intelligence
++61 to maximum Energy Shield
+42% increased Energy Shield
+17% increased Stun and Block Recovery
+1% increased Critical Strike Chance per 10 Strength
+Gain Accuracy Rating equal to your Strength
+74% increased Energy Shield (crafted)
+--------
+Split
+--------
+Hunter Item
+Warlord Item
 `
     }
 ];
