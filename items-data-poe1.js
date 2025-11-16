@@ -1388,6 +1388,55 @@ Split
 Hunter Item
 Warlord Item
 `
+    },
+    {
+        id: 7,
+        version: "poe1",
+        league: "Keepers",
+        name: "不祥 皇家之冠 刑求面具",
+        mirrorFee: 30,
+        category: "armor",
+        type: " 力量爆破 / 稀有度",
+        tags: ["Fractured Item","Eater of Worlds Item","Searing Exarch Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/HelmetDexInt11.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+不祥 皇家之冠
+刑求面具
+--------
+Quality: +30% (augmented)
+Evasion Rating: 1356 (augmented)
+Energy Shield: 327 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 132
+Int: 132
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 85
+--------
+增加 12% 技能的魔力保留效用 (implicit)
+減少 26% 攻擊的魔力消 (implicit)
+--------
+擊殺稀有或傳奇敵人增加 60% 物品掉落稀有度 (fractured)
+有 1 個深淵插槽
++126 點閃避值
+增加 95% 閃避與能量護盾
++47 最大能量護盾
+增加 50% 物品稀有度
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+--------
+`
     }
 ];
 /**
@@ -1738,6 +1787,55 @@ Split
 --------
 Hunter Item
 Warlord Item
+`
+    },
+    {
+        id: 7,
+        version: "poe1",
+        league: "Keepers",
+        name: "Dire Crown Torturer's Mask",
+        mirrorFee: 30,
+        category: "armor",
+        type: " Kinetic Blast / IIR magic find",
+        tags: ["Fractured Item","Eater of Worlds Item","Searing Exarch Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/HelmetDexInt11.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Dire Crown
+Torturer's Mask
+--------
+Quality: +30% (augmented)
+Evasion Rating: 1356 (augmented)
+Energy Shield: 327 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 132
+Int: 132
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 85
+--------
+12% increased Mana Reservation Efficiency of Skills (implicit)
+26% reduced Mana Cost of Attacks (implicit)
+--------
+60% increased Rarity of Items Dropped by Slain Rare or Unique Enemies (fractured)
+Has 1 Abyssal Socket
++126 to Evasion Rating
+95% increased Evasion and Energy Shield
++47 to maximum Energy Shield
+50% increased Rarity of Items found
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+--------
 `
     }
 ];
