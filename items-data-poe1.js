@@ -1048,7 +1048,7 @@ const poe1Items_keepers_ch = [
         id: 1,
         version: "poe1",
         league: "Keepers",
-        name: "勝利 護冠 罪魔邪冠",
+        name: "Phoenix Horn Archdemon Crown",
         mirrorFee: 20,
         category: "armor",
         type: "贖罪烙印 / Bv 飛刃風暴",
@@ -1099,7 +1099,7 @@ Elder Item
         id: 2,
         version: "poe1",
         league: "Keepers",
-        name: "復仇 殿堂 亡者護甲",
+        name: "Phoenix Horn Archdemon Crown",
         mirrorFee: 20,
         category: "armor",
         type: "千智 詐欺師",
@@ -1151,7 +1151,7 @@ Fractured Item
         id: 3,
         version: "poe1",
         league: "Keepers",
-        name: "奇術 之暮 暮光法衣",
+        name: "Rune Veil Twilight Regalia",
         mirrorFee: 20,
         category: "armor",
         type: "千智",
@@ -1201,7 +1201,7 @@ Fractured Item
         id: 4,
         version: "poe1",
         league: "Keepers",
-        name: "遺忘 夜幕 暮光法衣",
+        name: "Oblivion Curtain Twilight Regalia",
         mirrorFee: 20,
         category: "armor",
         type: "千智流派",
@@ -1248,7 +1248,7 @@ Crusader Item
         id: 5,
         version: "poe1",
         league: "Keepers",
-        name: "心靈 之途 風暴者短靴",
+        name: "Mind Road Stormrider Boots",
         mirrorFee: 20,
         category: "armor",
         type: "命中流派",
@@ -1293,10 +1293,10 @@ Hunter Item
 `
     },
     {
-        id: 5,
+        id: 6,
         version: "poe1",
         league: "Keepers",
-        name: "惡魔 刀鋒 追憶之 動能魔杖",
+        name: "Demon Edge Synthesised Kinetic Wand",
         mirrorFee: 30,
         category: "weapon",
         type: "物理法杖",
@@ -1346,10 +1346,10 @@ Synthesised Item
 `
     },
     {
-        id: 6,
+        id: 7,
         version: "poe1",
         league: "Keepers",
-        name: "死寂 之幕 巫妖之冠",
+        name: "Death Veil Lich's Circlet",
         mirrorFee: 20,
         category: "armor",
         type: "千智流派",
@@ -1390,10 +1390,10 @@ Warlord Item
 `
     },
     {
-        id: 7,
+        id: 8,
         version: "poe1",
         league: "Keepers",
-        name: "不祥 皇家之冠 刑求面具",
+        name: "Dire Crown Torturer's Mask",
         mirrorFee: 30,
         category: "armor",
         type: " 力量爆破 / 稀有度",
@@ -1693,7 +1693,7 @@ Hunter Item
 `
     },
     {
-        id: 5,
+        id: 6,
         version: "poe1",
         league: "Keepers",
         name: "Demon Edge Synthesised Kinetic Wand",
@@ -1746,7 +1746,7 @@ Synthesised Item
 `
     },
     {
-        id: 6,
+        id: 7,
         version: "poe1",
         league: "Keepers",
         name: "Death Veil Lich's Circlet",
@@ -1790,7 +1790,7 @@ Warlord Item
 `
     },
     {
-        id: 7,
+        id: 8,
         version: "poe1",
         league: "Keepers",
         name: "Dire Crown Torturer's Mask",
