@@ -19,7 +19,7 @@
 
 body {
     font-family: "FontinSmallCaps", Verdana, Arial, Helvetica, sans-serif;;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(image/background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(image/background.webp);
     background-size:auto 1200px ;
     background-repeat: no-repeat;
     background-position: center;
