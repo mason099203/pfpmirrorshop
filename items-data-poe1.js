@@ -1848,48 +1848,48 @@ const poe1Items_mirage_ch = [
         id: 1,
         version: "poe1",
         league: "Mirage",
-        name: "Phoenix Horn Archdemon Crown",
-        mirrorFee: 20,
-        category: "armor",
-        type: "Penance Brand / Blade vortex",
+        name: "Ghoul Sever Reaver Sword",
+        mirrorFee: "",
+        category: "weapon",
+        type: "",
         tags: ["Shaper Item", "Elder Item"],
-        owner: "我的酋長不行了",
-        contact: "我的酋長不行了",
-        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
-        socketimageUrl: "./image/4s.webp",
-        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
-        itemData: `Item Class: Helmets
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/TwoHandSword3.png",
+        socketimageUrl: "./image/6s.webp",
+        // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Two Hand Swords
 Rarity: Rare
-Victory Cowl
-Archdemon Crown
+Ghoul Sever
+Reaver Sword
 --------
+Two Handed Sword
 Quality: +20% (augmented)
-Armour: 254 (augmented)
-Energy Shield: 106 (augmented)
+Physical Damage: 62-104
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.98 (augmented)
+Weapon Range: 1.3 metres
 --------
 Requirements:
-Level: 75
-Str: 79
-Int: 79
+Level: 67
+Str: 82
+Dex: 119
 --------
-Sockets: W-W-W-W 
+Sockets: W-W-W-W-W-W 
 --------
-Item Level: 84
+Item Level: 87
 --------
--2 to Level of Socketed Support Gems (implicit)
-+2 to Level of Socketed Skill Gems (implicit)
+品質不會增加物理傷害 (enchant)
+每 8% 品質增加 1% 攻擊速度 (enchant)
 --------
-+2 to Level of Socketed AoE Gems
-Socketed Gems are Supported by Level 25 Concentrated Effect
-Socketed Gems are Supported by Level 25 Hypothermia
-Socketed Gems deal 30% more Elemental Damage
-Socketed Spells have +4% to Critical Strike Chance
-10% increased Area of Effect
-25% increased Area Damage
-20% increased Effect of Cold Ailments
-+45 to maximum Energy Shield (crafted)
+增加 60% 全域命中值 (implicit)
 --------
-Split
+插槽中寶石被等級 10 的近戰擊暈獲得耐力球輔助
+插槽中的技能造成 20% 更多攻擊傷害
+增加 30% 攻擊速度 (部分)
++1 最大耐力球
+使用此武器攻擊，每 10 點力量附加 3 至 5 火焰傷害
+專注時有 30% 機率造成 2 倍傷害 (crafted)
 --------
 Shaper Item
 Elder Item
@@ -1905,48 +1905,48 @@ const poe1Items_mirage_en = [
         id: 1,
         version: "poe1",
         league: "Mirage",
-        name: "Phoenix Horn Archdemon Crown",
-        mirrorFee: 20,
-        category: "armor",
-        type: "Penance Brand / Blade vortex",
+        name: "Ghoul Sever Reaver Sword",
+        mirrorFee: "",
+        category: "weapon",
+        type: "",
         tags: ["Shaper Item", "Elder Item"],
-        owner: "我的酋長不行了",
-        contact: "我的酋長不行了",
-        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
-        socketimageUrl: "./image/4s.webp",
-        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
-        itemData: `Item Class: Helmets
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/TwoHandSword3.png",
+        socketimageUrl: "./image/6s.webp",
+        // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Two Hand Swords
 Rarity: Rare
-Victory Cowl
-Archdemon Crown
+Ghoul Sever
+Reaver Sword
 --------
+Two Handed Sword
 Quality: +20% (augmented)
-Armour: 254 (augmented)
-Energy Shield: 106 (augmented)
+Physical Damage: 62-104
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.98 (augmented)
+Weapon Range: 1.3 metres
 --------
 Requirements:
-Level: 75
-Str: 79
-Int: 79
+Level: 67
+Str: 82
+Dex: 119
 --------
-Sockets: W-W-W-W 
+Sockets: W-W-W-W-W-W 
 --------
-Item Level: 84
+Item Level: 87
 --------
--2 to Level of Socketed Support Gems (implicit)
-+2 to Level of Socketed Skill Gems (implicit)
+Quality does not increase Physical Damage (enchant)
+1% increased Attack Speed per 8% Quality (enchant)
 --------
-+2 to Level of Socketed AoE Gems
-Socketed Gems are Supported by Level 25 Concentrated Effect
-Socketed Gems are Supported by Level 25 Hypothermia
-Socketed Gems deal 30% more Elemental Damage
-Socketed Spells have +4% to Critical Strike Chance
-10% increased Area of Effect
-25% increased Area Damage
-20% increased Effect of Cold Ailments
-+45 to maximum Energy Shield (crafted)
+60% increased Global Accuracy Rating (implicit)
 --------
-Split
+Socketed Gems are Supported by Level 10 Endurance Charge on Melee Stun
+Socketed Skills deal 20% more Attack Damage
+30% increased Attack Speed
++1 to Maximum Endurance Charges
+Adds 3 to 5 Fire Damage to Attacks with this Weapon per 10 Strength
+30% chance to deal Double Damage while Focused (crafted)
 --------
 Shaper Item
 Elder Item
