@@ -68,7 +68,7 @@ Hunter Item
         mirrorFee: 0,
         category: "armor",
         type: "Warcry cri /Volcanic Fissure of Snaking",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
@@ -115,7 +115,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "Str Stacking Armour/Energy Enjoyer",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
@@ -167,7 +167,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -219,7 +219,7 @@ Fractured Item
         mirrorFee: 0,
         category: "armor",
         type: "Penance Brand / Blade vortex",
-        tags: ["Shaper Item","Elder Item"],
+        tags: ["Shaper Item", "Elder Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
@@ -269,7 +269,7 @@ Elder Item
         mirrorFee: 60,
         category: "weapon",
         type: "Str Stacking Original Sin Molten Strike",
-        tags: ["Synthesised Item","Split"],
+        tags: ["Synthesised Item", "Split"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
@@ -366,7 +366,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "weapon",
         type: "Phy Bow / Tornado Shot (PDPS: 1464)",
-        tags: ["Synthesised Item"],   
+        tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
@@ -419,7 +419,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "armor",
         type: " Explode /Increased effect of Non-Curse",
-        tags: ["Crusader Item","Redeemer Item"],   
+        tags: ["Crusader Item", "Redeemer Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
@@ -473,7 +473,7 @@ Redeemer Item
         mirrorFee: "60",
         category: "weapon",
         type: "Flicker Strike / 12L melee skill",
-        tags: ["Shaper Item","Elder Item"],   
+        tags: ["Shaper Item", "Elder Item"],
         owner: "Baned_BlueBin",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
@@ -586,7 +586,7 @@ Hunter Item
         mirrorFee: 0,
         category: "armor",
         type: "戰吼/炎火脈動．蜿蜒",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Honour Ward Giantslayer Helmet.webp",
@@ -633,7 +633,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "力量護甲人/能量護盾",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
@@ -685,7 +685,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "千智 詐欺師",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -737,7 +737,7 @@ Fractured Item
         mirrorFee: 0,
         category: "armor",
         type: "贖罪烙印 / Bv 飛刃風暴",
-        tags: ["Shaper Item","Elder Item"],
+        tags: ["Shaper Item", "Elder Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
@@ -787,7 +787,7 @@ Elder Item
         mirrorFee: 60,
         category: "weapon",
         type: "力量 原罪 熔岩之擊",
-        tags: ["Synthesised Item","Split"],
+        tags: ["Synthesised Item", "Split"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Miracle Gutter Synthesised Reaver Sword.webp",
@@ -884,7 +884,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "weapon",
         type: "物理弓 / 龍捲射擊 (PDPS: 1464)",
-        tags: ["Synthesised Item"],   
+        tags: ["Synthesised Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rapture Song Synthesised Spine Bow.webp",
@@ -937,7 +937,7 @@ Synthesised Item
         mirrorFee: "60",
         category: "armor",
         type: "爆炸衣 非詛咒效果",
-        tags: ["Crusader Item","Redeemer Item"],   
+        tags: ["Crusader Item", "Redeemer Item"],
         owner: "福爾摩匹",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Loath Shroud Sacrificial Garb.webp",
@@ -991,7 +991,7 @@ Redeemer Item
         mirrorFee: "60",
         category: "weapon",
         type: "閃現打擊 / 12L 近戰技能",
-        tags: ["Shaper Item","Elder Item"],   
+        tags: ["Shaper Item", "Elder Item"],
         owner: "Baned_BlueBin",
         contact: "十六鏡流派打得過凋落嗎 ",
         imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
@@ -1052,12 +1052,12 @@ const poe1Items_keepers_ch = [
         mirrorFee: 20,
         category: "armor",
         type: "贖罪烙印 / Bv 飛刃風暴",
-        tags: ["Shaper Item","Elder Item"],
+        tags: ["Shaper Item", "Elder Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
-        clip:"https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
         itemData: `Item Class: Helmets
 Rarity: Rare
 勝利 護冠 
@@ -1103,7 +1103,7 @@ Elder Item
         mirrorFee: 20,
         category: "armor",
         type: "千智 詐欺師",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -1155,7 +1155,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "千智",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/BodyStrDexInt1C.png",
@@ -1205,7 +1205,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "千智流派",
-        tags: ["Elder Item","Crusader Item"],
+        tags: ["Elder Item", "Crusader Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/BodyStrDexInt1C.png",
@@ -1252,7 +1252,7 @@ Crusader Item
         mirrorFee: 20,
         category: "armor",
         type: "命中流派",
-        tags: ["Hunter Item","Redeemer Item"],
+        tags: ["Hunter Item", "Redeemer Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/RitualDexBoots.png",
@@ -1353,7 +1353,7 @@ Synthesised Item
         mirrorFee: 20,
         category: "armor",
         type: "千智流派",
-        tags: ["Hunter Item","Warlord Item"],
+        tags: ["Hunter Item", "Warlord Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/HelmetInt8.png",
@@ -1397,7 +1397,7 @@ Warlord Item
         mirrorFee: 30,
         category: "armor",
         type: " 力量爆破 / 稀有度",
-        tags: ["Fractured Item","Eater of Worlds Item","Searing Exarch Item"],
+        tags: ["Fractured Item", "Eater of Worlds Item", "Searing Exarch Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/HelmetDexInt11.png",
@@ -1452,12 +1452,12 @@ const poe1Items_keepers_en = [
         mirrorFee: 20,
         category: "armor",
         type: "Penance Brand / Blade vortex",
-        tags: ["Shaper Item","Elder Item"],
+        tags: ["Shaper Item", "Elder Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
         socketimageUrl: "./image/4s.webp",
-        clip:"https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
         itemData: `Item Class: Helmets
 Rarity: Rare
 Victory Cowl
@@ -1503,7 +1503,7 @@ Elder Item
         mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
@@ -1555,7 +1555,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "Int Stacking Trickster",
-        tags: ["Searing Exarch Item","Eater of Worlds Item","Fractured Item"],
+        tags: ["Searing Exarch Item", "Eater of Worlds Item", "Fractured Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/BodyStrDexInt1C.png",
@@ -1605,7 +1605,7 @@ Fractured Item
         mirrorFee: 20,
         category: "armor",
         type: "int Stacker",
-        tags: ["Elder Item","Crusader Item"],
+        tags: ["Elder Item", "Crusader Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/BodyStrDexInt1C.png",
@@ -1652,7 +1652,7 @@ Crusader Item
         mirrorFee: 20,
         category: "armor",
         type: "Accuracy Stacker",
-        tags: ["Hunter Item","Redeemer Item"],
+        tags: ["Hunter Item", "Redeemer Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/RitualDexBoots.png",
@@ -1753,7 +1753,7 @@ Synthesised Item
         mirrorFee: 20,
         category: "armor",
         type: "Physical Wand",
-        tags: ["Hunter Item","Warlord Item"],
+        tags: ["Hunter Item", "Warlord Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/HelmetInt8.png",
@@ -1797,7 +1797,7 @@ Warlord Item
         mirrorFee: 30,
         category: "armor",
         type: " Kinetic Blast / IIR magic find",
-        tags: ["Fractured Item","Eater of Worlds Item","Searing Exarch Item"],
+        tags: ["Fractured Item", "Eater of Worlds Item", "Searing Exarch Item"],
         owner: "我的酋長不行了",
         contact: "我的酋長不行了",
         imageUrl: "./image/HelmetDexInt11.png",
@@ -1839,9 +1839,122 @@ Fractured Item
 `
     }
 ];
-
-const poe1Items = [...poe1Items_mercenaries_en, ...poe1Items_keepers_en];
-const poe1Items_ch = [...poe1Items_mercenaries_ch, ...poe1Items_keepers_ch];
+/**
+ * Mirage
+ * @type {Array<Object>}
+ */
+const poe1Items_mirage_ch = [
+    {
+        id: 1,
+        version: "poe1",
+        league: "Mirage",
+        name: "Phoenix Horn Archdemon Crown",
+        mirrorFee: 20,
+        category: "armor",
+        type: "Penance Brand / Blade vortex",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/4s.webp",
+        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Victory Cowl
+Archdemon Crown
+--------
+Quality: +20% (augmented)
+Armour: 254 (augmented)
+Energy Shield: 106 (augmented)
+--------
+Requirements:
+Level: 75
+Str: 79
+Int: 79
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+-2 to Level of Socketed Support Gems (implicit)
++2 to Level of Socketed Skill Gems (implicit)
+--------
++2 to Level of Socketed AoE Gems
+Socketed Gems are Supported by Level 25 Concentrated Effect
+Socketed Gems are Supported by Level 25 Hypothermia
+Socketed Gems deal 30% more Elemental Damage
+Socketed Spells have +4% to Critical Strike Chance
+10% increased Area of Effect
+25% increased Area Damage
+20% increased Effect of Cold Ailments
++45 to maximum Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },
+];
+/**
+ * Mirage
+ * @type {Array<Object>}
+ */
+const poe1Items_mirage_en = [
+    {
+        id: 1,
+        version: "poe1",
+        league: "Mirage",
+        name: "Phoenix Horn Archdemon Crown",
+        mirrorFee: 20,
+        category: "armor",
+        type: "Penance Brand / Blade vortex",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "我的酋長不行了",
+        contact: "我的酋長不行了",
+        imageUrl: "./image/Victory Cowl Archdemon Crown.webp",
+        socketimageUrl: "./image/4s.webp",
+        clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Victory Cowl
+Archdemon Crown
+--------
+Quality: +20% (augmented)
+Armour: 254 (augmented)
+Energy Shield: 106 (augmented)
+--------
+Requirements:
+Level: 75
+Str: 79
+Int: 79
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+-2 to Level of Socketed Support Gems (implicit)
++2 to Level of Socketed Skill Gems (implicit)
+--------
++2 to Level of Socketed AoE Gems
+Socketed Gems are Supported by Level 25 Concentrated Effect
+Socketed Gems are Supported by Level 25 Hypothermia
+Socketed Gems deal 30% more Elemental Damage
+Socketed Spells have +4% to Critical Strike Chance
+10% increased Area of Effect
+25% increased Area Damage
+20% increased Effect of Cold Ailments
++45 to maximum Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
+`
+    },
+];
+const poe1Items = [...poe1Items_mercenaries_en, ...poe1Items_keepers_en, ...poe1Items_mirage_en];
+const poe1Items_ch = [...poe1Items_mercenaries_ch, ...poe1Items_keepers_ch, ...poe1Items_mirage_ch];
 /**
  * 取得所有 POE 1 物品資料（根據當前語言）
  * @returns {Array<Object>} POE 1 物品資料陣列的副本
@@ -1849,7 +1962,7 @@ const poe1Items_ch = [...poe1Items_mercenaries_ch, ...poe1Items_keepers_ch];
 function getPoe1Items() {
     // 檢查是否有語言管理器並取得當前語言
     const currentLang = typeof getCurrentLanguage === 'function' ? getCurrentLanguage() : 'zh-TW';
-    
+
     // 根據語言返回對應的物品陣列
     if (currentLang === 'en-US') {
         return [...poe1Items];
