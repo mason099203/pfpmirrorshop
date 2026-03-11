@@ -8,7 +8,7 @@ const languages = {
     'zh-TW': {
         pageTitle: "PFP Mirror Shop",
         pageSubtitle: "由 老P 和聊天室們提供的免費低價複製裝備",
-        
+
         twitchLabel: "poogf01",
         discordLabel: "渣P伺服器",
         shopLabel: "商店",
@@ -19,21 +19,22 @@ const languages = {
         leagueLabel: "聯盟",
         allLeagues: "全部",
         mercenaries: "輿圖之奧秘",
-        keepers:"黯焰看守者",
-        
+        keepers: "黯焰看守者",
+        mirage: "遠古蜃景",
+
         categoryLabel: "物品分類",
         allCategories: "全部",
         weapon: "武器",
-        armor: "護甲", 
+        armor: "護甲",
         accessory: "飾品",
         itemCountLabel: "商店物品數量",
-        
+
         feeLabel: "FEE",
         ownerLabel: "擁有者",
         contactLabel: "聯絡",
         itemDetailsLabel: "物品詳情",
         hideDetailsLabel: "隱藏詳情",
-        
+
         tags: {
             free: "免費",
             cheap: "低價",
@@ -43,20 +44,20 @@ const languages = {
             hot: "火熱",
             recommended: "推薦"
         },
-        
+
         copyPoB: "複製 PoB",
         whisper: "私訊",
         clip: "剪輯",
-        
+
         messages: {
             pobCopied: "PoB 已複製到剪貼簿",
             whisperCopied: "已複製到剪貼簿",
             itemAdded: "物品已成功新增",
             itemError: "新增物品時發生錯誤"
         },
-        
+
         footerText: "本產品未與 GRINDING GEAR GAMES 有任何關聯或認可，由饅頭寶包製作。",
-        
+
         languageSwitch: {
             zh: "中文",
             en: "English"
@@ -65,32 +66,33 @@ const languages = {
     'en-US': {
         pageTitle: "PFP Mirror Shop",
         pageSubtitle: "Free & Low-cost Mirror Services by PFP and Community",
-        
+
         twitchLabel: "poogf01",
         discordLabel: "PFP Server",
         shopLabel: "Shop",
 
         versionLabel: "Version",
         allVersions: "All",
-        
+
         leagueLabel: "League",
         allLeagues: "All",
         mercenaries: "Mercenaries",
-        keepers:"Keepers",
-        
+        keepers: "Keepers",
+        mirage: "Mirage",
+
         categoryLabel: "Category",
         allCategories: "All",
         weapon: "Weapon",
         armor: "Armor",
         accessory: "Accessory",
         itemCountLabel: "Shop Items",
-        
+
         feeLabel: "FEE",
         ownerLabel: "Owner",
         contactLabel: "Contact",
         itemDetailsLabel: "Item Details",
         hideDetailsLabel: "Hide Details",
-        
+
         tags: {
             free: "Free",
             cheap: "Cheap",
@@ -100,20 +102,20 @@ const languages = {
             hot: "Hot",
             recommended: "Recommended"
         },
-        
+
         copyPoB: "Copy PoB",
         whisper: "Whisper",
         clip: "Clip",
-        
+
         messages: {
             pobCopied: "PoB copied to clipboard",
             whisperCopied: "copied to clipboard",
             itemAdded: "Item added successfully",
             itemError: "Error adding item"
         },
-        
+
         footerText: "This product is not affiliated with or endorsed by GRINDING GEAR GAMES. Made by 饅頭寶包.",
-        
+
         languageSwitch: {
             zh: "中文",
             en: "English"
@@ -136,10 +138,10 @@ function initializeLanguageManager() {
     if (savedLanguage && languages[savedLanguage]) {
         currentLanguage = savedLanguage;
     }
-    
+
     // 初始化語言切換按鈕
     setupLanguageSwitcher();
-    
+
     // 套用當前語言
     applyLanguage(currentLanguage);
 }
@@ -179,13 +181,13 @@ function switchLanguage(language) {
 
     currentLanguage = language;
     localStorage.setItem('selectedLanguage', language);
-    
+
     // 套用新語言
     applyLanguage(language);
-    
+
     // 更新語言切換按鈕狀態
     updateLanguageSwitcherButtons();
-    
+
     // 語言切換後套用篩選條件並重新渲染
     // filterItems 會：
     // 1. 根據當前篩選條件（版本、聯盟、分類）重新篩選物品
@@ -207,7 +209,7 @@ function applyLanguage(language) {
 
     // 更新頁面標題
     document.title = langData.pageTitle;
-    
+
     // 更新頁面元素
     updateElement('.subtitle', langData.pageSubtitle);
     updateElement('label[for="version-select"]', langData.versionLabel);
@@ -217,20 +219,21 @@ function applyLanguage(language) {
     updateElement('#league-select option[value=""]', langData.allLeagues);
     updateElement('#league-select option[value="Mercenaries"]', langData.mercenaries);
     updateElement('#league-select option[value="Keepers"]', langData.keepers);
+    updateElement('#league-select option[value="Mirage"]', langData.mirage);
     updateElement('label[for="category-select"]', langData.categoryLabel);
     updateElement('#category-select option[value=""]', langData.allCategories);
     updateElement('#category-select option[value="weapon"]', langData.weapon);
     updateElement('#category-select option[value="armor"]', langData.armor);
     updateElement('#category-select option[value="accessory"]', langData.accessory);
     updateElement('.footer p', langData.footerText);
-    
+
     // 更新物品數量標籤
     const itemCountElement = document.querySelector('.items-info p');
     if (itemCountElement) {
         const count = document.getElementById('item-count').textContent;
         itemCountElement.innerHTML = `${langData.itemCountLabel}: <span id="item-count">${count}</span>`;
     }
-    
+
     // 更新頁面語言屬性
     document.documentElement.lang = language;
 }
@@ -258,12 +261,12 @@ function updateLanguageSwitcherButtons() {
             btn.classList.add('active');
         }
     });
-    
+
     // 更新按鈕文字
     const langData = languages[currentLanguage];
     const zhBtn = document.querySelector('[data-lang="zh-TW"]');
     const enBtn = document.querySelector('[data-lang="en-US"]');
-    
+
     if (zhBtn) zhBtn.textContent = langData.languageSwitch.zh;
     if (enBtn) enBtn.textContent = langData.languageSwitch.en;
 }
@@ -276,11 +279,11 @@ function updateLanguageSwitcherButtons() {
 function getText(key) {
     const langData = languages[currentLanguage];
     if (!langData) return key;
-    
+
     // 支援點記法取值 (例如: 'tags.free')
     const keys = key.split('.');
     let value = langData;
-    
+
     for (const k of keys) {
         if (value && typeof value === 'object' && k in value) {
             value = value[k];
@@ -288,7 +291,7 @@ function getText(key) {
             return key; // 如果找不到對應的鍵值，返回原始鍵值
         }
     }
-    
+
     return typeof value === 'string' ? value : key;
 }
 
@@ -301,6 +304,6 @@ function getCurrentLanguage() {
 }
 
 // 在頁面載入完成後初始化語言管理器
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initializeLanguageManager();
 }); 
