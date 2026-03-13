@@ -1894,6 +1894,113 @@ Item Level: 87
 Shaper Item
 Elder Item
 `
+    },{
+        id: 2,
+        version: "poe1",
+        league: "Mirage",
+        name: "Brimstone Coat Sacred Chainmail",
+        mirrorFee: "20",
+        category: "armor",
+        type: "千力 , 護甲 , 耐力球",
+        tags: ["Fractured Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
+        socketimageUrl: "./image/6s.webp",
+        // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Brimstone Coat
+Sacred Chainmail
+--------
+Quality: +30% (augmented)
+Armour: 3540 (augmented)
+Energy Shield: 723 (augmented)
+--------
+Requirements:
+Level: 84
+Str: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 90
+--------
+增加 12% 變動防禦詞綴的大小 (enchant)
+減少 50% 變動抗性詞綴的大小 (enchant)
+--------
+每 180 點力量，承受 1% 更少傷害 (implicit)
+增加 26% 極地裝甲增益效果 (implicit)
+--------
+增加 56% 全域防禦 (fractured)
++55 力量
+每個耐力球使你承受的暴擊傷害減少 10%
++418 點護甲
+增加 118% 護甲與能量護盾
++88 最大能量護盾
+8% 額外物理傷害減免
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    },
+    {
+        id: 3,
+        version: "poe1",
+        league: "Mirage",
+        name: "Hate Slicer Anarchic Spiritblade",
+        mirrorFee: "20",
+        category: "weapon",
+        type: "元素打擊 , 閃現打擊",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
+        socketimageUrl: "./image/3sL.webp",
+        // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: One Hand Swords
+Rarity: Rare
+Hate Slicer
+Anarchic Spiritblade
+--------
+One Handed Sword
+Quality: +20% (augmented)
+Physical Damage: 34-63
+Critical Strike Chance: 8.38% (augmented)
+Attacks per Second: 1.95 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 70
+Str: 121
+Dex: 121
+--------
+Sockets: W-W-W 
+--------
+Item Level: 85
+--------
+品質不會增加物理傷害 (enchant)
+每 8% 品質增加 1% 攻擊速度 (enchant)
+--------
+使用此武器攻擊時 100% 物理傷害轉化為隨機元素傷害 (implicit)
+--------
+插槽中寶石被等級 20 的增加暴擊率輔助
+插槽中寶石被等級 20 的快速攻擊輔助
+插槽中寶石被等級 20 的增加暴擊傷害輔助
+此物品上寶石受到等級 20 的元素傷害攻擊輔助
+插槽中的技能造成 40% 更多攻擊傷害
+增加 20% 攻擊速度
+增加 29% 暴擊率
++28% 全域暴擊加成
+攻擊技能增加 37% 元素傷害
+攻擊和法術不能被閃避 (crafted)
+--------
+Shaper Item
+Elder Item
+`
     },
 ];
 /**
@@ -1947,6 +2054,113 @@ Socketed Skills deal 20% more Attack Damage
 +1 to Maximum Endurance Charges
 Adds 3 to 5 Fire Damage to Attacks with this Weapon per 10 Strength
 30% chance to deal Double Damage while Focused (crafted)
+--------
+Shaper Item
+Elder Item
+`
+    },
+    {
+        id: 2,
+        version: "poe1",
+        league: "Mirage",
+        name: "Brimstone Coat Sacred Chainmail",
+        mirrorFee: "20",
+        category: "armor",
+        type: "Strength Stacker , Armour Stacker , endu charge",
+        tags: ["Fractured Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Torment Shell Sacred Chainmail.webp",
+        socketimageUrl: "./image/6s.webp",
+        // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Brimstone Coat
+Sacred Chainmail
+--------
+Quality: +30% (augmented)
+Armour: 3540 (augmented)
+Energy Shield: 723 (augmented)
+--------
+Requirements:
+Level: 84
+Str: 173
+Int: 173
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 90
+--------
+12% increased Explicit Defence Modifier magnitudes (enchant)
+50% reduced Explicit Resistance Modifier magnitudes (enchant)
+--------
+1% less Damage Taken per 180 Strength (implicit)
+26% increased Arctic Armour Buff Effect (implicit)
+--------
+56% increased Global Defences (fractured)
++55 to Strength
+You take 10% reduced Extra Damage from Critical Strikes per Endurance Charge
++418 to Armour
+118% increased Armour and Energy Shield
++88 to maximum Energy Shield
+8% additional Physical Damage Reduction
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
+    },
+    {
+        id: 3,
+        version: "poe1",
+        league: "Mirage",
+        name: "Hate Slicer Anarchic Spiritblade",
+        mirrorFee: "20",
+        category: "weapon",
+        type: "Elemental Hit , Flicker Strike",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Rage Saw Anarchic Spiritblade.webp",
+        socketimageUrl: "./image/3sL.webp",
+        itemData: `Item Class: One Hand Swords
+Rarity: Rare
+Hate Slicer
+Anarchic Spiritblade
+--------
+One Handed Sword
+Quality: +20% (augmented)
+Physical Damage: 34-63
+Critical Strike Chance: 8.38% (augmented)
+Attacks per Second: 1.95 (augmented)
+Weapon Range: 1.1 metres
+--------
+Requirements:
+Level: 70
+Str: 121
+Dex: 121
+--------
+Sockets: W-W-W 
+--------
+Item Level: 85
+--------
+Quality does not increase Physical Damage (enchant)
+1% increased Attack Speed per 8% Quality (enchant)
+--------
+100% of Physical Damage from Hits with this Weapon is Converted to a random Element (implicit)
+--------
+Socketed Gems are Supported by Level 20 Increased Critical Strikes
+Socketed Gems are Supported by Level 20 Faster Attacks
+Socketed Gems are supported by Level 20 Increased Critical Damage
+Socketed Gems are supported by Level 20 Elemental Damage with Attacks
+Socketed Skills deal 40% more Attack Damage
+20% increased Attack Speed
+29% increased Critical Strike Chance
++28% to Global Critical Strike Multiplier
+37% increased Elemental Damage with Attack Skills
+Hits can't be Evaded (crafted)
 --------
 Shaper Item
 Elder Item
