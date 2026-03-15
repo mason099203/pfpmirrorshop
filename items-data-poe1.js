@@ -1849,7 +1849,7 @@ const poe1Items_mirage_ch = [
         version: "poe1",
         league: "Mirage",
         name: "Ghoul Sever Reaver Sword",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "weapon",
         type: "千力",
         tags: ["Shaper Item", "Elder Item"],
@@ -1899,7 +1899,7 @@ Elder Item
         version: "poe1",
         league: "Mirage",
         name: "Brimstone Coat Sacred Chainmail",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "armor",
         type: "千力 , 護甲 , 耐力球",
         tags: ["Fractured Item"],
@@ -1952,7 +1952,7 @@ Fractured Item
         version: "poe1",
         league: "Mirage",
         name: "Hate Slicer Anarchic Spiritblade",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "weapon",
         type: "元素打擊 , 閃現打擊",
         tags: ["Shaper Item", "Elder Item"],
@@ -2001,6 +2001,101 @@ Item Level: 85
 Shaper Item
 Elder Item
 `
+    },{
+        id: 4,
+        version: "poe1",
+        league: "Mirage",
+        name: "Wrath Shell Necrotic Armour",
+        mirrorFee: "5",
+        category: "armor",
+        type: " LS / EH / Magic find",
+        tags: ["Shaper Item", "warlord Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Wrath Shell
+Necrotic Armour
+--------
+Quality: +30% (augmented)
+Evasion Rating: 3287 (augmented)
+Energy Shield: 674 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 103 
+Int: 103 
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+減少 40% 能力值需求 (enchant)
+--------
+插槽中寶石被等級 20 的物品稀有度增幅輔助
+Ignore Stuns while using Socketed Attack Skills
+Socketed Attacks have -20 to Total Mana Cost
++373 點閃避值
+增加 110% 閃避與能量護盾
++80 最大能量護盾
+近期內每擊殺一個感電怪物獲得 1 至 5 附加閃電傷害
+擊殺傳奇敵人增加 25% 掉落物品稀有度
++10% 壓抑法術傷害率 (crafted)
+--------
+Split
+--------
+Shaper Item
+Warlord Item
+`
+    },{
+        id: 5,
+        version: "poe1",
+        league: "Mirage",
+        name: "Phoenix Crown Torturer's Mask",
+        mirrorFee: "5",
+        category: "armor",
+        type: " IIR Magic find / Elemental Hit",
+        tags: ["Fractured Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/HelmetDexInt11.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Phoenix Crown
+Torturer's Mask
+--------
+Quality: +30% (augmented)
+Evasion Rating: 532 (augmented)
+Energy Shield: 107 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 132
+Int: 132
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 85
+--------
+增加 12% 技能的魔力保留效用 (implicit)
+減少 26% 攻擊的魔力消 (implicit)
+--------
+擊殺稀有或傳奇敵人增加 60% 物品掉落稀有度 (fractured)
+Has 1 Abyssal Socket
++144 最大生命
+增加 50% 物品稀有度
+此物品插槽中投射物寶石等級 +1 (crafted)
+Projectiles Pierce an additional Target (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
+`
     },
 ];
 /**
@@ -2013,7 +2108,7 @@ const poe1Items_mirage_en = [
         version: "poe1",
         league: "Mirage",
         name: "Ghoul Sever Reaver Sword",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "weapon",
         type: "Strength Stacker",
         tags: ["Shaper Item", "Elder Item"],
@@ -2064,7 +2159,7 @@ Elder Item
         version: "poe1",
         league: "Mirage",
         name: "Brimstone Coat Sacred Chainmail",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "armor",
         type: "Strength Stacker , Armour Stacker , endu charge",
         tags: ["Fractured Item"],
@@ -2117,7 +2212,7 @@ Fractured Item
         version: "poe1",
         league: "Mirage",
         name: "Hate Slicer Anarchic Spiritblade",
-        mirrorFee: "20",
+        mirrorFee: "5",
         category: "weapon",
         type: "Elemental Hit , Flicker Strike",
         tags: ["Shaper Item", "Elder Item"],
@@ -2164,6 +2259,101 @@ Hits can't be Evaded (crafted)
 --------
 Shaper Item
 Elder Item
+`
+    },{
+        id: 4,
+        version: "poe1",
+        league: "Mirage",
+        name: "Wrath Shell Necrotic Armour",
+        mirrorFee: "5",
+        category: "armor",
+        type: " LS / EH / Magic find",
+        tags: ["Shaper Item", "warlord Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/Vengeance Sanctuary Necrotic Armour.webp",
+        socketimageUrl: "./image/6s.webp",
+        itemData: `Item Class: Body Armours
+Rarity: Rare
+Wrath Shell
+Necrotic Armour
+--------
+Quality: +30% (augmented)
+Evasion Rating: 3287 (augmented)
+Energy Shield: 674 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 103 
+Int: 103 
+--------
+Sockets: W-W-W-W-W-W 
+--------
+Item Level: 86
+--------
+40% reduced Attribute Requirements (enchant)
+--------
+Socketed Gems are Supported by Level 20 Item Rarity
+Ignore Stuns while using Socketed Attack Skills
+Socketed Attacks have -20 to Total Mana Cost
++373 to Evasion Rating
+110% increased Evasion and Energy Shield
++80 to maximum Energy Shield
+Adds 1 to 5 Lightning Damage for each Shocked Enemy you've Killed Recently
+25% increased Rarity of Items found from Slain Unique Enemies
++10% chance to Suppress Spell Damage (crafted)
+--------
+Split
+--------
+Shaper Item
+Warlord Item
+`
+    },{
+        id: 5,
+        version: "poe1",
+        league: "Mirage",
+        name: "Phoenix Crown Torturer's Mask",
+        mirrorFee: "5",
+        category: "armor",
+        type: " IIR Magic find / Elemental Hit",
+        tags: ["Fractured Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/HelmetDexInt11.png",
+        socketimageUrl: "./image/4l1b.png",
+        itemData: `Item Class: Helmets
+Rarity: Rare
+Phoenix Crown
+Torturer's Mask
+--------
+Quality: +30% (augmented)
+Evasion Rating: 532 (augmented)
+Energy Shield: 107 (augmented)
+--------
+Requirements:
+Level: 84
+Dex: 132
+Int: 132
+--------
+Sockets: W-W-W A 
+--------
+Item Level: 85
+--------
+12% increased Mana Reservation Efficiency of Skills (implicit)
+26% reduced Mana Cost of Attacks (implicit)
+--------
+60% increased Rarity of Items Dropped by Slain Rare or Unique Enemies (fractured)
+Has 1 Abyssal Socket
++144 to maximum Life
+50% increased Rarity of Items found
++1 to Level of Socketed Projectile Gems (crafted)
+Projectiles Pierce an additional Target (crafted)
+--------
+Split
+Searing Exarch Item
+Eater of Worlds Item
+--------
+Fractured Item
 `
     },
 ];
