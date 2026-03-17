@@ -1963,14 +1963,14 @@ Fractured Item
         // clip: "https://www.twitch.tv/poogf01/clip/QuaintDoubtfulClamMoreCowbell-gN_DF3grOeKqu9JN",
         itemData: `Item Class: One Hand Swords
 Rarity: Rare
-Hate Slicer
+Doom Impaler
 Anarchic Spiritblade
 --------
 One Handed Sword
 Quality: +20% (augmented)
-Physical Damage: 34-63
+Physical Damage: 78-144 (augmented)
 Critical Strike Chance: 8.38% (augmented)
-Attacks per Second: 1.95 (augmented)
+Attacks per Second: 1.97 (augmented)
 Weapon Range: 1.1 metres
 --------
 Requirements:
@@ -1980,7 +1980,7 @@ Dex: 121
 --------
 Sockets: W-W-W 
 --------
-Item Level: 85
+Item Level: 84
 --------
 品質不會增加物理傷害 (enchant)
 每 8% 品質增加 1% 攻擊速度 (enchant)
@@ -1988,15 +1988,16 @@ Item Level: 85
 使用此武器攻擊時 100% 物理傷害轉化為隨機元素傷害 (implicit)
 --------
 插槽中寶石被等級 20 的增加暴擊率輔助
+插槽中寶石被等級 20 的殘暴輔助
 插槽中寶石被等級 20 的快速攻擊輔助
-插槽中寶石被等級 20 的增加暴擊傷害輔助
+插槽中寶石被等級 18 的增加暴擊傷害輔助
 此物品上寶石受到等級 20 的元素傷害攻擊輔助
 插槽中的技能造成 40% 更多攻擊傷害
-增加 20% 攻擊速度
+增加 129% 物理傷害
+增加 21% 攻擊速度
 增加 29% 暴擊率
-+28% 全域暴擊加成
-攻擊技能增加 37% 元素傷害
-攻擊和法術不能被閃避 (crafted)
++24% 全域暴擊加成
+攻擊技能增加 35% 元素傷害
 --------
 Shaper Item
 Elder Item
@@ -2095,6 +2096,50 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+`
+    },{
+        id: 6,
+        version: "poe1",
+        league: "Mirage",
+        name: "Chimeric Clutches Warlock Gloves",
+        mirrorFee: "5",
+        category: "armor",
+        type: "spark/spark of nova",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/GlovesInt4.png",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+Chimeric Clutches
+Warlock Gloves
+--------
+Quality: +30% (augmented)
+Energy Shield: 188 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+插槽中寶石被等級 20 的投射物減速輔助
+插槽中寶石被等級 25 的快速投射輔助
+插槽中寶石被等級 25 的快速施放輔助
+此物品插槽中寶石有 +3.5% 暴擊率
+插槽中的法術 +90% 暴擊加成
+增加 14% 施放速度
+增加 30% 投射物速度
+增加 25% 投射物傷害
+增加 74% 能量護盾  (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
 `
     },
 ];
@@ -2222,14 +2267,14 @@ Fractured Item
         socketimageUrl: "./image/3sL.webp",
         itemData: `Item Class: One Hand Swords
 Rarity: Rare
-Hate Slicer
+Doom Impaler
 Anarchic Spiritblade
 --------
 One Handed Sword
 Quality: +20% (augmented)
-Physical Damage: 34-63
+Physical Damage: 78-144 (augmented)
 Critical Strike Chance: 8.38% (augmented)
-Attacks per Second: 1.95 (augmented)
+Attacks per Second: 1.97 (augmented)
 Weapon Range: 1.1 metres
 --------
 Requirements:
@@ -2239,7 +2284,7 @@ Dex: 121
 --------
 Sockets: W-W-W 
 --------
-Item Level: 85
+Item Level: 84
 --------
 Quality does not increase Physical Damage (enchant)
 1% increased Attack Speed per 8% Quality (enchant)
@@ -2247,15 +2292,16 @@ Quality does not increase Physical Damage (enchant)
 100% of Physical Damage from Hits with this Weapon is Converted to a random Element (implicit)
 --------
 Socketed Gems are Supported by Level 20 Increased Critical Strikes
+Socketed Gems are Supported by Level 20 Ruthless
 Socketed Gems are Supported by Level 20 Faster Attacks
-Socketed Gems are supported by Level 20 Increased Critical Damage
+Socketed Gems are supported by Level 18 Increased Critical Damage
 Socketed Gems are supported by Level 20 Elemental Damage with Attacks
 Socketed Skills deal 40% more Attack Damage
-20% increased Attack Speed
+129% increased Physical Damage
+21% increased Attack Speed
 29% increased Critical Strike Chance
-+28% to Global Critical Strike Multiplier
-37% increased Elemental Damage with Attack Skills
-Hits can't be Evaded (crafted)
++24% to Global Critical Strike Multiplier
+35% increased Elemental Damage with Attack Skills
 --------
 Shaper Item
 Elder Item
@@ -2354,6 +2400,50 @@ Searing Exarch Item
 Eater of Worlds Item
 --------
 Fractured Item
+`
+    },{
+        id: 6,
+        version: "poe1",
+        league: "Mirage",
+        name: "Chimeric Clutches Warlock Gloves",
+        mirrorFee: "5",
+        category: "armor",
+        type: "spark/spark of nova",
+        tags: ["Shaper Item", "Elder Item"],
+        owner: "AuA_poogf",
+        contact: "AuA_poogf",
+        imageUrl: "./image/GlovesInt4.png",
+        socketimageUrl: "./image/4s.webp",
+        itemData: `Item Class: Gloves
+Rarity: Rare
+Chimeric Clutches
+Warlock Gloves
+--------
+Quality: +30% (augmented)
+Energy Shield: 188 (augmented)
+--------
+Requirements:
+Level: 84
+Int: 144
+--------
+Sockets: W-W-W-W 
+--------
+Item Level: 84
+--------
+Socketed Gems are Supported by Level 20 Slower Projectiles
+Socketed Gems are supported by Level 25 Faster Projectiles
+Socketed Gems are Supported by Level 25 Faster Casting
+Socketed Gems have +3.5% Critical Strike Chance
+Socketed Spells have +90% to Critical Strike Multiplier
+14% increased Cast Speed
+30% increased Projectile Speed
+25% increased Projectile Damage
+74% increased Energy Shield (crafted)
+--------
+Split
+--------
+Shaper Item
+Elder Item
 `
     },
 ];
